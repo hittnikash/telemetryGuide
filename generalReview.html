@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <!-- Title-->
+        <title>CICU Telemetry Guide</title>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <meta name="description" content= "Telemetry Reference Guide"/>
+        <meta name="author" content="Ashley Needy"/>
+    <!--Link to CSS -->  
+    <link rel="stylesheet" href="CSS/normalize.css"/>
+    <link rel="stylesheet" href="CSS/styles.css"/>
+</head>
+<body>
+<!-- Header -->
+<div class= "wrapper">
+    <nav role="navigation"> 
+        <div class="topnav" id="myTopnav">
+          <div class= "logo">
+            <img class= "nav-logo" src="icons/logo-nc.png" alt="logo"> 
+            <button onclick="toggle()" class="hamburgerButton" aria-label="hamburger navigation menu" style= "background: url(icons/hamburger.png) no-repeat" ></button>
+          </div>
+        </div>
+          <div class="hams">
+          <div id="navLinks">
+          <a href="index.html">Home</a>
+       
+          <div class="dropdown-a">
+            <button class="dropbtn-a">Checklist-Guide 
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content-a">
+              <a href="mt.html">Monitor-Tech</a>
+              <a href="nursingGuide.html">Nursing Guide</a>
+              <a href="PhillipsSystemGuide.html">System Guide</a>
+            </div>
+              </div>
+          <a href="techSupport.html">Tech-Support</a>
+          <div class="dropdown">
+            <button class="dropbtn">Telemetry
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="intro.html">EKG Intro & Interpretation</a>
+              <a href="PedsNormalVitalSigns.html">Peds Normal Vital Signs</a> 
+              <a href="redAlarmAlgorithms.html">Red Alarm Algorithms</a> 
+              <a href="paper.html">EKG Paper</a>
+              <a href="nomenclature.html">EKG Nomenclature</a>
+              <a href="rhythm.html">Rhythm</a>
+              <a href="heartRate.html">Heart Rate</a>
+              <a href="refrence.html">EKG Reference</a>
+              <a href="artifact.html">Telemetry Artifact</a>
+              <a href="pacing.html">Pacing</a>
+              <a href="quiz.html">EKG Quiz</a>
+            </div>
+              </div>
+          </div>
+           </div>
+        
+        </nav>
+      
+        <main class="content" role= "main">
+          <header class= "container" role="banner">
+    
+          
+         <section>
+          <h2>Icons in General Review:</h2><br>
+             <figure class= "figParameters">
+            <img class= "howToImg" src="editedTeleHowTos/reviewpts.jpg" alt= "General Review"> 
+            <figcaption class= "capParameters">Example: General Review</figcaption> 
+        </figure>
+        <br>
+        <p>If you hover over a patient sector, the action buttons will appear. Hover again over review and you will
+            have two options: alarm review & general review. Inside both these selections you will see many icons. 
+            Here is a review of what they these icons do.</p>
+        <br>
+      </section>
+      <br>
+      <div class= "teleIconLayout">
+      <img class= "teleIcons" src="editedTeleHowTos/delete.png" alt= "Delete Alarms"> 
+      <h2>Delete Alarms:</h2>
+    </div>
+      <p>When you select alarm review the icons are in a column on the right.
+         This particular icon deletes selected alarms 
+         and strips. Once deleted this action cannot be undone. </p>
+
+         <br>
+         <div class= "teleIconLayout">
+         <img class= "teleIcons" src="editedTeleHowTos/saveStrip.png" alt= "Save Strips"> 
+         <h2>Save A Strip:</h2>
+       </div>
+         <p>During your review you may need to save a strip. This icon allows you do just that. </p>
+       <br>
+        
+       <div class= "teleIconLayout">
+        <img class= "teleIcons" src="editedTeleHowTos/filterAlarms.png" alt= "Filter Alarms"> 
+        <h2>Filter Alarms:</h2>
+      </div>
+        <p>You can filter the alarms, to easily view saved strips only or other alarms. </p>
+      <br>
+              
+      <div class= "teleIconLayout">
+        <img class= "teleIcons" src="editedTeleHowTos/print.png" alt= "Print Strips"> 
+        <h2>Print Strips:</h2>
+      </div>
+        <p>You can print out strips with this button. </p>
+      <br>
+       
+      <div class= "teleIconLayout">
+        <img class= "teleIcons" src="editedTeleHowTos/recordStrip.png" alt= "Record A Strip"> 
+        <h2>Record A Strips:</h2>
+      </div>
+        <p>This icon allows you to a record a strip. This will print a strip on telemetry paper.</p>
+      <br>
+
+      <div class= "teleIconLayout">
+        <img class= "teleIcons" src="editedTeleHowTos/toggleViews.png"  alt= "Toggle View"> 
+        <h2>Toggle View:</h2>
+      </div>
+        <p>This can be used to toggle between different review windows, such as event view, tabular view 
+            and graphic view.
+        </p>
+      <br>
+
+      <div class= "teleIconLayout">
+        <img class= "teleIcons" src="editedTeleHowTos/lgWindowView.png"  alt= "Large View"> 
+        <h2>Large View:</h2>
+      </div>
+        <p>Can be used to access larger view of review window section.
+        </p>
+      <br>
+
+      <div class= "teleIconLayout">
+        <img class= "teleIcons" src="editedTeleHowTos/editAlarms.png"  alt= "Edit Alarms"> 
+        <h2>Edit Alarms:</h2>
+      </div>
+        <p>This icon allows you to create, edit & delete custom alarm labels.
+        </p>
+      <br>
+
+      <div class= "teleIconLayout">
+        <img class= "teleIcons" src="editedTeleHowTos/backForthstrip.png"  alt= "Navigation"> 
+        <h2>Navigation:</h2>
+      </div>
+        <p>Used to navigate to the previous & next strips.
+        </p>
+      <br>
+
+      <div class= "teleIconLayout">
+        <img class= "teleIcons" src="editedTeleHowTos/settings.png"  alt= "Settings"> 
+        <h2>Settings:</h2>
+      </div>
+        <p>Use to change the timeline or view duration. Changes you make to view or timeline
+          duration only apply to the patient you are viewing. Once you close the window the changes 
+          revert back to the default settings. 
+        </p>
+      <br>
+
+     <section>
+      <h2 id= "alarmReview">Alarm Review:</h2> 
+      <br>
+      <figure class= "figParameters">
+        <img class= "howToImg" src="editedTeleHowTos/reviewpts.jpg" alt="review"> 
+        <figcaption class= "capParameters">Example: Review</figcaption> 
+    </figure>
+    <p>To go through the alarms, first start by hovering over the patient sector. The action 
+      buttons will appear. Next hovr over the review button and and two options will appear. 
+      'General Review' or 'A'larm Review'. Select alarm review.
+    </p>
+    <br>
+    <img class= "howToImg" src="editedTeleHowTos/alarmActionTab.png" alt="Alarm"> 
+    <p>The check boxes in the lower left allows the user to select alarms. The action tab on the right
+      allow the user to perfor several different tasks. You may recognize these icons as they are reviewed in detail
+      above. These tasks include: toggiling views, filtering alarms, printing strips, recording a strip, saving a strip &
+      deleting strips.
+    </p>
+    <p>Another option to be aware of is the select all feature which is not shown in this image. This option was a recent update 
+      and allows the user to select all the alarms at once.
+    </p>
+    <p>To go through the alarms the user can 'select all' & then navigate through the alarms de-selecting 'true alarms'.
+       Alternatively the user can also navigate through the alarms selecting only artifact.</p>
+
+      <p>The alternative views to the alarm review bank are  'compressed view' & 'alarm window'.</p> 
+      <figure class= "figParameters">
+      <img class= "howToImg" src="editedTeleHowTos/compressedAlarms.jpg" alt="Compressed alarm view"> 
+      <figcaption class= "capParameters">Compressed Alarm Review</figcaption>
+    </figure>
+      <br>
+      <figure class= "figParameters">
+      <img class= "howToImg" src="editedTeleHowTos/alarmReview.jpg" alt="Alarm Window"> 
+      <figcaption class= "capParameters">Alarm Window</figcaption>
+    </figure>
+  </section>
+<br>
+  <section>
+    <h2 id= "searchStrip">Search Strips:</h2> 
+    <br>
+    <figure class= "figParameters">
+      <img class= "howToImg" src="editedTeleHowTos/alarmFilterBAnk.jpg" alt="search Strips"> 
+      <figcaption class= "capParameters">Example: Search Strips</figcaption> 
+  </figure>
+  <p>To find a strip easily you have a few options. First, if you saved the strip you can filter the alarms to 
+    show just the saved strips. You can also filter by yellow & red alarms. So if the patient alarmed for an event you
+    can find it by filtering the type of alarms.
+  </p>
+  <p>Another option is to 'search' for the strip. You can search by alarm name, or if you labeled your
+    strip that you are searching for you can search using the label. </p>
+        </section>
+
+        <section>
+          <h2 id= "calipers">Using Calipers:</h2> 
+          <br>
+          <figure class= "figParameters">
+            <img class= "howToImg" src="editedTeleHowTos/caliper.jpg" alt="Calipers"> 
+            <figcaption class= "capParameters">Example: Calipers</figcaption> 
+        </figure>
+        <p>To use the calipers, check the box and slide the popup down so that its not in the way of your measurement.
+        </p>
+              </section>
+<br>
+              <section>
+                <h2 id= "vitalSigns">View Vital Signs:</h2> 
+                <br>
+                <figure class= "figParameters">
+                  <img class= "howToImg" src="editedTeleHowTos/vitalSigns.jpg" alt="View Vital Signs"> 
+                  <figcaption class= "capParameters">Example: View Vital Signs </figcaption> 
+              </figure>
+              <p>In the general review window select the toggle button, on the right side of the patient sector.
+                Then you can adjust the timeline using the gears also on the right hand side. At the most you are 
+                able to adjust to a minute by minute view if needed.
+              </p>
+                    </section>
+<br>
+                    <section>
+                      <h2 id= "saveStrips">Saving Strips:</h2> 
+                      <br>
+                      <figure class= "figParameters">
+                        <img class= "howToImg" src="editedTeleHowTos/saveStrips.jpg" alt="Saving Strips"> 
+                        <figcaption class= "capParameters">Example: Saving Strips </figcaption> 
+                    </figure>
+                    <p>There are two different types of save strips. First are strips saved of an arrythmia. Next are 'Control Strips'.
+                      Control strips are saved at certain times: 0600, 1400 & 2200. You can think of control strips like
+                      an experiment, the control strips are like the control group receiving a placebo. All saved strips are prepared in
+                      a report for cardiology to review.</p>
+                    <p>
+                      To save an arrythmia strip from general review, first click on the arrythmia and line it up in the window.
+                      On the right side there is a little yellow comment box. Select this icon to save a strip, when saving the strip 
+                      you can create a label, choose a generic label or leave the strip un-labeled. 
+                    </p>
+
+                    <p>During your review if you see the save stip icon at the bottom of the window it means a strip has been saved during
+                      that timeframe.
+                    </p>
+
+                    <h2>Control Strips:</h2>
+                    <figure class= "figParameters">
+                      <img class= "howToImg" src="CICUeditedPics/saveStripIcon.jpg" alt="Control Strips"> 
+                      <figcaption class= "capParameters">Example: Control Stips </figcaption> 
+                  </figure> 
+                  <p>Control strips can be saved manually. This is done on each individual patient the same way 
+                    you would save an arrythmia strip. Or a less monotonous way would be selecting the save strip
+                    icon at the very top of each monitor. This will automatically save a strip for each patient on the
+                    monitor at the time that you save the strips. Just make sure to save at the correct times!
+                </p>
+                          </section>
+        </header> 
+        </main>
+      </div>
+<hr class="footerLine">
+<!-- Footer -->
+    <footer role="contentinfo">
+    
+                    <span class="copyright">&copy;2020 CICU TELEMETRY GUIDE</span>
+                    <div class="disclaimer">This website is intended for use by medical professionals for educational
+                      purposes only. For medical care, please contact a healthcare provider.
+                    </div>
+    </footer> 
+    
+        <!-- JS (Hamburger Menu)-->
+        <script src= "JS/hamburger.js"></script>
+
+    
+        
+
+    </body>
+</html>

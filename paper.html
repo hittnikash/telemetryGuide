@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <!-- Title-->
+        <title>CICU Telemetry Guide</title>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <meta name="description" content="Telemetry Reference Guide"/>
+        <meta name="author" content="Ashley Needy"/>
+    <!--Link to CSS -->  
+    <link rel="stylesheet" href="CSS/normalize.css"/>
+    <link rel="stylesheet" href="CSS/styles.css"/>
+</head>
+<body>
+<div class= "wrapper">
+  <!-- NAVIGATION -->
+  <nav role="navigation"> 
+    <div class="topnav" id="myTopnav">
+      <div class= "logo">
+        <img class= "nav-logo" src="icons/logo-nc.png" alt="logo"> 
+        <button onclick="toggle()" class="hamburgerButton" aria-label="hamburger navigation menu" style= "background: url(icons/hamburger.png) no-repeat" ></button>
+      </div>
+    </div>
+      <div class="hams">
+      <div id="navLinks">
+      <a href="index.html">Home</a>
+   
+      <div class="dropdown-a">
+        <button class="dropbtn-a">Checklist-Guide 
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content-a">
+          <a href="mt.html">Monitor-Tech</a>
+          <a href="nursingGuide.html">Nursing Guide</a>
+          <a href="PhillipsSystemGuide.html">System Guide</a>
+        </div>
+        </div>
+      <a href="techSupport.html">Tech-Support</a>
+      <div class="dropdown">
+        <button class="dropbtn">Telemetry
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="intro.html">EKG Intro & Interpretation</a>
+          <a href="PedsNormalVitalSigns.html">Peds Normal Vital Signs</a> 
+          <a href="redAlarmAlgorithms.html">Red Alarm Algorithms</a> 
+          <a href="paper.html">EKG Paper</a>
+          <a href="nomenclature.html">EKG Nomenclature</a>
+          <a href="rhythm.html">Rhythm</a>
+          <a href="heartRate.html">Heart Rate</a>
+          <a href="refrence.html">EKG Reference</a>
+          <a href="artifact.html">Telemetry Artifact</a>
+          <a href="pacing.html">Pacing</a>
+          <a href="quiz.html">EKG Quiz</a>
+        </div>
+          </div>
+      </div>
+       </div>
+    </nav>
+        
+        <main class="content" role= "main">
+          <header class= "container" role="banner">
+          <section class= "intro-PAPER">
+            <h1>EKG Paper</h1><br>
+        
+ <p>EKG tracings are recorded on grid paper. The grid paper is broken down into “blocks”.  
+   The horizontal axis represents time, and the vertical axis represents EKG amplitude (voltage).</p>
+
+   <img class= "paper-img" src="resources/createdImgs/1-SecStrip.jpg" alt= "EKG Paper-Time Example"><br>
+        
+  <p>A six second strip has thirty ‘big blocks’,  five of those ‘big blocks’ represent 1 second.
+     One ‘big block’ equals 0.2 second. Within one ‘big block are five ‘small blocks’, 
+     each representing 0.04 seconds. The black marks at the top of the strip indicate 3 second 
+     intervals.
+  </p> <br>
+
+     <img class="paper-img" src="resources/createdImgs/20secStrip.jpg" alt= "EKG Paper-Amplitude Example"><br>
+  <p>On the vertical axis two ‘big blocks’ equal 1 millivolt (mV). 
+    Within the ‘big block’ are five ‘small blocks’ each representing 0.1 mV.
+    </p>   
+
+          </section>
+        </header> 
+        </main>
+</div>
+<hr class="footerLine">
+<!-- Footer -->
+    <footer role="contentinfo">
+       
+                    <span class="copyright">&copy;2020 CICU TELEMETRY GUIDE</span>
+                    <div class="disclaimer">This website is intended for use by medical professionals for educational
+                      purposes only. For medical care, please contact a healthcare provider.
+                    </div>
+       
+    </footer> 
+    
+        <!-- JS (Hamburger Menu)-->
+        <script src= "JS/hamburger.js"></script>
+
+    
+        
+
+    </body>
+</html>

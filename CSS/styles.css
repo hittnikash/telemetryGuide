@@ -1,0 +1,1155 @@
+@charset "UTF-8";
+
+/*--------------------------------------------
+BASE STYLES (MOBILE-FIRST)
+--------------------------------------------*/
+* {
+  box-sizing: border-box;
+  }
+
+/***** BASIC TEXT STYLES ******/
+p {
+  font-family: "Montserrat-subheading", "Verdana", "sans-serif";
+  line-height: 35px;
+  font-size: 1rem;
+  color: #000;
+  flex: 1 1 auto;
+  width: 80%;
+  margin-left: 10%;
+  padding: 2%;
+  }
+
+h1 {
+  font-weight: 500;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  letter-spacing: 4px;
+  text-align: center;
+  width: 75%;
+  }
+
+h2 {
+  font-weight: 500;
+  text-transform: uppercase;
+  font-size: 1rem;
+  letter-spacing: 4px;
+  text-align: center;
+  width: 80vw;
+  }
+
+h3 {
+  font-weight: 500;
+  text-transform: uppercase;
+  font-size: 1rem;
+  letter-spacing: 3px;
+  text-align: left;
+  }
+
+ html, body {
+  height: 100%;
+  } 
+
+body {
+  display: flex;
+  flex-direction: column;
+  }
+
+.wrapper {
+  /* width: 100vw; */
+  /* margin: 0 auto; */
+  flex: 1 1 auto;
+  }
+
+  .contentinfo {
+    flex-shrink: 0;
+  }
+
+/* index */
+.intro, .intro-MT,
+.intro-TS, .intro-Q,
+.intro-NG, .intro-INT,
+.intro-PAPER, .intro-NOMA,
+.intro-RHY, .intro-HR, 
+.intro-REF, .intro-STUDY, 
+main {
+  display: flex;
+  flex-direction: column;  
+  align-items: center;
+}
+
+.showForDesktop {
+  display: none;
+}
+
+.intro-img {
+  border-radius: 8px;
+  width: 90vw;
+  margin-bottom: 5%;
+}
+
+.paper-img {
+  width: 85%;
+}
+
+.wave-IMG {
+  width: 95%;  
+}
+
+.NOMA-img {
+  width: 95%;
+}
+
+/* Navigation */
+/* nav logo   */
+.nav-logo {
+  width: auto;
+  height: 70px;
+  margin-top: -5px;
+  margin-left: -5px;
+  Z-index: 4;
+  }
+
+.logo {
+  display: flex;
+  flex-direction: row;
+  margin-top: 5%;
+  justify-content: space-between;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-bottom: 5%;
+}  
+
+/* hamburger menu */
+.hamburgerButton {
+  width: 50px;
+  height: 50px;
+  padding-right: 16%;
+  margin-top: 5px;
+  }
+
+.topNav {
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+  position: relative;
+  margin-top: 5%;
+
+  }
+
+#navLinks, .hams, #navLinks a {
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  font-family: "Oswald", sans-serif;
+  font-size: 1rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  color:#000;
+  }
+
+.hams {
+text-align: center;
+}  
+   
+#navLinks {
+  display: none;
+} 
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  display: block;
+  color: #000;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 2rem;
+  padding: 15px;
+  font-family: "Oswald", "sans-serif";
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+/* Add an active class to highlight the current page */
+/* .active {
+  background-color: teal;
+  color: #000;
+} */
+
+/* Hide the link that should open and close the topnav on small screens */
+/* .topnav .icon {
+  display: none;
+} */
+
+/* Dropdown container - needed to position the dropdown content */
+.dropdown, .dropdown-a , .dropdown-right{
+  text-align: center;
+  overflow: hidden;
+  font-family: "Oswald", "sans-serif";
+}
+
+/* Style the dropdown button to fit inside the topnav */
+.dropdown, .dropdown-a , .dropbtn, .dropbtn-a, 
+.dropdown-right {
+  /* letter-spacing: 3px; */
+  border: none;
+  outline: none;
+  color: #000;
+  padding: 14px 8px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+  text-transform: uppercase;
+  font-size: 1rem;
+}
+
+
+/* Style the dropdown content (hidden by default) */
+.dropdown-content, .dropdown-content-a,
+.dropdown-content-right, 
+.dropdown-content-right a {
+  display: none;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Style the links inside the dropdown */
+.dropdown-content a,
+.dropdown-content-a a { 
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+}
+
+/* Add a dark background on topnav links and the dropdown button on hover */
+.hams a:hover, .dropdown:hover .dropbtn, .dropdown-a:hover .dropbtn-a {
+  background-color: #09a6d1;
+  color: white;
+  border-radius: 5px;
+}
+
+/* Add a grey background to dropdown links on hover */
+.dropdown-content a:hover, .dropdown-content-a a:hover {
+  /* background-color: #ddd; */
+  background-color: #f68923;
+  color: black;
+}
+
+/* Show the dropdown menu when the user moves the mouse over the dropdown button */
+.dropdown:hover .dropdown-content, 
+.dropdown-a:hover .dropdown-content-a ,
+.dropdown-right:hover .dropdown-content-right {                            
+  display: flex;
+  flex-direction: column;
+  align-self: center;  
+}
+
+.dropbtn, .dropbtn-a {
+  margin-top: -13px;
+}
+
+/* Collasped SideBar */
+/* The sidebar menu */
+/* Drop Collasped SideBar */
+/* The sidebar menu */
+
+/* .openbtn:hover, 
+.openOTHERbtn:hover {
+   border: #f68923;
+} */
+
+.sidebar {
+  height: 0; /* 100% Full-height */
+  width: 100%; /* 0 width - change this with JavaScript */
+  position: absolute; /* Stay in place */
+  z-index: 2; /* Stay on top */
+  top: 100px;
+  left: 0;
+  background-color: #09a6d1;
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 10px; /* Place content 200px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidebar */
+}
+
+.otherSidebar {
+  height: 0;
+  width: 100%;
+  position: absolute;
+  top: 110px;
+  left: 0;
+  background-color: #f68923;
+  overflow-x: hidden;
+  padding-top: 10px;
+  transition: 0.5s;
+}
+
+/* The sidebar links */
+.sidebar a, 
+.otherSidebar a {
+  padding: 10px 10px 10px 35px;
+  text-decoration: none;
+  font-size: 1rem;
+  color: #fff;
+  display: block;
+  cursor: pointer;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidebar a:hover,
+.otherSidebar a:hover {
+  color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidebar .closebtn,
+.otherSidebar .closebtn {
+  position: absolute;
+  top: -12px;
+  right: 0;
+  font-size: 36px;
+  /* margin-left: 50px; */
+}
+
+/* The button used to open the sidebar */
+.openbtn {
+  font-size: 1.5rem;
+  height: 53px;
+  cursor: pointer;
+  background-color: #09a6d1;
+  color: white;
+  padding: 8px 8px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  z-index: 3;
+  position: absolute;
+  top: 16%;
+  left: 75%;
+}
+
+.openOTHERbtn {
+  font-size: 1.5rem;
+  cursor: pointer;
+  height: 40px;
+  background-color: #f68923;
+  color: white;
+  padding: 8px 8px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  /* box-shadow: 1px 1px #696969;  */
+  z-index: 1;
+  position: absolute;
+  top: 18%;
+  left: 60%;
+
+}
+
+/* .openbtn:hover, 
+.openOTHERbtn:hover {
+   border: #f68923;
+} */
+
+/* .titleButton { 
+  display: flex;
+  /* flex-direction: row;
+  justify-content: flex-end; 
+
+} */
+
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main, #main2 {
+  transition: margin-Bottom .5s; /* If you want a transition effect */
+  padding: 5px;
+}
+
+
+
+
+
+
+
+
+
+.controlNursingLink {
+  cursor: pointer;
+}
+/* How To section */
+.howToImg {
+  width: 85%;
+}
+
+.figParameters {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.capParameters {
+  font-family: "Montserrat subheading", "Verdana", "sans-serif";
+  font-style: italic;
+  width: 80%;
+  background-color: #000;
+  color: #fff;
+  width: 85%;
+  margin-top: -10px;
+  border-radius: 5px;
+}
+
+.teleIcons {
+  width: 20%;
+  height: 20%;
+  margin-top: -6%;
+  margin-right: -10%;
+}
+
+.teleIconLayout {
+  display: flex;
+  flex-direction: row;
+}
+/* 
+.titleButton { 
+  display: flex;
+  align-self: flex-start;
+  margin-left: 5%;
+} */
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+}
+
+.footerLine {
+  display: block;
+  width: 65%;
+  max-width: 85%;
+  color: black;
+  margin-bottom: -7%;
+  }
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 10%;
+  }
+
+.footerLine {
+  margin-top: 15%;
+}  
+
+.copyright {
+  align-self: center;
+  margin-bottom: 5%;
+}
+
+.disclaimer {
+ width: 85%;
+ padding-left: 5%;
+ padding-right: 5%;
+ padding-bottom: 5%;
+ margin-left: 3%;
+ align-self: center;
+}
+
+/* intro ekg page */
+.intro-flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+/* .sinus-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10%;
+} */
+
+.intro-ekg-img {
+  width: 25px;
+  margin-right: 3%;
+}
+
+.intro-list {
+align-content: center;
+width: 60%;
+margin-left: 10%;
+line-height: 150%;
+}
+
+/* tech page */
+.modalTitle {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+/* Tech Checlist page */
+/* Accordian Tools panels */
+.menu {
+  display: flex;
+  flex-direction: column;
+  margin-top: 5%;
+  }
+
+.intro {
+  display: flex;
+  flex-direction: column;
+}  
+
+.acc-p {
+width:  260px;
+color: #fff;
+margin-left: 5%;
+}  
+
+.list {
+  /* margin-left: 15%; effect nomenclature */
+  padding: 10%;
+  list-style-type: circle;
+  color: #fff;
+  line-height: 200%;
+}
+
+/* .titleButton { 
+  display: none;
+} */
+
+.accordionB,
+.accordionBLink,
+.accordion,
+.accordionLink {
+  font-family: "Montserrat subheading", "Verdana", "sans-serif";
+  background-color: #09a6d1;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-size: 1rem;
+  letter-spacing: 1px;
+  box-shadow: 1px 1px #696969;
+  border-width: 1px 1px 2px;
+  padding: 8px;
+  width: 300px;
+  text-align: center;
+  border: 1px solid #000;
+  outline: none;
+  margin-bottom: 3%;
+  }
+
+.accordionB:after,
+.accordion:after {
+  content: "\02795"; /* Unicode character for (+) */
+  font-size: 15px;
+  color: #fff;
+  float: right;
+  }
+
+.accordion.active:after,
+.accordionB.active:after {
+  content: "\2796"; /* Unicode character for (-) */
+  }
+
+.active,
+.accordion:hover,
+.accordionB:hover {
+  background-color: #f68923;
+  transition: 0.9s;
+  }
+
+.panel {
+  padding: 10 30px;
+  margin-top: -7px;
+  width: 300px;
+  background-color: #f68923;
+  border-left: 1px solid #000;
+  border-right: 1px solid #000;
+  display: none;
+  overflow: hidden;
+  border-radius: 5px;
+  } 
+
+#techSupport {
+  border-radius: 10px; 
+}
+
+.techSm, .tech-imgB, 
+.tech-imgC,.tech-imgD,
+.tech-imgE,.tech-imgF, 
+.tech-imgG {
+width: 10rem;
+margin-left: 5%;
+cursor: pointer;
+border-radius: 10px;
+margin-top: 5vh;
+}
+
+.figGrid {
+  text-align: left;
+  margin-left: 25%;
+  margin-bottom: 5%;
+}
+
+.techModalA,
+.techModalB,
+.techModalC,
+.techModalD,
+.techModalE,
+.techModalF,
+.techModalG {
+  position: absolute;
+  cursor: pointer;
+  top: 130%;
+  width: 400px;
+  height: 400px;
+  display: flex;
+  }
+
+.techModalA--hidden,
+.techModalB--hidden,
+.techModalC--hidden,
+.techModalD--hidden,
+.techModalE--hidden,
+.techModalF--hidden, 
+.techModalG--hidden {
+  display: none;
+  }
+
+.modalContents {
+  background-color: #fff;
+  border: 1px solid #000;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 5%;
+  }
+
+#closeA, #closeB,
+#closeC, #closeD,
+#closeE, #closeF,
+#closeG {
+  padding: 5px;
+  cursor: pointer;
+  margin-top: -8px;
+ margin-left: 50px;
+}
+
+.deviceTrackImg {
+  display: none;
+  border-radius: 8px;
+  margin-top: 15%;
+  margin-bottom: 15%;
+}
+
+li:hover + img {
+  display: block;
+  width: 100%;
+}
+  /* basic-page */
+  .basic-list {
+      list-style-type: circle;
+      color: #000;
+      line-height: 150%;
+  }
+
+/*   
+  Control Modal */
+  .control {
+    width: 200px;
+    border-radius: 8px;
+    margin-left: 15%;
+    margin-top: 10%;
+    cursor: pointer;
+  } 
+
+.Cmodal {
+  cursor: pointer;
+  width: 220px;
+  height: 410px;
+  display: flex;
+  margin-top: -30%;
+  margin-left: 15%;
+
+  }
+
+.Cmodal--hidden {
+  display: none;
+  }
+
+.modalContents {
+  background-color: #fff;
+  border: 1px solid #000;
+  display: flex;
+  flex-direction: column;
+  margin-left: -10%;
+  margin-top: 20%;
+  margin-bottom: 20%;
+  padding: 10px;
+  border-radius: 5%;
+  } 
+
+  #close {
+    align-self: flex-end;
+    
+  }
+
+  /* woi/ulp section */
+  .noma, .noma-Tabs, section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  /* refrence page-- flash cards */
+/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flashDisplay {
+font-weight: bold;
+font-size: .70rem;
+color: #fff;
+margin-top: 5%;
+margin-bottom: 2%;
+letter-spacing: 2.5px;
+line-height: 15px;
+}
+
+.flashText {
+  font-size: .70rem;
+  line-height: 17px;
+  text-align: left;
+  color: #fff;
+  width: 100%;
+}
+
+.strip {
+  margin-top: 5%;
+  width: 320px;
+  height: 145px;
+}
+
+.caption {
+  color: #fff;
+  margin-top: 4%;
+}
+
+.flip-card {
+  background-color: transparent;
+  width: 340px;
+  height: 230px;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  cursor: pointer;
+  margin-bottom: 5%;
+  box-shadow: 5px 6px rgba(0,0,0,0.2);
+}
+
+.flip-card:hover {
+  animation: mymove 5s infinite;
+  transform: scale(1.05, 1.15);
+  max-width: 400px;
+  border: 1px solid rgba(0,0,0,0.2)
+}
+
+@keyframes mymove {
+  50% {box-shadow: 5px 10px #ea1d48;}
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+  
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  background-color: #f68923;
+  color: black;
+}
+
+/* Style the back side */
+.flip-card-back {
+  background-color: #09a6d1;
+  color: white;
+  transform: rotateY(180deg);
+  height: 240px;
+  
+}
+
+span {
+  margin-bottom: 10%;
+}
+
+
+.center-img {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+/*-------------------------------------------------------------
+      i-PAD
+-------------------------------------------------------------*/
+/****** Large-ish Screen Media Queries: Targets VP sizes 768px & wider. *******/
+@media (min-width: 768px) {
+  
+.hamburgerButton {
+  display: none;
+  }
+
+ .logo {
+  display: flex;
+  justify-content: center;
+ }
+
+#navLinks, .dropdown, .hams {
+  display: flex;
+  flex-direction: row;
+  } 
+  
+  .dropbtn-a, .dropbtn, .hams {
+    justify-content: center;
+  }
+
+/* .hams, #navLinks {
+  margin-right: 0;
+  } */
+
+          
+.dropdown {
+  flex-direction: column;
+  }
+
+/* .dropbtn {
+  margin-top: -12px;
+  } */
+
+ .intro-img, .NOMA-img {
+   width: 50vw;
+   margin-left: 5%;
+   margin-right: 3%;
+ } 
+
+/* .showForDesktop {
+  display: flex;
+  margin-bottom: 7%;
+  justify-content: center;
+  margin-top: 5%
+} */
+
+.intro-INT2 {
+  display: flex;
+  flex-direction: row;
+  align-self: flex-start;
+  align-items: initial;
+}
+
+.p-INT2 {
+  width: 100%;
+  margin-left: 10%;
+  margin-right: 100px;
+}
+.basic-list {
+  width: 100%;
+  margin-top: 3%;
+}
+
+.intro-text {
+  margin-right: 2%;
+  margin-top: -4%;
+}
+
+/* .hideForDesktop {
+  display: none;
+} */
+
+ .intro, .intro-INT {
+  flex-direction: row;
+ }
+
+ .INT-text {
+   width: 60%;
+   margin-left: 5%;
+ }
+
+ .list {
+   padding: 5%;
+   /* margin-left: 10%; */
+ }
+
+ .intro-list {
+   width: 30%;
+   margin-top: -20%;
+   margin-right: 5%;
+ }
+
+ .intro-flex {
+   margin-left: 8%;
+   justify-content: flex-start;
+   
+ }
+
+ .wave-IMG {
+   width: 90%;
+   align-self: center;
+ }
+
+ /* paper page */
+ .paper-Img {
+   width: 80%;
+ }
+
+ /*Nomanclature*/
+.panel {
+  width: 600px;
+  border-radius: 10px;
+}
+
+.accordianB, 
+.accordionBLink,
+.accordion,
+.accordionLink{
+  width: 600px;
+}
+
+ .NOMA-text {
+   padding-left: 0;
+ }
+
+ /* .acc-p{
+ width: 50%;
+ 
+ } */
+
+ .techSm, .tech-imgB, 
+ .tech-imgC,.tech-imgD,
+ .tech-imgE,.tech-imgF, 
+ .tech-imgG {
+ width: 20rem;
+ height: auto;
+ }
+
+ .NOMA-img {
+   margin-right: 10%;
+   width: 35vw;
+ }
+.noma-Tabs {
+ margin-left: 10%;
+  align-self: flex-start;
+
+}
+ .NOMA {   
+  flex-direction: row;
+  margin-left: 10%;
+  
+  }
+
+  .control {
+    width: 400px;
+    margin-left: 0;
+  }
+
+.Cmodal {
+ width: 350px;
+ height: 250px;
+  }
+
+  .modalContents {
+    margin-top: -30%;
+    margin-left: 10%;
+    
+  }
+
+/* The sidebar menu */
+/* The sidebar links */
+.sidebar a, 
+.otherSidebar a {
+  padding: 10px 10px 10px 35px;
+  font-size: 1.2rem;
+}
+
+
+/* Position and style the close button (top right corner) */
+.sidebar .closebtn,
+.otherSidebar .closebtn {
+  font-size: 36px;
+}
+
+/* The button used to open the sidebar */
+.openbtn {
+  font-size: 20px;
+  height: 70px;
+  padding: 10px 15px;
+}
+
+.openOTHERbtn {
+  font-size: 20px;
+  height: 70px;
+  padding: 10px 8px;
+}
+
+
+
+
+  /* MT page */
+
+  /* Accordian Tools panels */
+ 
+  /*hides main title and acoordian tabs*/
+/* .hideAcc, .hideTitle, .monitorAccordianSection { 
+  display: none;
+} */
+
+/* .hideTitle {
+  align-content: flex-start;
+  align-items: flex-start;
+  align-self: flex-start;
+} */
+/* displays titleButton for sidebar nav*/
+
+/* device img size*/
+li:hover + img {
+  width: 40%;
+}
+
+.list {
+  color: #000;
+}
+
+ /* main {
+    align-items: flex-start;
+}  */
+
+/* .monitorAccordianSection {
+  margin-left: 10%;
+} */
+
+/* REF GUIDE  */
+/* .intro-REF {
+  margin-left: 10%;
+} */
+
+.flip-card {
+  width: 440px;
+  height: 260px;
+}
+
+.flip-card-back {
+height: 260px;
+}
+
+.flip-card:hover {
+  max-width: 500px;
+}
+
+.strip {
+  width: 420px;
+}
+}
+/*-------------------------------------------------------------
+      i-PAD PRO
+-------------------------------------------------------------*/
+/****** Large-ish Screen Media Queries: Targets VP sizes 1024px & wider. *******/
+@media (min-width: 1024px) {
+  /* .logo {
+    justify-content: flex-start;
+  } */
+ .logo {
+   margin-bottom: 10%;
+ } 
+ 
+.dropbtn {
+  margin-top: 27px;
+}  
+
+#navLinks, .dropdown, .hams {
+  /* justify-content: flex-end; */
+  margin-top: -40px;
+    } 
+
+   p, li {
+     font-size: 1rem;
+   } 
+
+   h1 {
+     font-size: 1rem;
+   }
+   .intro-text {
+     margin-top: -10%;
+    
+   }
+
+   #navLinks a, .dropbtn, .dropbtn-a {
+     font-size: 1.5rem;
+   }
+
+.Cmodal {
+  margin-bottom: 5%;
+}
+  }
+/* SMALL DESKTOP SIZES */
+  @media (min-width: 1200px) {
+
+.logo {
+  justify-content: flex-start;
+}
+
+#navLinks, .hams {
+  justify-content: flex-end;
+  margin-top: -8%;
+}
+
+#navLinks a, .dropbtn, .dropbtn-a {
+  font-size: 1.3rem;
+}
+
+.openbtn, .accordion {
+  font-size: 1.2rem;
+}
+
+#techSupport {
+  margin-top: 5%;
+}
+
+.disclaimer {
+  width: 55%;
+  margin-top: -4%;
+}
+
+
+  }
+
+
+
+
+
+
+
+
+
+
+
+  @media (min-width: 1400px) {
+  }

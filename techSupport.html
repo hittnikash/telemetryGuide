@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <!-- Title-->
+        <title>CICU Telemetry Guide</title>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <meta name="description" content="Telemetry Reference Guide"/>
+        <meta name="author" content="Ashley Needy"/>
+    <!--Link to CSS -->  
+    <link rel="stylesheet" href="CSS/normalize.css"/>
+    <link rel="stylesheet" href="CSS/styles.css"/>
+    <script src="https://use.fontawesome.com/9d6927737f.js"></script>
+ 
+</head>
+<body>
+<!-- Header -->
+<div class= "wrapper">
+ 
+
+  <nav role="navigation"> 
+    <div class="topnav" id="myTopnav">
+      <div class= "logo">
+        <img class= "nav-logo" src="icons/logo-nc.png" alt="logo"> 
+        <button onclick="toggle()" class="hamburgerButton" aria-label="hamburger navigation menu" style= "background: url(icons/hamburger.png) no-repeat" ></button>
+      </div>
+    </div>
+      <div class="hams">
+      <div id="navLinks">
+      <a href="index.html">Home</a>
+   
+      <div class="dropdown-a">
+        <button class="dropbtn-a">Checklist-Guide 
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content-a">
+          <a href="mt.html">Monitor-Tech</a>
+          <a href="nursingGuide.html">Nursing Guide</a>
+          <a href="PhillipsSystemGuide.html">System Guide</a>
+        </div>
+        </div>
+      <a href="techSupport.html">Tech-Support</a>
+      <div class="dropdown">
+        <button class="dropbtn">Telemetry
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="intro.html">EKG Intro & Interpretation</a>
+          <a href="PedsNormalVitalSigns.html">Peds Normal Vital Signs</a> 
+          <a href="redAlarmAlgorithms.html">Red Alarm Algorithms</a> 
+          <a href="paper.html">EKG Paper</a>
+          <a href="nomenclature.html">EKG Nomenclature</a>
+          <a href="rhythm.html">Rhythm</a>
+          <a href="heartRate.html">Heart Rate</a>
+          <a href="refrence.html">EKG Reference</a>
+          <a href="artifact.html">Telemetry Artifact</a>
+          <a href="pacing.html">Pacing</a>
+          <a href="quiz.html">EKG Quiz</a>
+        </div>
+          </div>
+      </div>
+       </div>
+    </nav>
+        <main class="content" role= "main">
+          <header class= "container" role="banner">
+          <section class= "intro-TS">
+           
+            <!-- side Bar nav -->
+   <div class= "blueTab"></div>   
+<div id="mySidebar" class="sidebar">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <!-- <section class="tech-index">
+    <div class="menu">
+     <button class="accordion">Technical-Support</button>
+     <div class="panel">
+        <p class="acc-p">Tech stuff go here yall. 
+       </p>
+     </div>
+  </div>
+    </section>   -->
+    <a href="#"></a>
+    <a href="#"></a>
+    <a href="#"></a>
+    <a href="#"></a>
+    <a href="#"></a>
+    <a href="#"></a>
+    <a href="bedsideMT.html#bedside">Bedside-Monitor</a>
+    <a href="bedsideMT.html#X2X3">X2 & X3</a>
+    <a href="bedsideMT.html#X2X3Attachment">X2/X3 Attachment</a>
+    <a href="bedsideMT.html#AccBox">Accessory Boxes</a>
+    <a href="bedsideMT.html#travelMon">Travel Monitor</a>
+    <a href="bedsideMT.html#telePack">Tele-Pack</a>
+</div>
+
+<div id="main" class="titleButton">
+  <button class="openbtn" onclick="openNav()"><i class="fas fa fa-desktop" alt= "Equipment-Overview"></i>
+  </button> 
+</div>
+
+<div class= "redTab"></div>
+<!-- OTHERTAB -->
+<div id="myOtherSidebar" class="otherSidebar">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeOtherNav()">&times;</a>
+  <a href="#">COMING SOON!</a>
+  <a href="#">Tech stuff</a>
+  <a href="#">will</a>
+  <a href="#">go</a>
+  <a href="#">here</a>
+  <a href="#">!</a>
+</div>
+
+<div id="main2" class="titleButton">
+  <button class= "openOTHERbtn" onclick="openOtherNav()"><i class="fas fa fa-cogs" alt= "Technical-Support"></i>
+  </button>
+</div><br>
+<h1>Equipment Overview & Tech Support</h1><br> 
+            <img id= "techSupport" src="images/labeledMT.jpg" alt= "labeled monitor" width="65%">
+            <p>There are many “parts” to telemetry monitoring. In this section you can become more 
+            familiar with the technical aspects of Phillips telemetry Monitoring. Like any tech avaliable, 
+            there are older models and newer models of each device. At Norton Childrens we have an array of 
+            both older and newer devices.</p>
+
+<!--Accordion Menu Options-->
+<!-- <section class= "hideAcc"
+<div class="menu">
+  <button class="accordion">Equipment</button>
+    <div class="panel">
+             
+<div class="menu">
+  <button class="accordion">Bedside Monitor</button>
+  <div class="panel">
+    <img class= "techSm" src="images/bedside-Mt.jpg" alt= "bedside-monitor" width="130px" height="200px"> 
+      <p class="acc-p">The monitor at each patients bedside is referred to as the bedside monitor. 
+     </p>
+      </div>
+
+          <button class="accordion">X2 & X3</button>
+          <div class="panel">
+            <figure>  
+            <img class= "tech-imgB" src="images/X2.jpg" alt= "X2" width="45%">
+            <figcaption class= "figGrid"><i>X2 device</i></figcaption> 
+                </figure>
+              <p class="acc-p">This small device pairs to the bedside monitor.  
+                <figure>  
+                  <img class= "tech-imgC" src="images/X3.jpg" alt= "X3" width="50%">
+                  <figcaption class= "figGrid"><i>X3 device</i></figcaption> 
+                </figure>
+                <p class="acc-p">This small device pairs to the bedside monitor.  
+             </p>
+          </div>
+
+        <button class="accordion">X2/X3 Attachments</button>
+        <div class="panel">
+          <img class= "tech-imgD" src="images/X2-X3-attachment.jpg" alt= "X2/X3 Attachment" width="50%">
+            <p class="acc-p">The X2 or X3 slides and clicks into this attachment. This attachment provides xtra outlets for pressure 
+              and co2 cables. 
+            </p>
+        </div>
+
+      <button class="accordion">Accessory Boxes</button>
+        <div class="panel">
+          <img class= "tech-imgE" src="images/FMS-boxes.jpg" alt="Accessory Boxes" width="55%">
+            <p class="acc-p">These small FMS boxes plug into the base of the bedside monitor and provide xtra outlets for 02, pressure and 
+              Co2 cables
+            </p>
+        </div>
+      
+      <button class="accordion">Travel Monitor </button>
+      <div class="panel">
+        <img class= "tech-imgF" src="images/travel-Monitor.jpg" alt= "Travel Monitor" width="60%">
+        <p class="acc-p">This monitor can be removed from its mobile stand. When the patient is ready to travel the X2 or X3 is removed 
+          from the bedside monitor and inserted onto the back of the travel monitor. There are also extra slots for FMS accessory boxes.
+        </p>
+      </div>
+
+      <button class="accordion">Tele-Pack</button>
+      <div class="panel">
+        <img class= "tech-imgG" src="images/tele-Pack.jpg" alt= "Tele-Pack" width="40%">
+        <p class="acc-p">If a patient is ambulatory and wants to go for a stroll around the unit
+          they can be taken off the bedside monitor & monitoring can be continued with the use of a portable device called a tele-pack. 
+        </p>
+
+        <p class="acc-p">The tele-pack's like the X2's & X3's must be paired to the bedside monitor via the main telemetry station. Note that if a patient
+          is utilizing a telepack for continous cardiac monitoring then the RN will be unable to print trends for that patient- as trends
+          can only be printed from the bedside monitor.
+        </p>
+
+        <p class="acc-p">Note that tele-packs are stored in the telmetry room, and must be signed out by the person retrieving the pack.
+          When tele-packs are signed out for a patient– the patient name, room number, date & time must be filled out. The monitor-tech is 
+          reponsible for keeping track of devices.
+        </p>
+      </div>
+    </div>  
+    </div>
+    </div> 
+</section>  -->
+
+</header> 
+        </main>
+
+</div>
+<hr class="footerLine">
+<!-- Footer -->
+    <footer role="contentinfo">
+    
+                    <span class="copyright">&copy;2020 CICU TELEMETRY GUIDE</span>
+                    <div class="disclaimer">This website is intended for use by medical professionals for educational
+                      purposes only. For medical care, please contact a healthcare provider.
+                    </div>
+    </footer> 
+    
+        <!-- JS (Hamburger Menu)-->
+        <script src= "JS/hamburger.js"></script>
+        <script src= "JS/tech.js"></script>
+        <!-- <script src= "JS/accordian.js"></script>  -->
+        <script src= "JS/sideBar.js"></script>
+       
+
+    </body>
+</html>

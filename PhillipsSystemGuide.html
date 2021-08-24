@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <!-- Title-->
+        <title>CICU Telemetry Guide</title>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <meta name="description" content= "Telemetry Reference Guide"/>
+        <meta name="author" content="Ashley Needy"/>
+    <!--Link to CSS -->  
+    <link rel="stylesheet" href="CSS/normalize.css"/>
+    <link rel="stylesheet" href="CSS/styles.css"/>
+</head>
+<body>
+<!-- Header -->
+<div class= "wrapper">
+ 
+
+    <nav role="navigation"> 
+        <div class="topnav" id="myTopnav">
+          <div class= "logo">
+            <img class= "nav-logo" src="icons/logo-nc.png" alt="logo"> 
+            <button onclick="toggle()" class="hamburgerButton" aria-label="hamburger navigation menu" style= "background: url(icons/hamburger.png) no-repeat" ></button>
+          </div>
+        </div>
+          <div class="hams">
+          <div id="navLinks">
+          <a href="index.html">Home</a>
+       
+          <div class="dropdown-a">
+            <button class="dropbtn-a">Checklist-Guide 
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content-a">
+              <a href="mt.html">Monitor-Tech</a>
+              <a href="nursingGuide.html">Nursing Guide</a>
+              <a href="PhillipsSystemGuide.html">System Guide</a>
+            </div>
+              </div>
+          <a href="techSupport.html">Tech-Support</a>
+          <div class="dropdown">
+            <button class="dropbtn">Telemetry
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="intro.html">EKG Intro & Interpretation</a>
+              <a href="PedsNormalVitalSigns.html">Peds Normal Vital Signs</a> 
+              <a href="redAlarmAlgorithms.html">Red Alarm Algorithms</a>  
+              <a href="paper.html">EKG Paper</a>
+              <a href="nomenclature.html">EKG Nomenclature</a>
+              <a href="rhythm.html">Rhythm</a>
+              <a href="heartRate.html">Heart Rate</a>
+              <a href="refrence.html">EKG Reference</a>
+              <a href="artifact.html">Telemetry Artifact</a>
+              <a href="pacing.html">Pacing</a>
+              <a href="quiz.html">EKG Quiz</a>
+            </div>
+              </div>
+          </div>
+           </div>
+        
+        </nav>
+        <h1 class= "showForDesktop">Welcome to the CICU<br>Telemetry Training Course!</h1> 
+        <main class="content" role= "main">
+          <header class= "container" role="banner">
+         
+            <h1><strong>Systems Guide:</strong></h1><br>
+      
+            <!-- Actions inside Patient Sectors -->
+            <h4><strong>Actions Inside Patient Sectors</strong></h4>
+            <ul>
+              <li><a href= "selectHeartRateParametrs.html#setParams" target="_blank">Select & Set Parameters</a></li>
+              <li><a href= "selectHeartRateParametrs.html#changeLeads" target="_blank">Change Leads/Waveform & Adjust Size</a></li>
+              <li><a href= "selectHeartRateParametrs.html#alarmMessages" target="_blank">View Alarm Message</a></li>
+            </ul><br>
+
+              <!-- Actions inside Patient Window -->
+              <h4><strong>Actions Inside Patient Windows</strong></h4>
+            <ul>
+              <li><a href= "viewPtonSector.html#viewPTserver" target="_blank">View Any Patient On Server</a></li>
+              <li><a href= "viewPtonSector.html#reLearn" target="_blank">ECG Analysis/ Re-learn Arrythmia</a></li>
+              <li><a href= "viewPtonSector.html#leads" target= "_blank">Multi-lead to Single-lead Analysis</a></li>
+              <li><a href= "viewPtonSector.html#beat" target= "_blank">Beat Annotation</a></li>
+            </ul><br>
+
+              <!-- Manage Patient -->
+              <h4><strong>Actions inside Manage Patient:</strong></h4>
+           <ul>
+              <li><a href= "admittingTransferringPT.html#pair" target="_blank">Pair Devices to Bedside Monitor</a></li>
+              <li><a href= "admittingTransferringPT.html#admit" target="_blank">Admitting Patient</a></li>
+              <li><a href= "admittingTransferringPT.html#transfer" target="_blank">Transfer Patient</a></li>
+              <li><a href= "admittingTransferringPT.html#standby" target="_blank">Put Monitor on Standby</a></li>
+              <li><a href= "admittingTransferringPT.html#standby#clearSector" target="_blank">Clear A Sector</a></li>
+              <li><a href= "admittingTransferringPT.html#group" target="_blank">Group by Color</a></li>
+            </ul><br>
+      
+            <!-- Review -->
+            <h4><strong>Actions inside Review Panel:</strong></h4>
+          <ul>
+            <li><a href= "generalReview.html" target="_blank">Icons in General Review</a></li>
+            <li><a href= "generalReview.html#alarmReview" target="_blank">Alarm Review</a></li>
+            <li><a href= "generalReview.html#searchStrips" target="_blank">Search Strips</a></li>
+            <li><a href= "generalReview.html#calipers" target="_blank">Using Calipers</a></li>
+            <li><a href= "generalReview.html#vitalSigns" target="_blank">View Vital signs</a></li>
+            <li><a href= "generalReview.html#saveStrips" target="_blank">Saving Strips</a></li>
+          </ul><br>  
+
+            <!-- TopBar Icons -->
+            <h4><strong>Top Bar Icons:</strong></h4>
+            <ul>
+              <li><a href= "topBar.html" target="_blank">Get Phillips product info, serial number...</a></li>
+              <li><a href= "topBar.html#" target="_blank">Search Content & Browse Alarm Meanings</a></li>
+            </ul> 
+
+        </header> 
+        </main>
+      </div>
+<hr class="footerLine">
+<!-- Footer -->
+    <footer role="contentinfo">
+    
+                    <span class="copyright">&copy;2020 CICU TELEMETRY GUIDE</span>
+                    <div class="disclaimer">This website is intended for use by medical professionals for educational
+                      purposes only. For medical care, please contact a healthcare provider.
+                    </div>
+    </footer> 
+    
+        <!-- JS (Hamburger Menu)-->
+        <script src= "JS/hamburger.js"></script>
+
+    
+        
+
+    </body>
+</html>

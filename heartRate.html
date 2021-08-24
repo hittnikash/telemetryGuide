@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <!-- Title-->
+        <title>CICU Telemetry Guide</title>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <meta name="description" content="Telemetry Reference Guide"/>
+        <meta name="author" content="Ashley Needy"/>
+    <!--Link to CSS -->  
+    <link rel="stylesheet" href="CSS/normalize.css"/>
+    <link rel="stylesheet" href="CSS/styles.css"/>
+</head>
+<body>
+<!-- Header -->
+<div class= "wrapper">
+ 
+  <nav role="navigation"> 
+    <div class="topnav" id="myTopnav">
+      <div class= "logo">
+        <img class= "nav-logo" src="icons/logo-nc.png" alt="logo"> 
+        <button onclick="toggle()" class="hamburgerButton" aria-label="hamburger navigation menu" style= "background: url(icons/hamburger.png) no-repeat" ></button>
+      </div>
+    </div>
+      <div class="hams">
+      <div id="navLinks">
+      <a href="index.html">Home</a>
+   
+      <div class="dropdown-a">
+        <button class="dropbtn-a">Checklist-Guide 
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content-a">
+          <a href="mt.html">Monitor-Tech</a>
+          <a href="nursingGuide.html">Nursing Guide</a>
+          <a href="PhillipsSystemGuide.html">System Guide</a>
+        </div>
+        </div>
+      <a href="techSupport.html">Tech-Support</a>
+      <div class="dropdown">
+        <button class="dropbtn">Telemetry
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="intro.html">EKG Intro & Interpretation</a>
+          <a href="PedsNormalVitalSigns.html">Peds Normal Vital Signs</a> 
+          <a href="redAlarmAlgorithms.html">Red Alarm Algorithms</a> 
+          <a href="paper.html">EKG Paper</a>
+          <a href="nomenclature.html">EKG Nomenclature</a>
+          <a href="rhythm.html">Rhythm</a>
+          <a href="heartRate.html">Heart Rate</a>
+          <a href="refrence.html">EKG Reference</a>
+          <a href="artifact.html">Telemetry Artifact</a>
+          <a href="pacing.html">Pacing</a>
+          <a href="quiz.html">EKG Quiz</a>
+        </div>
+          </div>
+      </div>
+       </div>
+    </nav>
+        
+        <main class="content" role= "main">
+          <header class= "container" role="banner">
+          <section class= "intro-HR">
+            <h1>heartRate:</h1> 
+            <br>
+             <img class= "intro-img" src= "resources/createdImgs/stripCount.jpg" alt= "Example of EKG heart rate count">
+            <p>There are several methods for determining heart rate. The first method illustrated above is simple. Count the number 
+              of QRS complexes over a 6 second interval. Multiply by 10 to determine heart rate. This method works 
+              well for both regular and irregular rhythms. In the first image, we can count 7 QRS complexes,
+              so the heart rate is 70.
+            </p>
+           <br>
+           <img class= "intro-img" src= "resources/createdImgs/r-r.jpg" alt= "Example of R-R interval"> 
+            <p>Another method for calculating heart rate is to measure from your R to R wave using calipers then
+               follow this formula:
+            </p>
+
+            <p><b>60 / R-R </b></p>
+
+            <p>For example lets say the measurement from R to R wave is  .85. You will plug this number into your formula.
+            </p>
+            <p><b>60 / .85 = 70</b></p>
+
+            <p>This means the patients heart rate is 70. This method works best with regular rhythms.
+            </p>            
+          </section>
+        
+        </header> 
+        </main>
+</div>
+<hr class="footerLine">
+<!-- Footer -->
+    <footer role="contentinfo">
+
+                    <span class="copyright">&copy;2020 CICU TELEMETRY GUIDE</span>
+                    <div class="disclaimer">This website is intended for use by medical professionals for educational
+                      purposes only. For medical care, please contact a healthcare provider.
+                    </div>
+    </footer> 
+    
+        <!-- JS (Hamburger Menu)-->
+        <script src= "JS/hamburger.js"></script>
+
+    
+        
+
+    </body>
+</html>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <!-- Title-->
+        <title>CICU Telemetry Guide</title>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <meta name="description" content="Telemetry Reference Guide"/>
+        <meta name="author" content="Ashley Needy"/>
+    <!--Link to CSS -->  
+    <link rel="stylesheet" href="CSS/normalize.css"/>
+    <link rel="stylesheet" href="CSS/styles.css"/>
+</head>
+<body>
+<!-- Header -->
+<div class= "wrapper">
+
+  <nav role="navigation"> 
+    <div class="topnav" id="myTopnav">
+      <div class= "logo">
+        <img class= "nav-logo" src="icons/logo-nc.png" alt="logo"> 
+        <button onclick="toggle()" class="hamburgerButton" aria-label="hamburger navigation menu" style= "background: url(icons/hamburger.png) no-repeat" ></button>
+      </div>
+    </div>
+      <div class="hams">
+      <div id="navLinks">
+      <a href="index.html">Home</a>
+   
+      <div class="dropdown-a">
+        <button class="dropbtn-a">Checklist-Guide 
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content-a">
+          <a href="mt.html">Monitor-Tech</a>
+          <a href="nursingGuide.html">Nursing Guide</a>
+          <a href="PhillipsSystemGuide.html">System Guide</a>
+        </div>
+        </div>
+      <a href="techSupport.html">Tech-Support</a>
+      <div class="dropdown">
+        <button class="dropbtn">Telemetry
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="intro.html">EKG Intro & Interpretation</a>
+          <a href="PedsNormalVitalSigns.html">Peds Normal Vital Signs</a> 
+          <a href="redAlarmAlgorithms.html">Red Alarm Algorithms</a> 
+          <a href="paper.html">EKG Paper</a>
+          <a href="nomenclature.html">EKG Nomenclature</a>
+          <a href="rhythm.html">Rhythm</a>
+          <a href="heartRate.html">Heart Rate</a>
+          <a href="refrence.html">EKG Reference</a>
+          <a href="artifact.html">Telemetry Artifact</a>
+          <a href="pacing.html">Pacing</a>
+          <a href="quiz.html">EKG Quiz</a>
+        </div>
+          </div>
+      </div>
+       </div>
+    </nav>
+<section class= "intro-flex">
+    <img class= "intro-ekg-img" src="images/heartEKG.png" alt= "intro image">
+    <h1>Introduction:</h1> 
+  </section>
+        <main class="content" role= "main">
+          <header class= "container" role="banner">
+          <section class= "intro-INT">
+            <p class= "INT-text">An electrocardiogram, also known as an EKG is a recording of the heart's electrical
+               activity. EKGs record a tracing of cardiac electrical impulse as that impulse moves from the atrium to the
+               ventricles. These electrical impulses are what cause the heart to contract and pump blood throughout the body. 
+               These EKGs are interpreted by medical professionals to understand the following:
+            </p>
+                <ul class= "intro-list" style="list-style-type:circle">
+                    <li>Heart rate & regularity</li>
+                    <li>Timing & strength of the electrical signals (think segments & intervals)</li>
+                    <li>Any possible abnormal conditions</li>
+                </ul>
+                </section>
+                <br>
+        
+                <img class= "wave-IMG" src="resources/createdImgs/sinus-ekg.jpg" alt= "Example ekg of sinus">
+                <br>
+                <section class= "intro-INT2">
+                <p class= "p-INT2">You will need to learn to how to interpret an EKG to determine if a rhythm is abnormal or sinus (normal). 
+                  You can do so by analyzing these eight steps: 
+                 </p>
+               
+               <ul class= "basic-list">
+                 <li>Rhythm</li>
+                 <li>Rate</li>
+                 <li>P Wave</li>
+                 <li>PR Interval</li>
+                 <li>QRS Interval</li>
+                 <li>T Wave</li>
+                 <li>QT Interval</li>
+                 <li>ST Segment</li>
+               </ul>         
+              </section>
+            </header> 
+        </main>
+</div>
+<hr class="footerLine">
+<!-- Footer -->
+    <footer role="contentinfo">
+   
+                    <span class="copyright">&copy;2020 CICU TELEMETRY GUIDE</span>
+                    <div class="disclaimer">This website is intended for use by medical professionals for educational
+                      purposes only. For medical care, please contact a healthcare provider.
+                    </div>
+    </footer> 
+    
+        <!-- JS (Hamburger Menu)-->
+        <script src= "JS/hamburger.js"></script>
+
+    
+        
+
+    </body>
+</html>

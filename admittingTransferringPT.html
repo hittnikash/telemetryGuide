@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <!-- Title-->
+        <title>CICU Telemetry Guide</title>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <meta name="description" content= "Telemetry Reference Guide"/>
+        <meta name="author" content="Ashley Needy"/>
+    <!--Link to CSS -->  
+    <link rel="stylesheet" href="CSS/normalize.css"/>
+    <link rel="stylesheet" href="CSS/styles.css"/>
+</head>
+<body>
+<!-- Header -->
+<div class= "wrapper">
+ 
+
+    <nav role="navigation"> 
+        <div class="topnav" id="myTopnav">
+          <div class= "logo">
+            <img class= "nav-logo" src="icons/logo-nc.png" alt="logo"> 
+            <button onclick="toggle()" class="hamburgerButton" aria-label="hamburger navigation menu" style= "background: url(icons/hamburger.png) no-repeat" ></button>
+          </div>
+        </div>
+          <div class="hams">
+          <div id="navLinks">
+          <a href="index.html">Home</a>
+       
+          <div class="dropdown-a">
+            <button class="dropbtn-a">Checklist-Guide 
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content-a">
+              <a href="mt.html">Monitor-Tech</a>
+              <a href="nursingGuide.html">Nursing Guide</a>
+              <a href="PhillipsSystemGuide.html">System Guide</a>
+            </div>
+              </div>
+          <a href="techSupport.html">Tech-Support</a>
+          <div class="dropdown">
+            <button class="dropbtn">Telemetry
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="intro.html">EKG Intro & Interpretation</a>
+              <a href="PedsNormalVitalSigns.html">Peds Normal Vital Signs</a> 
+              <a href="redAlarmAlgorithms.html">Red Alarm Algorithms</a> 
+              <a href="paper.html">EKG Paper</a>
+              <a href="nomenclature.html">EKG Nomenclature</a>
+              <a href="rhythm.html">Rhythm</a>
+              <a href="heartRate.html">Heart Rate</a>
+              <a href="refrence.html">EKG Reference</a>
+              <a href="artifact.html">Telemetry Artifact</a>
+              <a href="pacing.html">Pacing</a>
+              <a href="quiz.html">EKG Quiz</a>
+            </div>
+              </div>
+          </div>
+           </div>
+        
+        </nav>
+        <main class="content" role= "main">
+          <header class= "container" role="banner">
+    
+       
+           
+         <section>
+<h1>Tasks in</h1>
+          <h1>Manage Patient</h1>
+          <p>Tasks in 'Manage Patient' include transfering patients to other rooms, discharging patients, clearing sectors, 
+            putting the monitor on standby, adding groups & confirming paced modes. </p>
+<br>
+          <h2 id= "admit">Admit Patient:</h2><br>
+             <figure class= "figParameters">
+            <img class= "howToImg" src="editedTeleHowTos/managePT.jpg" alt="Manage Patient"> 
+            <figcaption class= "capParameters">Example: Manage Patient </figcaption> 
+        </figure>
+        <p>
+          First hover over the patient sector, the action buttons will appear. Select Manage Patient.
+          A new panel will pop up. Select 'Find Patient'. 
+      </p>
+        <br>
+        <figure class= "figParameters">
+            <img class= "howToImg" src="editedTeleHowTos/admitPT.jpg" alt="Find Patient"> 
+            <figcaption class= "capParameters">Example: Find Patient</figcaption> 
+        </figure>
+        <br>
+     
+        <figure class= "figParameters">
+            <img class= "howToImg" src="editedTeleHowTos/admitSearch.jpg" alt="admit search MRN/EP0"> 
+            <figcaption class= "capParameters">Example: Search by MRN/ EP0</figcaption> 
+        </figure>
+        <br>
+         <p>Next you need to type the patients MRN into the search box labeled MRN.
+            Once you hit search the patients information will auto populate. The only information
+            that needs to be added is the patient age. There age should be added under the section 
+            labeled 'Screen Notes'. Lastly confirm paced mode, select 'ON' if the patient has a pacemaker, otherwise
+            select 'OFF'. 
+            
+        </p>
+    <br>
+    <h2 id= "transfer">Transfer Patient:</h2><br>
+    <figure class= "figParameters">
+      <img class= "howToImg" src="editedTeleHowTos/transfer.jpg" alt="Transferring Patients"> 
+      <figcaption class= "capParameters">Example: Transferring Patients</figcaption> 
+  </figure>
+  <p>To transfer a patient howver over the patient sector. The action buttons will appear, select 'Manage Patient'
+    Navigate to the right side of the panel, under the buttons labeled permanent is a transfer button. Select transfer.
+    Now select the unit & room the patient has transfered to.
+  </p>
+  <br> 
+
+            <h2 id= "group">Groups</h2><br>
+            <figure class= "figParameters">
+                <img class= "howToImg" src="editedTeleHowTos/groups.jpg" alt="Groups"> 
+                <figcaption class= "capParameters">Example: Groups</figcaption> 
+            </figure>
+            <br> 
+            <p>At Nortons we typically only select groups for patients based on tele orders. If the patient has WOI orders then select w/o. 
+            This will put a orange box around the patients name. If they have orders to be followed by cardiology then select ULP.
+            This will place a blue box around there name.
+        </p>
+<br>
+
+<h2 id= "pair">Pair Devices to Monitor:</h2><br>
+<section>
+    <figure class= "figParameters">
+   <img class= "howToImg" src="editedTeleHowTos/managePT.jpg" alt="manage patient"> 
+   <figcaption class= "capParameters">Example: Manage Patient</figcaption> 
+</figure>
+<br>
+<figure class= "figParameters">
+   <img class= "howToImg" src="editedTeleHowTos/pairDevices.jpg" alt="pair equipment"> 
+   <figcaption class= "capParameters">Example: Equipment</figcaption> 
+</figure>
+<br>
+<p> To pair a device such as an X2, X3 or a tele-pack start by hovering over the patient sector.
+    The action buttons will appear. Next select 'Manage Patient'. Next select Equipment. A list of avaliable 
+    equipment will appear to the left. Use the arrows to remove or add a device.
+</p>
+
+<p>If the device you are trying to pair is not listed then that usually means it is 'paired' to another patient already.
+  If you hover over the room numbers in each patient sector the paired devices will display making it quick & easy to see 
+  what device is paired to each room. 
+</p>
+<br>
+<h2 id= "standby">Transport/Standby</h2><br>
+<figure class= "figParameters">
+    <img class= "howToImg" src="editedTeleHowTos/transportStandby.jpg" alt="standby"> 
+    <figcaption class= "capParameters">Example: Transport/Standby</figcaption> 
+</figure>
+<br> 
+<figure class= "figParameters">
+    <img class= "howToImg" src="editedTeleHowTos/checkToStandby.jpg" alt="check to standby"> 
+    <figcaption class= "capParameters">Example: Check to Standby</figcaption> 
+</figure>
+<br> 
+<p>To place a monitor on standby hover over the patient sector until the action buttons appear. 
+    Select 'manage patient'. Next Select the button on the right labeled 'Transport/Standby'.  </p>
+
+   <p>Another panel will pop up prompting you to make a selection. You must check the equipment box for
+       the monitor to standby.
+   </p> <br>
+
+   <h2 id= "clearSector">Clearing Sectors</h2><br>
+   <figure class= "figParameters">
+       <img class= "howToImg" src="editedTeleHowTos/clearSector.jpg" alt="clear a sector"> 
+       <figcaption class= "capParameters">Example: Clear Sector</figcaption> 
+   </figure>
+   <br>  
+   <p>Start by hovering over the patient sector. The action buttons will appear, select 'Manage Patient'. On the far right, 
+       select the last button labeled 'Clear Sector'in the 'permanent' stack. A pop-up will appear asking if you wish to stop the overview 
+       of the patient sector you selected. To clear the sector select 'yes'.
+
+   </p>
+          <p>What is the difference between discharging a patient and clearing a sector? Discharging a patient discharges 
+              the patient information & recorded data from the bedside monitor. Clearing a sector stops the overview of a sector, 
+              but does not discharge patient information & data.
+            </p> 
+        </section>
+        </header> 
+        </main>
+      </div>
+<hr class="footerLine">
+<!-- Footer -->
+    <footer role="contentinfo">
+    
+                    <span class="copyright">&copy;2020 CICU TELEMETRY GUIDE</span>
+                    <div class="disclaimer">This website is intended for use by medical professionals for educational
+                      purposes only. For medical care, please contact a healthcare provider.
+                    </div>
+    </footer> 
+    
+        <!-- JS (Hamburger Menu)-->
+        <script src= "JS/hamburger.js"></script>
+
+    
+        
+
+    </body>
+</html>

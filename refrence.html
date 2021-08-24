@@ -1,0 +1,919 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <!-- Title-->
+        <title>CICU Telemetry Guide</title>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <meta name="description" content="Telemetry Reference Guide"/>
+        <meta name="author" content="Ashley Needy"/>
+    <!--Link to CSS -->  
+    <link rel="stylesheet" href="CSS/normalize.css"/>
+    <link rel="stylesheet" href="CSS/styles.css"/>
+</head>
+<body>
+<!-- Header -->
+<div class= "wrapper">
+  <nav role="navigation"> 
+    <div class="topnav" id="myTopnav">
+      <div class= "logo">
+        <img class= "nav-logo" src="icons/logo-nc.png" alt="logo"> 
+        <button onclick="toggle()" class="hamburgerButton" aria-label="hamburger navigation menu" style= "background: url(icons/hamburger.png) no-repeat" ></button>
+      </div>
+    </div>
+      <div class="hams">
+      <div id="navLinks">
+      <a href="index.html">Home</a>
+   
+      <div class="dropdown-a">
+        <button class="dropbtn-a">Checklist-Guide 
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content-a">
+          <a href="mt.html">Monitor-Tech</a>
+          <a href="nursingGuide.html">Nursing Guide</a>
+          <a href="PhillipsSystemGuide.html">System Guide</a>
+        </div>
+        </div>
+      <a href="techSupport.html">Tech-Support</a>
+      <div class="dropdown">
+        <button class="dropbtn">Telemetry
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="intro.html">EKG Intro & Interpretation</a>
+          <a href="PedsNormalVitalSigns.html">Peds Normal Vital Signs</a> 
+          <a href="redAlarmAlgorithms.html">Red Alarm Algorithms</a> 
+          <a href="paper.html">EKG Paper</a>
+          <a href="nomenclature.html">EKG Nomenclature</a>
+          <a href="rhythm.html">Rhythm</a>
+          <a href="heartRate.html">Heart Rate</a>
+          <a href="refrence.html">EKG Reference</a>
+          <a href="artifact.html">Telemetry Artifact</a>
+          <a href="pacing.html">Pacing</a>
+          <a href="quiz.html">EKG Quiz</a>
+        </div>
+          </div>
+      </div>
+       </div>
+    </nav>
+        
+        <main class="content" role= "main">
+          <header class= "container" role="banner">
+          <section class= "intro-REF">
+           <!-- <img class= "intro-img" src="images/heartBook.jpg"> -->
+           <h1>EKG Refrence</h1>
+            <h2>Flash Cards</h2> 
+            <span>(Click to Flip!)</span>
+           <br>
+            <!-- flashcards -->
+            <!-- NSR -->
+            <div class="flip-card">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <figure>
+                  <img class= "strip" src="resources/strips-source/NSR.jpg" alt="Click to view rhythm characteristics">
+                  <figcaption class= "caption"><b>NORMAL SINUS RHYTHM</b> 
+               </figcaption>
+                </figure>
+                </div>
+                <div class="flip-card-back">
+                  <h1 class= "flashDisplay">Normal sinus rhythm</h1>
+                  <p class= "flashText"><b>RHYTHM:</b> Regular
+                  <b>RATE:</b> Normal (60-100bpm)<br>
+                  <b>P-WAVE:</b> Normal (positive & precedes each QRS)<br>
+                  <b>PR-INTERVAL:</b> Normal (0.12-0.20 sec)<br>
+                  <b>QRS:</b> Normal (0.06-0.10 sec)<br>
+                  <b>NOTES:</b></p><br>
+                </div>
+              </div>
+            </div>
+          <br>
+            <!-- sinus Arrythmia -->
+            <div class="flip-card">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <figure>
+                  <img class= "strip" src="resources/strips-source/sinusArrythmia.jpg" alt="Click to view rhythm characteristics">
+                <figcaption class= "caption"><b>SINUS ARRYTHMIA</b></figcaption>
+                </figure>
+                </div>
+                <div class="flip-card-back">
+                  <h1 class= "flashDisplay">Sinus Arrythmia</h1>
+                  <p class= "flashText"><b>RHYTHM:</b> Irregular, varying with respiration.<br>
+                  <b>RATE:</b> Normal (60-100bpm) & rate may increase during inspiration.<br>
+                  <b>P-WAVE:</b> Normal<br>
+                  <b>PR-INTERVAL:</b> Normal (0.12-0.20 sec)<br>
+                  <b>QRS:</b> Normal (0.06-0.10 sec)<br>
+                  <b>NOTES:</b> Heart rate frequently increases with inspiration, 
+                    decreasing with expiration.</p><br>
+                </div>
+              </div>
+            </div>
+            <br>
+
+            <!-- sinus Arrest  -->
+            <div class="flip-card">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <figure>
+                  <img class= "strip" src="resources/strips-source/sinusArrest.jpg" alt="Click to view rhythm characteristics">
+                <figcaption class= "caption"><b>SINUS ARREST</b></figcaption>
+                </figure>
+                </div>
+                <div class="flip-card-back">
+                  <h1 class= "flashDisplay">Sinus Arrest</h1>
+                  <p class= "flashText"><b>RHYTHM:</b> Irregular, do to pause.<br>
+                 <b>RATE:</b> Normal to slow.<br>
+                 <b>P-WAVE:</b> Normal<br>
+                 <b>PR-INTERVAL:</b> Normal (0.12-0.20 sec)<br>
+                 <b>QRS:</b> Normal (0.06-0.10 sec)<br>
+                 <b>NOTES:</b> Pause time is not an interger multiple of the P-P interval. 
+                    </p><br>
+                </div>
+              </div>
+            </div>
+            <br>
+
+             <!-- sinus Bradycardia  -->
+             <div class="flip-card">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <figure>
+                  <img class= "strip" src="resources/strips-source/brady.jpg" alt="Click to view rhythm characteristics">
+                <figcaption class= "caption"><b>BRADYCARDIA</b></figcaption>
+                </figure>
+                </div>
+                <div class="flip-card-back">
+                  <h1 class= "flashDisplay">Sinus Bradycardia</h1>
+                  <p class= "flashText"><b>RHYTHM:</b> Regular<br>
+                  <b>RATE:</b> Slow (&lt;60 bpm)<br>
+                  <b>P-WAVE:</b> Normal<br>
+                  <b>PR-INTERVAL:</b> Normal (0.12-0.20 sec)<br>
+                  <b>QRS:</b> Normal (0.06-0.10 sec)<br>
+                  <b>NOTES:</b></p><br>
+                </div>
+              </div>
+            </div>
+            <br>
+
+          <!-- sinus Tachycardia  -->
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <figure>
+                <img class= "strip" src="resources/strips-source/tachy.jpg" alt="Click to view rhythm characteristics">
+              <figcaption class= "caption"><b>SINUS TACHYCARDIA</b></figcaption>
+              </figure>
+              </div>
+              <div class="flip-card-back">
+                <h1 class= "flashDisplay">Sinus Tachycardia</h1>
+                <p class= "flashText"><b>RHYTHM:</b> Regular<br>
+                <b>RATE:</b> Fast (&#62;100 bpm)<br>
+                <b>P-WAVE:</b> Normal, may merge with T-wave at very fast rates.<br>
+                <b>PR-INTERVAL:</b> Normal (0.12-0.20 sec)<br>
+                <b>QRS:</b> Normal (0.06-0.10 sec)<br>
+                <b>NOTES:</b> QT interval shortens with increased heart rate</p><br>
+              </div>
+            </div>
+          </div>
+          <br>
+          
+          <!-- Pac  -->
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <figure>
+                <img class= "strip" src="resources/strips-source/PAC.jpg" alt="Click to view rhythm characteristics">
+              <figcaption class= "caption"><b>PREMATURE ATRIAL COMPLEX</b></figcaption>
+              </figure>
+              </div>
+              <div class="flip-card-back">
+                <h1 class= "flashDisplay">Premature Atrial Complex</h1>
+                <p class= "flashText"><b>RHYTHM:</b> Irregular<br>
+                <b>RATE:</b> Usually normal but depends on underlying rhythm.<br>
+                <b>P-WAVE:</b> P-Wave morphology changes.<br>
+                <b>PR-INTERVAL:</b> Normal or longer<br>
+                <b>QRS:</b> 0.10 sec or less<br>
+                <b>NOTES:</b></p><br>
+              </div>
+            </div>
+          </div>
+          <br>
+
+          <!-- Pvc  -->
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <figure>
+                <img class= "strip" src="resources/strips-source/PVC.jpg" alt="Click to view rhythm characteristics">
+              <figcaption class= "caption"><b>PREMATURE VENTRICULAR COMPLEX</b></figcaption>
+              </figure>
+              </div>
+              <div class="flip-card-back">
+                <h1 class= "flashDisplay">Premature Ventricular Complex</h1>
+                <p class= "flashText"><b>RHYTHM:</b> Irregular<br>
+                <b>RATE:</b> The underlying rate<br>
+                <b>P-WAVE:</b> Absent<br>
+                <b>PR-INTERVAL:</b> Not measurable<br>
+                <b>QRS:</b> Wide (&#62;0.10sec), bizarre appearence<br>
+                <b>NOTES:</b> Two PVCs together are termed a couplet while three 
+                PVCs in a row is ventricular tachycardia.</p><br>
+              </div>
+            </div>
+          </div>
+          <br>
+
+      <!-- Pjc  -->
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <figure>
+            <img class= "strip" src="resources/strips-source/PJC.jpg" alt="Click to view rhythm characteristics">
+          <figcaption class= "caption"><b>PREMATURE JUNCTIONAL COMPLEX</b></figcaption>
+          </figure>
+          </div>
+          <div class="flip-card-back">
+            <h1 class= "flashDisplay">Premature Junctional Complex</h1>
+            <p class= "flashText"><b>RHYTHM</b> Irregular<br>
+            <b>RATE:</b> The underlying rate<br>
+            <b>P-WAVE:</b> Present before, during (hidden) or afteer QRS, if visible it is inverted.<br>
+            <b>PR-INTERVAL:</b> Absent or short<br>
+            <b>QRS:</b> Normal (0.06-0.10 sec)<br>
+            <b>NOTES:</b></p><br>
+          </div>
+        </div>
+      </div>
+      <br>
+
+    <!-- Ventricular big  -->
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <figure>
+            <img class= "strip" src="resources/strips-source/V-big.jpg" alt="Click to view rhythm characteristics">
+          <figcaption class= "caption"><b>VENTRICULAR BIGEMENY</b></figcaption>
+          </figure>
+          </div>
+          <div class="flip-card-back">
+            <h1 class= "flashDisplay">Ventricular Bigeminy</h1>
+            <p class= "flashText"><b>RHYTHM:</b> Irregular<br>
+            <b>RATE:</b> The underlying rate<br>
+            <b>P-WAVE:</b> Absent<br>
+            <b>PR-INTERVAL:</b> Not measurable<br>
+            <b>QRS:</b> Wide (&#62;0.10sec), bizarre appearence<br>
+            <b>NOTES:</b>PVC appears every second beat. (Bigeminy can be Atrial, or junctional also!)</p><br>
+          </div>
+        </div>
+      </div>
+      <br>
+      <!-- Ventricular trig  -->
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <figure>
+            <img class= "strip" src="resources/strips-source/Vtrig.jpg" alt="Click to view rhythm characteristics">
+          <figcaption class= "caption"><b>VENTRICULAR TRIGEMENY</b></figcaption>
+          </figure>
+          </div>
+          <div class="flip-card-back">
+            <h1 class= "flashDisplay">Ventricular Trigeminy</h1>
+            <p class= "flashText"><b>RHYTHM:</b> Irregular<br>
+            <b>RATE:</b> The underlying rate<br>
+            <b>P-WAVE:</b> Absent<br>
+            <b>PR-INTERVAL:</b> Not measurable<br>
+            <b>QRS:</b> Wide (&#62;0.10sec), bizarre appearence<br>
+            <b>NOTES:</b>PVC appears every third beat. (Bigeminy can be Atrial, or junctional also!)</p><br>
+          </div>
+        </div>
+      </div>
+      <br>
+<!-- BBB  -->
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <figure>
+      <img class= "strip" src="resources/strips-source/BBB.jpg" alt="Click to view rhythm characteristics">
+    <figcaption class= "caption"><b>BUNDLE BRANCH BLOCK</b></figcaption>
+    </figure>
+    </div>
+    <div class="flip-card-back">
+      <h1 class= "flashDisplay">Bundle Branch Block</h1>
+      <p class= "flashText"><b>RHYTHM:</b> Regular<br>
+      <b>RATE:</b> The underlying rate<br>
+      <b>P-WAVE:</b> Normal<br>
+      <b>P-INTERVAL:</b> Normal (0.12-0.20 sec)<br>
+      <b>QRS:</b> Wide (&#62;0.12sec), bizarre appearence<br>
+      <b>NOTES:</b> QRS complex wide, (Described as Bunny ears, or notched)</p><br>
+    </div>
+  </div>
+</div>
+<br>
+
+<!-- Sp  -->
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <figure>
+      <img class= "strip" src="resources/strips-source/SP.jpg" alt="Click to view rhythm characteristics">
+    <figcaption class= "caption"><b>SINOATRIAL BLOCK (SINUS PAUSE)</b></figcaption>
+    </figure>
+    </div>
+    <div class="flip-card-back">
+      <h1 class= "flashDisplay">Sinoatrial Block (Sinus Pause)</h1>
+      <p class= "flashText"><b>RHYTHM:</b> Irregular when SA block occurs<br>
+      <b>RATE:</b> Normal or slow<br>
+      <b>P-WAVE:</b> Normal<br>
+      <b>PR-INTERVAL:</b> Normal (0.12-0.20 sec)<br>
+      <b>QRS:</b> Normal (0.06-0.10 sec)<br>
+      <b>NOTES:</b> Pause time is an interger multiple of the P-P interval.</p><br>
+    </div>
+  </div>
+</div>
+<br>
+
+<!-- JER  -->
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <figure>
+      <img class= "strip" src="resources/strips-source/JER.jpg" alt="Click to view rhythm characteristics">
+    <figcaption class= "caption"><b>JUNCTIONAL ESCAPE RHYTHM</b></figcaption>
+    </figure>
+    </div>
+    <div class="flip-card-back">
+      <h1 class= "flashDisplay">Junctional Escape Rhythm</h1>
+      <p class= "flashText"><b>RHYTHM:</b> Regular<br>
+      <b>RATE:</b> Slow (40-60 bpm)<br>
+      <b>P-WAVE:</b> Present before, during (hidden) or after QRS, if visible it is inverted.<br>
+      <b>PR-INTERVAL:</b> Not measurable<br>
+      <b>QRS:</b> Normal (0.06-0.10 sec)<br>
+      <b>NOTES:</b> Can Be also a singular beat, known as Junctional Escape beat.</p><br>
+    </div>
+  </div>
+</div>
+<br>
+
+<!-- Acce. Junc. Rhythm  -->
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <figure>
+      <img class= "strip" src="resources/strips-source/AJR.jpg" alt="Click to view rhythm characteristics">
+    <figcaption class= "caption"><b>ACCELERATED JUNCTIONAL RHYTHM</b></figcaption>
+    </figure>
+    </div>
+    <div class="flip-card-back">
+      <h1 class= "flashDisplay">Accelerated Junctional Rhythm</h1>
+      <p class= "flashText"><b>RHYTHM:</b> Regular<br>
+      <b>RATE:</b> Normal (60-100 bpm)<br>
+      <b>P-WAVE:</b> Present before, during (hidden) or after QRS, if visible it is inverted.<br>
+      <b>PR-INTERVAL:</b> Not measurable<br>
+      <b>QRS:</b> Normal (0.06-0.10 sec)<br>
+      <b>NOTES:</b></p><br>
+    </div>
+  </div>
+</div>
+<br>
+
+<!-- Junc. Tachy  -->
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <figure>
+      <img class= "strip" src="resources/strips-source/JET.jpg" alt="Click to view rhythm characteristics">
+    <figcaption class= "caption"><b>JUNCTIONAL TACHYCARDIA</b></figcaption>
+    </figure>
+    </div>
+    <div class="flip-card-back">
+      <h1 class= "flashDisplay">Junctional Tachycardia</h1>
+      <p class= "flashText"><b>RHYTHM:</b> Regular<br>
+      <b>RATE:</b> Fast (100-180 bpm) <br>
+      <b>P-WAVE:</b> Present before, during (hidden) or after QRS, if visible it is inverted.<br>
+      <b>PR-INTERVAL:</b> Absent or short<br>
+      <b>QRS:</b> Normal (0.06-0.10 sec)<br>
+      <b>NOTES:</b></p><br>
+    </div>
+  </div>
+</div>
+<br>
+
+<!-- SVT  -->
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <figure>
+      <img class= "strip" src="resources/strips-source/SVT.jpg" alt="Click to view rhythm characteristics">
+    <figcaption class= "caption"><b>SUPRAVENTRICULAR TACHYCARDIA</b></figcaption>
+    </figure>
+    </div>
+    <div class="flip-card-back">
+      <h1 class= "flashDisplay">Supraventricular Tachycardia (SVT)</h1>
+      <p class= "flashText"><b>RHYTHM:</b> Regular<br>
+      <b>RATE:</b> Fast (150-250 bpm) <br>
+      <b>P-WAVE:</b> Merged with T-wave.<br>
+      <b>PR-INTERVAL:</b> Normal (0.12 sec)<br>
+      <b>QRS:</b> Normal (0.10 sec)<br>
+      <b>NOTES:</b>PR-Interval can be difficult to measure.</p><br>
+    </div>
+  </div>
+</div>
+<br>
+
+<!--Acc. Idioventricular Rhythm   -->
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <figure>
+      <img class= "strip" src="resources/strips-source/acceidioVent.jpg" alt="Click to view rhythm characteristics">
+    <figcaption class= "caption"><b>ACCELERATED IDIOVENTRICULAR RHYTHM</b></figcaption>
+    </figure>
+    </div>
+    <div class="flip-card-back">
+      <h1 class= "flashDisplay">Accelerated Idioventricular Rhythm</h1>
+      <p class= "flashText"><b>RHYTHM:</b> Regular<br>
+      <b>RATE:</b> 50-120 bpm <br>
+      <b>P-WAVE:</b> Absent<br>
+      <b>PR-INTERVAL:</b> Not measurable<br>
+      <b>QRS:</b> Wide (&#62;0.10 sec), bizarre looking<br>
+      <b>NOTES:</b></p><br>
+    </div>
+  </div>
+</div>
+<br>
+
+<!--Idioventricular Rhythm   -->
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <figure>
+      <img class= "strip" src="resources/strips-source/idiovent.jpg" alt="Click to view rhythm characteristics">
+    <figcaption class= "caption"><b>IDIOVENTRICULAR RHYTHM</b></figcaption>
+    </figure>
+    </div>
+    <div class="flip-card-back">
+      <h1 class= "flashDisplay">Idioventricular Rhythm</h1>
+      <p class= "flashText"><b>RHYTHM:</b> Regular<br>
+      <b>RATE:</b> Slow (20-40 bpm) <br>
+      <b>P-WAVE:</b> Absent<br>
+      <b>PR-INTERVAL:</b> Not measurable<br>
+      <b>QRS:</b> Wide (&#62;0.10 sec), bizarre looking<br>
+      <b>NOTES:</b></p><br>
+    </div>
+  </div>
+</div>
+<br>
+
+<!--MF Atrial Tach   -->
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <figure>
+      <img class= "strip" src="resources/strips-source/mat.jpg" alt="Click to view rhythm characteristics">
+    <figcaption class= "caption"><b>MULTIFOCAL ATRIAL TACHYCARDIA</b></figcaption>
+    </figure>
+    </div>
+    <div class="flip-card-back">
+      <h1 class= "flashDisplay">Multifocal Atrial Tachycardia (MAT)</h1>
+      <p class= "flashText"><b>RHYTHM:</b> Irregular<br>
+      <b>RATE:</b> Fast (&#62;100 bpm) <br>
+      <b>P-WAVE:</b> Often changing shape & size from beat to beat
+         (at least three different forms)<br>
+      <b>PR-INTERVAL:</b> Variable<br>
+      <b>QRS:</b> Normal (0.06-0.10 sec)<br>
+      <b>NOTES:</b>T-wave is often distorted.</p><br>
+    </div>
+  </div>
+</div>
+<br>
+
+<!--Atrial Flutter   -->
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <figure>
+      <img class= "strip" src="resources/strips-source/A-flutter.jpg" alt="Click to view rhythm characteristics">
+    <figcaption class= "caption"><b>ATRIAL FLUTTER</b></figcaption>
+    </figure>
+    </div>
+    <div class="flip-card-back">
+      <h1 class= "flashDisplay">Atrial Flutter</h1>
+      <p class= "flashText"><b>RHYTHM:</b> Regular or irregular<br>
+      <b>RATE:</b> Fast (250-350 bpm) for Atrial, but ventricular rate is often slower <br>
+      <b>P-WAVE:</b> Not observable, but saw-toothed flutter waves are present.<br>
+      <b>PR-INTERVAL:</b> Not measurable<br>
+      <b>QRS:</b> Normal (0.06-0.10 sec)<br>
+      <b>NOTES:</b></p><br>
+    </div>
+  </div>
+</div>
+<br>
+
+<!--Atrial Fib   -->
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <figure>
+      <img class= "strip" src="resources/strips-source/A-fib.jpg" alt="Click to view rhythm characteristics">
+    <figcaption class= "caption"><b>ATRIAL FIBRILLATION</b></figcaption>
+    </figure>
+    </div>
+    <div class="flip-card-back">
+      <h1 class= "flashDisplay">Atrial Fibrillation</h1>
+      <p class= "flashText"><b>RHYTHM:</b>Irregular<br>
+      <b>RATE:</b> Very Fast (&#62;350 bpm) for Atrial, but ventricular rate may be slow, normal or fast. <br>
+      <b>P-WAVE:</b> Absent- erratic waves are present<br>
+      <b>PR-INTERVAL:</b> Absent<br>
+      <b>QRS:</b> Normal (0.06-0.10 sec) But may be widened if there are conduction delays<br>
+      <b>NOTES:</b></p><br>
+    </div>
+  </div>
+</div>
+<br>
+
+<!--Asystole  -->
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <figure>
+      <img class= "strip" src="resources/strips-source/Asystole.jpg" alt="Click to view rhythm characteristics">
+    <figcaption class= "caption"><b>ASYSTOLE</b></figcaption>
+    </figure>
+    </div>
+    <div class="flip-card-back">
+      <h1 class= "flashDisplay">Asystole</h1>
+      <p class= "flashText"><b>RHYTHM:</b> Not present<br>
+      <b>RATE:</b> Absent<br>
+      <b>P-WAVE:</b> Absent<br>
+      <b>PR-INTERVAL:</b> Absent<br>
+      <b>QRS:</b> Absent<br>
+      <b>NOTES:</b> Confirm with multiple leads & pulse ox or A-line (if the patient has one.)</p><br>
+    </div>
+  </div>
+</div>
+<br>
+
+<!--1st degree AVB  -->
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <figure>
+      <img class= "strip" src="resources/strips-source/1AVB.jpg" alt="Click to view rhythm characteristics">
+    <figcaption class= "caption"><b>FIRST DEGREE AVB</b></figcaption>
+    </figure>
+    </div>
+    <div class="flip-card-back">
+      <h1 class= "flashDisplay">First Degree Heart Block</h1>
+      <p class= "flashText"><b>RHYTHM:</b> Regular<br>
+      <b>RATE:</b> The underlying rate<br>
+      <b>P-WAVE:</b> Normal<br>
+      <b>PR-INTERVAL:</b> prolonged(&#62;0.20 sec)<br>
+      <b>QRS:</b> Normal (0.06-0.10 sec)<br>
+      <b>NOTES:</b> A first degree AV block occurs when electrical impulses moving through the Atrioventricular (AV) node
+         are delayed (but not blocked). First degree indicates slowed conduction without missed beats.</p><br>
+    </div>
+  </div>
+</div>
+<br>
+
+<!--2st degree AVB T1 -->
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <figure>
+      <img class= "strip" src="resources/strips-source/2AVBT1.jpg" alt="Click to view rhythm characteristics">
+    <figcaption class= "caption"><b>SECOND DEGREE AVB TYPE 1<br>(WENCKEBACH)</b></figcaption>
+    </figure>
+    </div>
+    <div class="flip-card-back">
+      <h1 class= "flashDisplay">Second Degree<br> Heart Block Type 1</h1>
+      <p class= "flashText"><b>RHYTHM:</b> Irregular but with progressively longer PR interval lengthening.<br>
+      <b>RATE:</b> The underlying rate<br>
+      <b>P-WAVE:</b> Normal<br>
+      <b>PR-INTERVAL:</b> progressively longer until a QRS complex is missed, then cycle repeats.<br>
+      <b>QRS:</b> Normal (0.06-0.10 sec)<br>
+      <b>NOTES:</b> Also known as Mobitz 1 or Wenckebach.</p><br>
+    </div>
+  </div>
+</div>
+<br>
+
+<!--2st degree AVB T2 -->
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <figure>
+      <img class= "strip" src="resources/strips-source/2AVBT2.jpg" alt="Click to view rhythm characteristics">
+    <figcaption class= "caption"><b>SECOND DEGREE AVB TYPE 2 <br>(MOBITZ 2)</b></figcaption>
+    </figure>
+    </div>
+    <div class="flip-card-back">
+      <h1 class= "flashDisplay">Second Degree <br>Heart Block Type 2</h1>
+      <p class= "flashText"><b>RHYTHM:</b> Regular (atrial) & irregular (ventricular)<br>
+      <b>RATE:</b> Characterized by Atrial rate usually faster than ventricular rate (usually slow).<br>
+      <b>P-WAVE:</b> Normal form, but more P waves that QRS complexes.<br>
+      <b>PR-INTERVAL:</b> Normal or prolonged<br>
+      <b>QRS:</b> Normal or wide<br>
+      <b>NOTES:</b> Also known as Mobitz 2</p><br>
+    </div>
+  </div>
+</div>
+<br>
+
+<!--3rd degree AVB -->
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <figure>
+      <img class= "strip" src="resources/strips-source/3AVB.jpg" alt="Click to view rhythm characteristics">
+    <figcaption class= "caption"><b>THIRD DEGREE AVB</b></figcaption>
+    </figure>
+    </div>
+    <div class="flip-card-back">
+      <h1 class= "flashDisplay">Third Degree Heart Block</h1>
+      <p class= "flashText"><b>RHYTHM:</b> Regular, but atrial & ventricular rhythms are independent.<br>
+      <b>RATE:</b> Characterized by Atrial rate usually normal & faster than ventricular rate<br>
+      <b>P-WAVE:</b> Normal shape & size, may appear within QRS complexes.<br>
+      <b>PR-INTERVAL:</b> Absent: the atria & ventricles beat independently.<br>
+      <b>NOTES:</b> Complete heart block.</p><br>
+    </div>
+  </div>
+</div>
+<br>
+
+<!--Vtach Mono -->
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <figure>
+      <img class= "strip" src="resources/strips-source/VT.jpg" alt="Click to view rhythm characteristics">
+    <figcaption class= "caption"><b>VENTRICULAR TACHYCARDIA<br> (MONOMORPHIC)</b></figcaption>
+    </figure>
+    </div>
+    <div class="flip-card-back">
+      <h1 class= "flashDisplay">Ventricular Tachycardia<br> Monomorphic</h1>
+      <p class= "flashText"><b>RHYTHM:</b> Regular<br>
+      <b>RATE:</b> Fast (100-250 bpm)<br>
+      <b>P-WAVE:</b> Absent<br>
+      <b>PR-INTERVAL:</b> Not measurable<br>
+      <b>QRS:</b> Wide (&#62;0.10 sec), bizarre appearance.<br>
+      <b>NOTES:</b> Monomorphic VT is defined by three or more consecutive uniform pvc's. </p><br>
+    </div>
+  </div>
+</div>
+<br>
+
+<!--Vtach poly-->
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <figure>
+      <img class= "strip" src="resources/strips-source/vt-polymorphic.jpg" alt="Click to view rhythm characteristics">
+    <figcaption class= "caption"><b>VENTRICULAR TACHYCARDIA<br> (POLYMORPHIC)</b></figcaption>
+    </figure>
+    </div>
+    <div class="flip-card-back">
+      <h1 class= "flashDisplay">Ventricular Tachycardia<br>Polymorphic</h1>
+      <p class= "flashText"><b>RHYTHM:</b> Regular<br>
+      <b>RATE:</b> Fast (100-250 bpm)<br>
+      <b>P-WAVE:</b> Absent<br>
+      <b>PR-INTERVAL:</b> Not measurable<br>
+      <b>QRS:</b> Wide (&#62;0.10 sec), bizarre appearance.<br>
+      <b>NOTES:</b> Polymorphic VT is defined as an unstable rhythm with varying QRS complex
+         morphology in any recorded ECG lead</p><br>
+    </div>
+  </div>
+</div>
+<br>
+
+<!--Torsades-->
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <figure>
+      <img class= "strip" src="resources/strips-source/torsades.jpg" alt="Click to view rhythm characteristics">
+    <figcaption class= "caption"><b>VENTRICULAR TACHYCARDIA <br> (TORSADE DE POINTES)</b></figcaption>
+    </figure>
+    </div>
+    <div class="flip-card-back">
+      <h1 class= "flashDisplay">Ventricular Tachycardia, <br>Torsade de Pointes</h1>
+      <p class= "flashText"><b>RHYTHM</b> Irregular<br>
+      <b>RATE:</b> Fast (200-250 bpm)<br>
+      <b>P-WAVE:</b> Absent<br>
+      <b>PR-INTERVAL:</b> Not measurable<br>
+      <b>QRS:</b> Wide (&#62;0.10 sec), bizarre appearance.<br>
+      <b>NOTES:</b> Torsades is defined as the combination of polymorphic VT
+    & a prolonged QT-interval. </p><br>
+    </div>
+  </div>
+</div>
+<br>
+
+<!--WPW-->
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <figure>
+      <img class= "strip" src="resources/strips-source/wpw.jpg" alt="Click to view rhythm characteristics">
+    <figcaption class= "caption"><b>WOLFF-PARKINSON-WHITE SYNDROME</b></figcaption>
+    </figure>
+    </div>
+    <div class="flip-card-back">
+      <h1 class= "flashDisplay">Wolff-Parkinson-White Syndrome</h1>
+      <p class= "flashText"><b>RHYTHM:</b> Regular unless atrial fibrillation present<br>
+      <b>RATE:</b> Normal (60-100 bpm)<br>
+      <b>P-WAVE:</b> Normal<br>
+      <b>PR-INTERVAL:</b> Can be short (&lt;0.12 sec)<br>
+      <b>QRS:</b> Usually wide (&#62; 0.12 sec)<br>
+      <b>NOTES:</b> Look for short PR intervals and/or delta wave. A delta wave (positive or negative)
+       distorts the early part of the QRS complex.</p><br>
+    </div>
+  </div>
+</div>
+<br>
+
+<!-- Pacemaker Issues -->
+
+<!--Pacemaker Single Chamber Atrial-->
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <figure>
+      <img class= "strip" src="resources/pacers/a-Paced.jpg" alt="Click to view rhythm characteristics">
+    <figcaption class= "caption"><b>PACEMAKER<br> (SINGLE CHAMBER ATRIAL)</b></figcaption>
+    </figure>
+    </div>
+    <div class="flip-card-back">
+      <h1 class= "flashDisplay">Pacemaker<br> Single Chamber Atrial</h1>
+      <p class= "flashText"><b>RHYTHM:</b> Regular<br>
+      <b>RATE:</b> 60 bpm<br>
+      <b>P-WAVE:</b> Normal<br>
+      <b>PR-INTERVAL:</b> Normal<br>
+      <b>QRS:</b> Normal<br>
+      <b>NOTES:</b> When a patient is atrial paced, the spike comes before the P-wave. 
+         </p><br>
+    </div>
+  </div>
+</div>
+<br>
+
+<!--Pacemaker Single Chamber Ventricular-->
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <figure>
+      <img class= "strip" src="resources/pacers/v-paced.jpg" alt="Click to view rhythm characteristics">
+    <figcaption class= "caption"><b>PACEMAKER <br>(SINGLE CHAMBER VENTRICULAR)</b></figcaption>
+    </figure>
+    </div>
+    <div class="flip-card-back">
+      <h1 class= "flashDisplay">Pacemaker<br> Single Chamber Ventricular</h1>
+      <p class= "flashText"><b>RHYTHM:</b> Regular<br>
+      <b>RATE:</b> 60 bpm<br>
+      <b>P-WAVE:</b> Normal<br>
+      <b>PR-INTERVAL:</b> Normal<br>
+      <b>QRS:</b> Wide, this is because the impulse in not originating from the SA- Node.<br>
+      <b>NOTES:</b> When a patient is ventricularly paced, the spike comes before the QRS complex
+        </p><br>
+    </div>
+  </div>
+</div>
+<br>
+
+<!--Pacemaker Single Chamber A & V-->
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <figure>
+      <img class= "strip" src="resources/pacers/AV-paced.jpg" alt="Click to view rhythm characteristics">
+    <figcaption class= "caption"><b>PACEMAKER <br>(ATRIAL & VENTRICULAR)</b></figcaption>
+    </figure>
+    </div>
+    <div class="flip-card-back">
+      <h1 class= "flashDisplay">Pacemaker<br>Atrial & Ventricular</h1>
+      <p class= "flashText"><b>RHYTHM:</b> Regular<br>
+      <b>RATE:</b> 60 bpm<br>
+      <b>P-WAVE:</b> Normal<br>
+      <b>PR-INTERVAL:</b> Normal<br>
+      <b>QRS:</b> Wide, this is because the impulse in not originating from the SA- Node.<br>
+      <b>NOTES:</b> When a patient is A/V paced there should be a spike in front of the P-wave, and another spike in front of the QRS complex.
+          Also known as dual pacing.</p><br>
+    </div>
+  </div>
+</div>
+<br>
+
+
+<!--Pacemaker failure to pace -->
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <figure>
+      <img class= "strip" src="resources/pacers/failureToPace.jpg" alt="Click to view rhythm characteristics">
+    <figcaption class= "caption"><b>PACEMAKER <br>(FAILURE TO PACE)</b></figcaption>
+    </figure>
+    </div>
+    <div class="flip-card-back">
+      <h1 class= "flashDisplay">Pacemaker, Failure To Pace</h1>
+      <p class= "flashText"><b>RHYTHM:</b> Irregular<br>
+      <b>RATE:</b> <br>
+      <b>P-WAVE:</b> <br>
+      <b>PR-INTERVAL:</b> <br>
+      <b>QRS:</b> <br>
+      <b>NOTES:</b>Pacer spikes fail to appear. This malfunction can happen with A-pacing, V-pacing or A/V pacing</p><br>
+    </div>
+  </div>
+</div>
+<br>
+
+<!--Pacemaker failure to capture -->
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <figure>
+      <img class= "strip" src="resources/pacers/failureToCapture.jpg" alt="Click to view rhythm characteristics">
+    <figcaption class= "caption"><b>PACEMAKER <br> (FAILURE TO CAPTURE)</b></figcaption>
+    </figure>
+    </div>
+    <div class="flip-card-back">
+      <h1 class= "flashDisplay">Pacemaker, Failure To Capture</h1>
+      <p class= "flashText"><b>RHYTHM:</b> Irregular<br>
+      <b>RATE:</b> <br>
+      <b>P-WAVE:</b> <br>
+      <b>PR-INTERVAL:</b> <br>
+      <b>QRS:</b> <br>
+      <b>NOTES:</b>Pacer spikes appear but are NOT followed by its associated p-wave or QRS complex. 
+      This malfunction can happen with A-pacing, V-pacing or A/V pacing</p><br>
+    </div>
+  </div>
+</div>
+<br>
+
+<!--Pacemaker undersensing issues -->
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <figure>
+      <img class= "strip" src="resources/pacers/failureToSense.jpg" alt="Click to view rhythm characteristics">
+    <figcaption class= "caption"><b>PACEMAKER <br> (UNDERSENSING)</b></figcaption>
+    </figure>
+    </div>
+    <div class="flip-card-back">
+      <h1 class= "flashDisplay">Pacemaker, undersensing</h1>
+      <p class= "flashText"><b>RHYTHM:</b> Regular or Irregular<br>
+      <b>RATE:</b> <br>
+      <b>P-WAVE:</b> <br>
+      <b>PR-INTERVAL:</b> <br>
+      <b>QRS:</b> <br>
+      <b>NOTES:</b> Pacermaker fails to sense intrinsic activty and sends the impulse to pace inappropriately. </p><br>
+    </div>
+  </div>
+</div>
+<br>
+
+<!--Pacemaker undersensing issues -->
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <figure>
+      <img class= "strip" src="resources/pacers/overSens.jpg" alt="Click to view rhythm characteristics">
+    <figcaption class= "caption"><b>PACEMAKER <br> (OVERSENSING)</b></figcaption>
+    </figure>
+    </div>
+    <div class="flip-card-back">
+      <h1 class= "flashDisplay">Pacemaker, oversensing</h1>
+      <p class= "flashText"><b>RHYTHM:</b> Regular or Irregular<br>
+      <b>RATE:</b> <br>
+      <b>P-WAVE:</b> <br>
+      <b>PR-INTERVAL:</b> <br>
+      <b>QRS:</b> <br>
+      <b>NOTES:</b> Pacermaker inhibited due to sensing of P-waves & QRS complexes that do not exist. Pacemaker is too sensitive. </p><br>
+    </div>
+  </div>
+</div>
+<br>
+
+    </section>
+  </header> 
+        </main>
+
+</div>
+<hr class="footerLine">
+<!-- Footer -->
+    <footer role="contentinfo">
+   
+                    <span class="copyright">&copy;2020 CICU TELEMETRY GUIDE</span>
+                    <div class="disclaimer">This website is intended for use by medical professionals for educational
+                      purposes only. For medical care, please contact a healthcare provider.
+                    </div>
+    </footer> 
+    
+        <!-- JS (Hamburger Menu)-->
+        <script src= "JS/hamburger.js"></script>
+
+    
+        
+
+    </body>
+</html>

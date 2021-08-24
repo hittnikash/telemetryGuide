@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <!-- Title-->
+        <title>CICU Telemetry Guide</title>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <meta name="description" content="Telemetry Reference Guide"/>
+        <meta name="author" content="Ashley Needy"/>
+    <!--Link to CSS -->  
+    <link rel="stylesheet" href="CSS/normalize.css"/>
+    <link rel="stylesheet" href="CSS/styles.css"/>
+</head>
+<body>
+<!-- Header -->
+<div class= "wrapper">
+ 
+
+  <nav role="navigation"> 
+    <div class="topnav" id="myTopnav">
+      <div class= "logo">
+        <img class= "nav-logo" src="icons/logo-nc.png" alt="logo"> 
+        <button onclick="toggle()" class="hamburgerButton" aria-label="hamburger navigation menu" style= "background: url(icons/hamburger.png) no-repeat" ></button>
+      </div>
+    </div>
+      <div class="hams">
+      <div id="navLinks">
+      <a href="index.html">Home</a>
+   
+      <div class="dropdown-a">
+        <button class="dropbtn-a">Checklist-Guide 
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content-a">
+          <a href="mt.html">Monitor-Tech</a>
+          <a href="nursingGuide.html">Nursing Guide</a>
+          <a href="PhillipsSystemGuide.html">System Guide</a>
+        </div>
+        </div>
+      <a href="techSupport.html">Tech-Support</a>
+      <div class="dropdown">
+        <button class="dropbtn">Telemetry
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="intro.html">EKG Intro & Interpretation</a>
+          <a href="PedsNormalVitalSigns.html">Peds Normal Vital Signs</a> 
+          <a href="redAlarmAlgorithms.html">Red Alarm Algorithms</a> 
+          <a href="paper.html">EKG Paper</a>
+          <a href="nomenclature.html">EKG Nomenclature</a>
+          <a href="rhythm.html">Rhythm</a>
+          <a href="heartRate.html">Heart Rate</a>
+          <a href="refrence.html">EKG Reference</a>
+          <a href="artifact.html">Telemetry Artifact</a>
+          <a href="pacing.html">Pacing</a>
+          <a href="quiz.html">EKG Quiz</a>
+        </div>
+          </div>
+      </div>
+       </div>
+    </nav>
+    
+    <main class="content" role= "main">
+      <header class= "container" role="banner">
+      <section class= "intro-MT">
+<!-- side Bar nav -->
+<div id="mySidebar" class="sidebar">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="device.html#device">Device Tracking</a>
+  <a href="device.html#censusChecking">Census Checking</a>
+  <a href="device.html#reviews">Reviews</a>
+  <a href="device.html#alarmFiltering"">Alarm Filtering</a>
+  <a href="device.html#alarmManagement">Alarm Management</a>
+  <a href="device.html#controlStrips">Control Strips</a>
+  <a href="device.html#techSupport">Tech Support</a>
+  <a href="device.html#alert">Alerting & Documenting</a>
+  <a href="device.html#graphicTrends">Graphic Trends</a>
+  <a href="device.html#reports">Reports</a>
+  <a href="device.html#orders">Order Sets</a>
+</div>
+
+<div id="main" class="titleButton">
+  <button class="openbtn" onclick="openNav()"> MONITOR-TECH CHECKLIST:
+  </button>
+</div>  
+      </section>
+<section>
+        <h1 class="hideTitle">Monitor-Tech <br>checklist</h1>
+          <p>As Monitor Tech it is your job to understand and complete the MT checklist.
+             To learn more about your responsibilities check out the comprehensive guide 
+       to the checklist under the Monitor-Tech checklist tab. Or learn more about the different order
+      sets for telemetry monitoring.</p> 
+  
+          <p>If you are a nurse pulled into the monitor-tech role, your responsibilities differ than that
+          listed & described on this page. There is a seperate nursing tab that illustrates your role in telemetry.
+        </p>    
+      </section>       
+      <section class= "monitorAccordianSection">
+<!--Accordion Menu Options-->
+
+<div class="menu">
+  <button class="accordion">Monitor-Tech Checklist</button>
+  <div class="panel">
+
+<div class="menu">
+  <button class="accordion">Device Tracking</button>
+  <div class="panel">
+      <p class="acc-p">The monitor-tech is responsible for keeping track of a number of devices. The devices must be signed out 
+        by the person retreiving them. They should include the patient name, room number, date & time, and device number if applicable, 
+        as well as the name of the person retriving the device.</p>
+        <p class="acc-p">Below are the devices the monitor-tech is responsible for tracking. </p>
+    
+        <ul class= "list">
+          <li class= "veinFinder">Vein Finder</li>
+             <img class= "deviceTrackImg" src="CICUeditedPics/veinfinder.jpg" alt="vein-finder">
+          <li>Dopplers</li>
+              <img class= "deviceTrackImg" src="CICUeditedPics/doppler.jpg" alt= "doppler">
+          <li>Tele-packs</li>
+             <img class= "deviceTrackImg" src="CICUeditedPics/telepak2.jpg" alt= "tele-pack">
+        </ul>
+
+       <p class="acc-p"> ** Note that these devices are stored in the telemetry room.
+     </p>
+    </div>
+
+  <button class="accordion">Census Checking</button>
+        <div class="panel">
+            <p class="acc-p">It is important to check the census regularly to ensure that there are no conflicts with patient data. 
+              This involves comparing each sector with what is listed in Epic.</p>
+
+              <p class="acc-p">In addition to checking your census, there is also another list that must be checked. The 
+              monitor-tech list is a list of patients that each have a telemetry order in.</p>
+              
+              <p class="acc-p">Whenever a physician enters a telemetry 
+              order for a patient– that patients name ends up on the monitor-tech list. This list is to ensure that all patients 
+              that need to be followed and reviewed dont get missed due to human error. 
+            </p>
+        </div>
+
+  <button class="accordion">Reviews:</button>
+  <div class="panel">
+      <p class="acc-p">A twelve hour review is done per patient with telemetry orders to be followed by cardiology. 
+        The review is broken down into three sections. So you will end up doing three four hour reviews per shift.</p>
+      <p class="acc-p">During your review it is your job to document what you see and the frequency in certain arrythmia. 
+         This includes changes in patient rhythm and real alarms. </p>
+  
+     <ul>
+      <li>Dayshift Review times are 0800, 1200 & 1600.</li>
+      <li>NightShift Review times are 1600, 2000 & 0400.</li>
+   </ul>
+      </div>
+
+          <button class="accordion">Alarm Filtering:</button>
+          <div class="panel">
+              <p class="acc-p">During each review you will start with going through the alarms of each patient that has telemetry orders.
+                You are responsibile for filtering through the alarms and only deleting artifact or duplicate alarms. </p>
+               
+                <p class="acc-p">It is important that you know how to tell the difference between artifact versus real. During your telemtry training 
+                you will learn to do exactly that! Once you have finished going through the alarms, it is time to review. 
+             </p>
+          </div>
+
+        <button class="accordion">Alarm Management</button>
+        <div class="panel">
+            <p class="acc-p">Part of alarm management is making sure that each patients waves are clear with no baseline artifact. You can optimize 
+              the waves shown by sizing up or down and even change the primary & secondary waveforms. Doing this will prevent artifact 
+              alarms before they happen- which will save you time when filtering & prevent alarm fatigue.</p> 
+              
+              <p class="acc-p">Another part of alarm management is knowing the parameters per patient age. If the parameters are not set appropriatly per patients age they may alarm
+              incessantly and needlessly. You can call the RN taking care of the patient to verify alarm parameters before changing.</p>
+
+              <p class="acc-p">If a patient is alarming frequently, and the parameters are set appropriatly- you can also call the RN taking care of the patient
+              to verify if there is a concern for this patient- if there is no concern you can inquire about changing the alarm parameters. The
+              RN will have to consult with the doctors before the parameters can be changed to decrease alarms.
+            </p>
+        </div>
+
+        <button class="accordion">Control Strips:</button>
+        <div class="panel">
+             <img onclick="modalToggle()" id="controlModal" class= "control" src="CICUeditedPics/saveStripIcon.jpg" alt="control strip" title= "Click Image">
+            <div class="Cmodal Cmodal--hidden">
+              <div class="modalContents">
+                <div id= "close"><button onclick="modalToggle()">x</button></div>
+                <p> Control strips can be saved for every patient per monitor easily by clicking this icon in
+                   the top right corner & following the prompts.</p>
+              </div> 
+            </div> 
+
+            <p class="acc-p">Strips are saved at specific times throughout the day & night, these are known as control strips. Control strips are saved 
+              on dayshift at 1400-(2:00), & nightshift at 2200-(10:00) and 0600-(6:00). </p>
+              
+              <p class="acc-p">The control strips along with the strips you save throughout your review- the strips that show changes in patients rhythm are then printed out on nightshift and
+              assembled into telemetry reports for the physicians to review.</p>
+         
+        </div>
+      
+      <button class="accordion">Tech Support:</button>
+      <div class="panel">
+        <p class="acc-p">Throughout your shift you my be contacted by nurses requiring technical support. You will learn more about trouble-shooting for 
+          common technical issues in the technical support tab at the top of the page.  
+        </p>
+      </div>
+
+      <button class="accordion">Alerting & Documenting:</button>
+      <div class="panel">
+        <p class="acc-p">You are expected to alert the nurse caring for the patient of any changes you see throughout your review as well as any real alarms
+          that come across in real time. Everyone is responsibile for the alarms. If an monitor is alarming for specified amount of time, contact 
+          the RN caring for that patient.</p> 
+          <p class="acc-p">Make sure to document the phone calls you make- with the name of the R.N you spoke with, 
+            date & time on the back of your review packet.
+        </p>
+      </div>
+
+      <button class="accordion">Graphic-Trends:</button>
+      <div class="panel">
+        <p class="acc-p"><strong>(NIGHT-SHIFT ONLY)</strong> Around 0335 a text needs to be sent to the RNs of patients with telemetry orders to remind them to print their trends.
+        </p>
+      </div>
+
+      <button class="accordion">Reports:</button>
+      <div class="panel">
+        <p class="acc-p"><strong>(NIGHT-SHIFT ONLY)</strong> is responsibile for printing all the strips that have been saved throughout the day & night and assembiling 
+          the strips as well as the trends in telemetry reports. These reports go in the cardiology bin in the monitor room. After the cardiologists review 
+          and sign the reports they are then placed in the "out bin" also located in the monitor tech room. Next the dayshift PCA will distribute the signed telemetry
+          reports from the out bin to the correct floors via tube station. The signed reports for the patients in the CICU go in the scanning bin located at the secretary desk.
+          Medical records will collect these reports on nightshift and take them to be scanned into each patients chart and then returned to their respective floors.
+          It is important for you to understand this process.  
+        </p>
+      </div>  
+ </div>
+ </div>
+          </section>
+
+    <section class= "monitorAccordianSection">
+      <div class="menu">
+        <button class="accordion">ORDERS: WOI & ULP</button>
+        <div class="panel">
+      <p class="acc-p"><strong>ORDERS: WOI & ULP</strong></p>
+      <p class="acc-p">WOI stands for Without Interpretation, and it simply means that the monitor tech stay alert for any changes in patient 
+        rhythm. If you notice a change alert the nurse caring for the patient.</p> 
+        <p class="acc-p">In addition if a patient has WOI orders then you need to ensure that 
+        the patient data is displayed on the central monitor, this would entail pulling up the patient sector if the patient is located on a med/surg floor 
+        or NICU. This is because only patient data for all CICU, PICU & PCU rooms are continuously displayed.</p> 
+        <p class="acc-p">Sometimes patients that are WOI will be changed to ULP if the physicians decide their strips need cardiology interpretation.</p>
+
+         <p class="acc-p">ULP stands for University of Louisville physicians and this order means the patient is followed by cardiology and will also be reviewed by 
+           the monitor tech. If the Monitor tech finds any arrythmias they will communicate them with the nurse who will then pass along the 
+           information to the physicians.</p>
+           <p class="acc-p"> Cardiology will review the reports we prepare for them in the morning. However if a patient is declining and 
+           there is concern or uncertainity of a rhythm a patient is either sustaining or going in & out of -cardiology may be contacted at any time 
+           to consult on the strips.
+         </p>
+
+      </div>
+  </div>
+
+    </section>
+  </header> 
+        </main>
+</div>
+<hr class="footerLine">
+<!-- Footer -->
+    <footer role="contentinfo">
+      
+                    <span class="copyright">&copy;2020 CICU TELEMETRY GUIDE</span>
+                    <div class="disclaimer">This website is intended for use by medical professionals for educational
+                      purposes only. For medical care, please contact a healthcare provider.
+                    </div>
+    </footer> 
+    
+        <!-- JS (Hamburger Menu)-->
+        <script src= "JS/hamburger.js"></script>
+        <script src= "JS/accordian.js"></script>
+        <script src= "JS/controlModal.Js"></script>
+        <script src= "JS/sideBar.js"></script>
+        
+
+    </body>
+</html>

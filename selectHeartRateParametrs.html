@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <!-- Title-->
+        <title>CICU Telemetry Guide</title>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <meta name="description" content= "Telemetry Reference Guide"/>
+        <meta name="author" content="Ashley Needy"/>
+    <!--Link to CSS -->  
+    <link rel="stylesheet" href="CSS/normalize.css"/>
+    <link rel="stylesheet" href="CSS/styles.css"/>
+</head>
+<body>
+<!-- Header -->
+<div class= "wrapper">
+ 
+
+    <nav role="navigation"> 
+        <div class="topnav" id="myTopnav">
+          <div class= "logo">
+            <img class= "nav-logo" src="icons/logo-nc.png" alt="logo"> 
+            <button onclick="toggle()" class="hamburgerButton" aria-label="hamburger navigation menu" style= "background: url(icons/hamburger.png) no-repeat" ></button>
+          </div>
+        </div>
+          <div class="hams">
+          <div id="navLinks">
+          <a href="index.html">Home</a>
+       
+          <div class="dropdown-a">
+            <button class="dropbtn-a">Checklist-Guide 
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content-a">
+              <a href="mt.html">Monitor-Tech</a>
+              <a href="nursingGuide.html">Nursing Guide</a>
+              <a href="PhillipsSystemGuide.html">System Guide</a>
+            </div>
+              </div>
+          <a href="techSupport.html">Tech-Support</a>
+          <div class="dropdown">
+            <button class="dropbtn">Telemetry
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="intro.html">EKG Intro & Interpretation</a>
+              <a href="PedsNormalVitalSigns.html">Peds Normal Vital Signs</a> 
+              <a href="redAlarmAlgorithms.html">Red Alarm Algorithms</a> 
+              <a href="paper.html">EKG Paper</a>
+              <a href="nomenclature.html">EKG Nomenclature</a>
+              <a href="rhythm.html">Rhythm</a>
+              <a href="heartRate.html">Heart Rate</a>
+              <a href="refrence.html">EKG Reference</a>
+              <a href="artifact.html">Telemetry Artifact</a>
+              <a href="pacing.html">Pacing</a>
+              <a href="quiz.html">EKG Quiz</a>
+            </div>
+              </div>
+          </div>
+           </div>
+        
+        </nav>
+      
+        <main class="content" role= "main">
+          <header class= "container" role="banner">
+    
+          
+         <section>
+          <h2 id= "setParams">Select and Set Parameters:</h2><br>
+             <figure class= "figParameters">
+            <img class= "howToImg" src="editedTeleHowTos/heartRateParameters.jpg" alt= "How to Set HeartRate Parameters"> 
+            <figcaption class= "capParameters">Example: Set heart-rate parameters.</figcaption> 
+        </figure>
+        <br>
+        <figure class= "figParameters">
+            <img class= "howToImg" src="editedTeleHowTos/spo2Parameters.jpg" alt="How to Set Spo2 Parameters"> 
+            <figcaption class= "capParameters">Example: Set Spo2 parameters.</figcaption>
+        </figure>
+        <br>
+        <p>Left click on or beside heartrate or Spo2 numeric, and a small box will pop up. In this box you can set the heart rate limits.</p>
+        <br>
+      </section>
+        <section>
+        <h2 id= "changeLeads">Change leads/waves & adjust Size.</h2><br>
+       
+            <figure class= "figParameters">
+           <img class= "howToImg" src="editedTeleHowTos/changeWave.jpg" alt="How to change Leads."> 
+           <figcaption class= "capParameters">Example: change out waveform.</figcaption> 
+       </figure>
+       <br>
+       <figure class= "figParameters">
+           <img class= "howToImg" src="editedTeleHowTos/adjustSz.jpg" alt="How to adjust size"> 
+           <figcaption class= "capParameters">Example: Change primary/secondary leads & Adjust size of waveform.</figcaption>
+       </figure>
+       <br>
+       <p>Left click beside waveform that you want to change. ***NOTE: If the patient has an A-line then 
+         it should be set as the secondary waveform.</p>
+        <p>Left click on the lead numeric and select lead. In this panel you can also size up or size down the wave.
+     <br>
+        </section>
+        <section>
+          <h2 id= "alarmMessages">Alarm Messages:</h2><br>
+        
+              <figure class= "figParameters">
+             <img class= "howToImg" src="editedTeleHowTos/viewAlarmMessages.jpg" alt="How to view alarm messages."> 
+             <figcaption class= "capParameters">Example: View Alarm Parameters.</figcaption> 
+         </figure>
+         <br>
+          <p>If a patient is yellow or red alarming click on the alarm message in the top right corner of the patient sector to view what triggered the alarm.</p>
+             <p>***Warning: If you click anywhere in the patient sector it will silence the alarm. Per policy alarms should not be silenced from the monitor room 
+              this could cause a delay in life-saving intervention and lead to an unfavorable patient outcome.</p> 
+        
+        <p>You may be wondering, "How do I respond to alarms". No worries! There is a guide for that too. Just click 
+          <a class= "controlNursingLink" href= "redAlarmAlgorithms.html" target="_blank"><strong><i>here!</i></strong></a> 
+       </p>
+        
+        </section>
+        </header> 
+        </main>
+      </div>
+<hr class="footerLine">
+<!-- Footer -->
+    <footer role="contentinfo">
+    
+                    <span class="copyright">&copy;2020 CICU TELEMETRY GUIDE</span>
+                    <div class="disclaimer">This website is intended for use by medical professionals for educational
+                      purposes only. For medical care, please contact a healthcare provider.
+                    </div>
+    </footer> 
+    
+        <!-- JS (Hamburger Menu)-->
+        <script src= "JS/hamburger.js"></script>
+
+    
+        
+
+    </body>
+</html>

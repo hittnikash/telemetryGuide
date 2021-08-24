@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <!-- Title-->
+        <title>CICU Telemetry Guide</title>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <meta name="description" content= "Telemetry Reference Guide"/>
+        <meta name="author" content="Ashley Needy"/>
+    <!--Link to CSS -->  
+    <link rel="stylesheet" href="CSS/normalize.css"/>
+    <link rel="stylesheet" href="CSS/styles.css"/>
+</head>
+<body>
+<!-- Header -->
+<div class= "wrapper">
+ 
+
+    <nav role="navigation"> 
+        <div class="topnav" id="myTopnav">
+          <div class= "logo">
+            <img class= "nav-logo" src="icons/logo-nc.png" alt="logo"> 
+            <button onclick="toggle()" class="hamburgerButton" aria-label="hamburger navigation menu" style= "background: url(icons/hamburger.png) no-repeat" ></button>
+          </div>
+        </div>
+          <div class="hams">
+          <div id="navLinks">
+          <a href="index.html">Home</a>
+       
+          <div class="dropdown-a">
+            <button class="dropbtn-a">Checklist-Guide 
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content-a">
+              <a href="mt.html">Monitor-Tech</a>
+              <a href="nursingGuide.html">Nursing Guide</a>
+              <a href="PhillipsSystemGuide.html">System Guide</a>
+            </div>
+              </div>
+          <a href="techSupport.html">Tech-Support</a>
+          <div class="dropdown">
+            <button class="dropbtn">Telemetry
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="intro.html">EKG Intro & Interpretation</a>
+              <a href="PedsNormalVitalSigns.html">Peds Normal Vital Signs</a> 
+              <a href="redAlarmAlgorithms.html">Red Alarm Algorithms</a> 
+              <a href="paper.html">EKG Paper</a>
+              <a href="nomenclature.html">EKG Nomenclature</a>
+              <a href="rhythm.html">Rhythm</a>
+              <a href="heartRate.html">Heart Rate</a>
+              <a href="refrence.html">EKG Reference</a>
+              <a href="artifact.html">Telemetry Artifact</a>
+              <a href="pacing.html">Pacing</a>
+              <a href="quiz.html">EKG Quiz</a>
+            </div>
+              </div>
+          </div>
+           </div>
+        
+        </nav>
+        <main class="content" role= "main">
+          <header class= "container" role="banner">
+    
+            
+         <section>
+          <h2 id= "viewPTserver">View Patients on Server:</h2><br>
+             <figure class= "figParameters">
+            <img class= "howToImg" src="editedTeleHowTos/actionButtons.jpg" alt="Action Buttons."> 
+            <figcaption class= "capParameters">Example: Action Buttons.</figcaption> 
+        </figure>
+        <p>Start by rolling the mouse over a sector, the action buttons will appear at the bottom
+          of the sector.</p>
+    
+        <figure class= "figParameters">
+            <img class= "howToImg" src="editedTeleHowTos/viewPtonServer.jpg" alt="How to view any patient on Server."> 
+            <figcaption class= "capParameters">Example: View Patient on Server.</figcaption> 
+        </figure>
+  
+         <p>Click on patient window to use the drop-downs to select the unit and room number</p>
+           <br>
+
+           <h2>ECG Analysis:</h2><br>
+           <section>
+               <figure class= "figParameters">
+              <img class= "howToImg" src="editedTeleHowTos/ECGanalysis.jpg" alt="ECG Analysis"> 
+              <figcaption class= "capParameters">Example: ECG Analysis</figcaption> 
+          </figure>
+          <p> Start by hovering over the patient sector. The action buttons will appear. Next, hover over the button labeled 'patient window'
+            a second option- ECG Analysis will dropdown. Select ECG Analysis.
+          </p><br>
+          <br>
+          <figure class= "figParameters">
+              <img class= "howToImg" src="editedTeleHowTos/reLearnArrythmia.jpg" alt="Re-learn Arrythmia"> 
+              <figcaption class= "capParameters">Example: Re-learn Arrythmia</figcaption> 
+          </figure>
+          <br>
+           
+          <p>In this window you can view all the leads set primary & secondary leads, see beat annotation, relearn arrythmia, and lastly change from 
+              multi-lead analysis to single-lead analysis.</p><br>
+            
+           <h2 id= "beat">Beat Annotation</h2>   
+          <p> Beat annotation is a great tool to see how the system is interpreting a rhythm. The letters above each beat allow you to see how the monitor
+              is interpreting each beat. N = Normal, V = Ventricular. </p><br>
+             
+            <h2 id= "reLearn">Re-learn Arrythmia</h2>  
+          <p>The button labeled Relearn Arrhy can be used to relearn a rhythm when the monitor
+              is misinterpreting an arrythmia & causing artifact alarms</p><br> 
+            
+            <h2 id= "leads">Multi-lead to Single-lead</h2>  
+          <p>Lastly in this window you can see the option to switch the mode from multi-lead analysis to single-lead analysis. This should be used only after 
+             other measures are taken such as, switching the primary & secondary leads, changing the electrodes and setup on the patient- 
+             (ensure the electrodes make good contact). In addition changing from multi to single-lead analysis is usually only necesary for some PACED
+             patients that alarm consistently for artifact. Alert the R.N caring for the patient if you believe this mode needs to be changed. 
+             Ensure the R.N is aware that by changing this mode the monitor will only analyze the primary lead.
+          </p>  
+        </section>
+        </header> 
+        </main>
+      </div>
+<hr class="footerLine">
+<!-- Footer -->
+    <footer role="contentinfo">
+    
+                    <span class="copyright">&copy;2020 CICU TELEMETRY GUIDE</span>
+                    <div class="disclaimer">This website is intended for use by medical professionals for educational
+                      purposes only. For medical care, please contact a healthcare provider.
+                    </div>
+    </footer> 
+    
+        <!-- JS (Hamburger Menu)-->
+        <script src= "JS/hamburger.js"></script>
+
+    
+        
+
+    </body>
+</html>
