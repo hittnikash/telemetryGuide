@@ -258,8 +258,8 @@ text-align: center;
 
 /* .openbtn:hover, 
 .openOTHERbtn:hover {
-   border: #f68923;
-} */
+  background-color: #ea1d48;
+}  */
 
 .sidebar {
   height: 0; /* 100% Full-height */
@@ -316,7 +316,7 @@ text-align: center;
 /* The button used to open the sidebar */
 .openbtn {
   font-size: 1.5rem;
-  height: 53px;
+  height: 48px;
   cursor: pointer;
   background-color: #09a6d1;
   color: white;
@@ -326,8 +326,10 @@ text-align: center;
   cursor: pointer;
   z-index: 3;
   position: absolute;
-  top: 16%;
-  left: 75%;
+  /* top: 16%; */
+  /* left: 75%; */
+  top: 6.5rem;
+  left: 19rem;
 }
 
 .openOTHERbtn {
@@ -343,8 +345,10 @@ text-align: center;
   /* box-shadow: 1px 1px #696969;  */
   z-index: 1;
   position: absolute;
-  top: 18%;
-  left: 60%;
+  /* top: 18%;
+  left: 60%; */
+  top: 7rem;
+  left: 15rem;
 
 }
 
