@@ -265,7 +265,7 @@ text-align: center;
   height: 100%; /* 100% Full-height */
   width: 0; /* 0 width - change this with JavaScript */
   position: fixed; /* Stay in place */
-  z-index: 1; /* Stay on top */
+  z-index: 5; /* Stay on top */
   top: 90;
   left: 0;
   padding-top: 15%;
@@ -283,7 +283,7 @@ text-align: center;
   position: fixed;
   top: 90px;
   left: 0;
-  z-index: 1;
+  z-index: 4;
   border-radius: 5px;
   background-color: #09a6d1;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
@@ -320,12 +320,11 @@ text-align: center;
   color: #fff;
 }
 
-.h3SideNav {
-  display: inline-block;
+.sideNaveh2 {
   color: #fff;
-  cursor: pointer;
-  margin-right: 20%;
-  margin-left: 5%;
+  margin-left: -22%;
+  margin-bottom: 10%;
+
 }
 
 
@@ -333,50 +332,44 @@ text-align: center;
 .openbtn {
   position: fixed;
   height: 40px;
-  width: 220px; 
+  width: 65px; 
   background-color: #ea1d48;
   border-radius: 110px;
-  padding: 1px;
-  /* top: 15rem;
-  left: -11rem;  */
   margin-top: 1.5rem;
-  margin-left: -12.6rem;
+  margin-left: -1.5rem;
   color: #fff;
-  z-index: 5;
-}
-
-.openbtn:hover {
-  margin-left: 10px;
-  transition: 0.20s;
+  z-index: 3;
+  font-size: 1.5rem;
+  padding-left: 5%;
 }
 
 .openOTHERbtn {
   position: fixed;
   height: 40px;
-  width: 260px; 
-  padding: 10px;
+  width: 65px; 
+  padding-left: 5%;
   border-radius: 110px;
   background-color: #09a6d1;
   color: #fff;
-  /* top: 19rem;
-  left: -13.5rem; */
   margin-top: 4rem;
-  margin-left: -15rem;
+  margin-left: -1.5rem;
+  z-index: 3;
+  font-size: 1.5rem;
 
 }
 
 .otherOtherBtn {
   position: fixed;
   height: 40px;
-  width: 260px; 
-  padding: 10px;
+  width: 65px; 
   border-radius: 50px;
   background-color: #f68923;
   color: #fff;
-  /* top: 23rem;
-  left: -13.5rem;  */
   margin-top: 7rem;
-  margin-left: -13.8rem;
+  margin-left: -1.5rem;
+  /* z-index: 1; */
+  font-size: 1.5rem;
+  padding-left: 5%;
   
 }
 
