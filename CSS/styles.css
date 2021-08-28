@@ -262,27 +262,33 @@ text-align: center;
 }  */
 
 .sidebar {
-  height: 0; /* 100% Full-height */
-  width: 100%; /* 0 width - change this with JavaScript */
-  position: absolute; /* Stay in place */
-  z-index: 2; /* Stay on top */
-  top: 100px;
+  height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 90;
   left: 0;
-  background-color: #09a6d1;
+  padding-top: 15%;
+  border-radius: 5px;
+  padding-top: -15%;
+  background-color: #ea1d48;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   overflow-x: hidden; /* Disable horizontal scroll */
-  padding-top: 10px; /* Place content 200px from the top */
   transition: 0.5s; /* 0.5 second transition effect to slide in the sidebar */
 }
 
 .otherSidebar {
-  height: 0;
-  width: 100%;
-  position: absolute;
-  top: 110px;
+  height: 100%;
+  width: 0;
+  position: fixed;
+  top: 90px;
   left: 0;
-  background-color: #f68923;
+  z-index: 1;
+  border-radius: 5px;
+  background-color: #09a6d1;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   overflow-x: hidden;
-  padding-top: 10px;
+  padding-top: 15%;
   transition: 0.5s;
 }
 
@@ -295,79 +301,100 @@ text-align: center;
   color: #fff;
   display: block;
   cursor: pointer;
+  transition: 0.3s;
 }
 
 /* When you mouse over the navigation links, change their color */
-.sidebar a:hover,
+/* .sidebar a:hover,
 .otherSidebar a:hover {
   color: #f1f1f1;
-}
+} */
 
 /* Position and style the close button (top right corner) */
 .sidebar .closebtn,
 .otherSidebar .closebtn {
   position: absolute;
-  top: -12px;
+  top: -10px;
   right: 0;
   font-size: 36px;
-  /* margin-left: 50px; */
+  color: #fff;
 }
+
+.h3SideNav {
+  display: inline-block;
+  color: #fff;
+  cursor: pointer;
+  margin-right: 20%;
+  margin-left: 5%;
+}
+
 
 /* The button used to open the sidebar */
 .openbtn {
-  font-size: 1.5rem;
-  height: 48px;
-  cursor: pointer;
-  background-color: #09a6d1;
-  color: white;
-  padding: 8px 8px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  z-index: 3;
-  position: absolute;
-  /* top: 16%; */
-  /* left: 75%; */
-  top: 6.5rem;
-  left: 19rem;
+  position: fixed;
+  height: 40px;
+  width: 220px; 
+  background-color: #ea1d48;
+  border-radius: 110px;
+  padding: 1px;
+  /* top: 15rem;
+  left: -11rem;  */
+  margin-top: 1.5rem;
+  margin-left: -12.6rem;
+  color: #fff;
+  z-index: 5;
+}
+
+.openbtn:hover {
+  margin-left: 10px;
+  transition: 0.20s;
 }
 
 .openOTHERbtn {
-  font-size: 1.5rem;
-  cursor: pointer;
+  position: fixed;
   height: 40px;
-  background-color: #f68923;
-  color: white;
-  padding: 8px 8px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  /* box-shadow: 1px 1px #696969;  */
-  z-index: 1;
-  position: absolute;
-  /* top: 18%;
-  left: 60%; */
-  top: 7rem;
-  left: 15rem;
+  width: 260px; 
+  padding: 10px;
+  border-radius: 110px;
+  background-color: #09a6d1;
+  color: #fff;
+  /* top: 19rem;
+  left: -13.5rem; */
+  margin-top: 4rem;
+  margin-left: -15rem;
 
 }
 
-/* .openbtn:hover, 
-.openOTHERbtn:hover {
-   border: #f68923;
-} */
+.otherOtherBtn {
+  position: fixed;
+  height: 40px;
+  width: 260px; 
+  padding: 10px;
+  border-radius: 50px;
+  background-color: #f68923;
+  color: #fff;
+  /* top: 23rem;
+  left: -13.5rem;  */
+  margin-top: 7rem;
+  margin-left: -13.8rem;
+  
+}
 
-/* .titleButton { 
+.titleButton {
   display: flex;
-  /* flex-direction: row;
-  justify-content: flex-end; 
-
-} */
+  justify-content: flex-start;
+  justify-items: flex-start;
+  justify-self: flex-start;
+  align-content: flex-start;
+  align-items: flex-start;
+  align-self: flex-start;
+  justify-content: flex-start;
+}
 
 
 /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
 #main, #main2 {
-  transition: margin-Bottom .5s; /* If you want a transition effect */
+  transition: margin-left .5s; /* If you want a transition effect */
   padding: 5px;
 }
 
