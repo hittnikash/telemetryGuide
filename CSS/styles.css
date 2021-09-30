@@ -259,7 +259,7 @@ text-align: center;
   width: 0; /* 0 width - change this with JavaScript */
   position: fixed; /* Stay in place */
   z-index: 5; /* Stay on top */
-  top: 90;
+  top: 100;
   left: 0;
   padding-top: 15%;
   border-radius: 5px;
@@ -267,6 +267,7 @@ text-align: center;
   background-color: #ea1d48;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   overflow-x: hidden; /* Disable horizontal scroll */
+  overflow-y: auto;
   transition: 0.5s; /* 0.5 second transition effect to slide in the sidebar */
 }
 
@@ -311,6 +312,7 @@ text-align: center;
   right: 0;
   font-size: 36px;
   color: #fff;
+  
 }
 
 .sideNaveh2 {
