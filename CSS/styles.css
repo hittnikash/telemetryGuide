@@ -14,34 +14,26 @@ p {
   font-size: 1rem;
   color: #000;
   flex: 1 1 auto;
-  width: 80%;
-  margin-left: 10%;
+  width: 80%; 
   padding: 2%;
   }
 
-h1 {
+
+
+h1, h2, h3 {
   font-weight: 500;
   text-transform: uppercase;
   font-size: 1.2rem;
   letter-spacing: 4px;
   text-align: center;
-  width: 75%;
   }
 
-h2 {
-  font-weight: 500;
-  text-transform: uppercase;
+h2, h3 {
   font-size: 1rem;
-  letter-spacing: 4px;
-  text-align: center;
-  width: 80vw;
+  letter-spacing: 3.5px;
   }
 
 h3 {
-  font-weight: 500;
-  text-transform: uppercase;
-  font-size: 1rem;
-  letter-spacing: 3px;
   text-align: left;
   }
 
@@ -76,9 +68,10 @@ main {
   flex-direction: column;  
   align-items: center;
 }
-
-.showForDesktop {
-  display: none;
+.images {
+  display: flex;
+  flex-direction: column;  
+  align-items: center;
 }
 
 .intro-img {
@@ -523,10 +516,6 @@ line-height: 150%;
   margin-top: 5%;
   }
 
-.intro {
-  display: flex;
-  flex-direction: column;
-}  
 
 .acc-p {
 width:  260px;
@@ -535,13 +524,21 @@ margin-left: 5%;
 }  
 
 .list {
-  /* margin-left: 15%; effect nomenclature */
-  padding: 10%;
-  list-style-type: circle;
-  color: #fff;
-  line-height: 200%;
-}
 
+  padding: 5%;
+  list-style-type: circle;
+  color: #000;
+  line-height: 150%;
+  width: 95%;
+  margin-left: 10%;
+}
+.systemList {
+ margin-left: 5%;
+  list-style-type: circle;
+  color: #000;
+  width: 100%;
+
+}
 /* .titleButton { 
   display: none;
 } */
@@ -918,10 +915,6 @@ span {
    margin-left: 5%;
  }
 
- .list {
-   padding: 5%;
-   /* margin-left: 10%; */
- }
 
  .intro-list {
    width: 30%;
@@ -1058,9 +1051,7 @@ li:hover + img {
   width: 40%;
 }
 
-.list {
-  color: #000;
-}
+
 
  /* main {
     align-items: flex-start;

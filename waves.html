@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <!-- Title-->
+        <title>CICU Telemetry Guide</title>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <meta name="description" content="Telemetry Reference Guide"/>
+        <meta name="author" content="Ashley Needy"/>
+    <!--Link to CSS -->  
+    <link rel="stylesheet" href="CSS/normalize.css"/>
+    <link rel="stylesheet" href="CSS/styles.css"/>
+    <script src="https://use.fontawesome.com/9d6927737f.js"></script>
+</head>
+<body>
+<!-- Header -->
+<div class= "wrapper">
+ 
+
+  <nav role="navigation"> 
+    <div class="topnav" id="myTopnav">
+      <div class= "logo">
+        <img class= "nav-logo" src="icons/logo-nc.png" alt="logo"> 
+        <button onclick="toggle()" class="hamburgerButton" aria-label="hamburger navigation menu" style= "background: url(icons/hamburger.png) no-repeat" ></button>
+      </div>
+    </div>
+      <div class="hams">
+      <div id="navLinks">
+      <a href="index.html">Home</a>
+   
+      <div class="dropdown-a">
+        <button class="dropbtn-a">Checklist-Guide 
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content-a">
+          <a href="mt.html">Monitor-Tech</a>
+          <a href="nursingGuide.html">Nursing Guide</a>
+          <a href="PhillipsSystemGuide.html">System Guide</a>
+        </div>
+        </div>
+      <a href="techSupport.html">Tech-Support</a>
+      <div class="dropdown">
+        <button class="dropbtn">Telemetry
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="intro.html">EKG Intro & Interpretation</a>
+          <a href="PedsNormalVitalSigns.html">Peds Normal Vital Signs</a> 
+          <a href="redAlarmAlgorithms.html">Red Alarm Algorithms</a> 
+          <a href="paper.html">EKG Paper</a>
+          <a href="nomenclature.html">EKG Nomenclature</a>
+          <a href="rhythm.html">Rhythm</a>
+          <a href="heartRate.html">Heart Rate</a>
+          <a href="refrence.html">EKG Reference</a>
+          <a href="artifact.html">Telemetry Artifact</a>
+          <a href="pacing.html">Pacing</a>
+          <a href="quiz.html">EKG Quiz</a>
+        </div>
+          </div>
+      </div>
+       </div>
+    </nav>
+     <main class="content" role= "main">
+      <header class= "container" role="banner">
+       <section class= "intro-NOMA">
+
+<!-- side Bar nav -->
+<div id="mySidebar" class="sidebar">
+    <h2 class= "sideNaveh2">Nomenclature</h2>
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="waves.html#Pwave">P-Wave</a>
+    <a href="waves.html#QRS">QRS-Complex</a>
+    <a href="waves.html#Twave">T-Wave</a>
+    <a href="waves.html#uWave">U-Wave</a>
+    <a href="waves.html#SegInt">Segments & Intervals</a>
+    <a href="waves.html#PRI">PR-Interval</a>
+    <a href="waves.html#stSeg">ST-Segment</a>
+    <a href="waves.html#qtI">QT-Interval</a>
+    <a href="waves.html#qrsI">QRS-Interval</a>
+    <a href="waveshtml#rrI">RR-Interval</a>
+    <a href="waves.html#ppI">PP-Interval</a>
+  </div>
+</section>
+<section>
+<div id="main" class="titleButton">
+  <button class="openbtn" onclick="openNav()"><i class="fa fa-heartbeat" alt= "Nomenclature" aria-hidden="true"></i>
+  </button> 
+</div>
+
+ <h1 id= "Pwave">The P-Wave</h1>
+          <img class= "techSm" src="resources/createdImgs/p.jpg" alt= "P-Wave"> 
+            <p>
+              The P-wave is the first deflection and is normally a positive waveform representing atrial 
+              depolarization. Atrial depolarization is triggered by an electrical impulse from the hearts principal pacemaker, the SA Node (sino-atrial node).
+              This impulse is what causes the contraction of the atria in your heart.
+              </p>
+
+            <p>
+              The P-wave shape is usually smooth & rounded and precedes the QRS complex. 
+              The normal duration is 0.06-0.11 seconds. 
+               When evaluating the P-Wave, ask yourself the following:</p>
+           <ul class= "list">
+            <li>Are they present?</li>
+            <li>Do they occur regularly?</li>
+            <li>Is there one P-wave for each QRS complex?</li>
+            <li>Are the P-Waves smooth, rounded & upright?</li>
+            <li>Do all P-Waves have similar shapes?</li>
+          </ul> 
+          <br>
+        </section>  
+<br>
+<section>
+    <h1 id= "QRS">The QRS Complex</h1>
+         
+          <img class= "techSm" src="resources/createdImgs/qrs.jpg" alt= "QRS Complex"> 
+          <p>The QRS complex follows the P wave & represents  ventricular depolarization 
+            and contraction.</p>
+            
+            <p>It normally begins with a downward deflection, Q; a larger upward deflection,
+             R; and then a downward S wave.</p>
+             <br>
+            <p><b>When evaluating a QRS Complex, ask yourself the following:</b></p>
+            <ul class= "list">
+             <li>Does the QRS interval fall within the range of 0.08-0.10 seconds?</li>
+             <li>Are the QRS complexes similar in appearance across the ECG tracing?</li>
+           </ul>
+          <br>
+          </section>
+  <br>
+  
+  <section>
+    <h1 id= "Twave">The T-Wave</h1>
+   <img class= "techSm" src="resources/createdImgs/t.jpg" alt= "T-Wave"> 
+              <p>
+                The T wave is normally an upward waveform representing repolarization of the ventricles.
+                 It is a slightly asymmetrical waveform that follows the QRS complex. A t-wave will usually follow
+                 the same direction as the QRS complex that preceded it (positive or negative). 
+              </p>  
+              
+              <p>When a T-wave occurs in the opposite direction of the QRS complex it usually signifies some sort of cardiac
+                  pathology.
+              </p>
+         
+              <p><b>When evaluating the T-Wave, ask yourself the following:</b></p>
+              <ul class= "list">
+               <li>Do the T waves have a downward (negative) deflection? </li>
+               <li>Are the T waves tall, with pointed peaks?</li>
+             </ul>
+             <br>
+            </section>
+  <br>
+  
+  <section>
+    <h1 id= "uWave">The U-Wave</h1>
+  <img class= "techSm" src="resources/createdImgs/u.jpg" alt= "U-Wave">  
+   <p>U-Wave</p>
+     <p>
+       The U-Wave succeeds the T wave & indicates the recovery of the Purkinje conduction fibers. 
+       This wave-form may not be observable. </p>
+       </section>
+         <br>
+  
+         <section>
+          <!--Segments & intervals-->
+         <h1 id= "SegInt">Segments & Intervals:</h1>
+             <br>
+                <p><b>Electrocardiographic Segment:</b> Line (usually isoelectric) that connects 
+                  two waves without including either one of them.</p> 
+         
+                <p><b>Electrocardiographic Interval:</b> Portion of the EKG that includes a segment
+                   and one or more waves.</p>  
+                 </section>   
+                 <br>
+         
+          <section>
+         <!-- PRI -->
+         <h1 id= "PRI">PR-Interval:</h1>
+                 <img class= "techSm" src="resources/createdImgs/PRI.jpg" alt= "PR-Interval"> 
+             
+                <p>The PR-Interval indicates AV conduction time, to measure this interval- 
+                  start from the beginning of the P wave until the beginning of the QRS complex. 
+                </p>
+                  <p>The normal  interval is 0.12 to 0.20 seconds. This interval shortens with increased 
+                  heart rate.</p>
+         
+                  <p><b>When evaluating the PRI:</b></p>
+                <ul class= "list">
+                  <li>Does the PR-Interval fall within the norm of 0.12-0.20 seconds?</li>
+                  <li>Is the PR-Interval constant across the ECG tracing?</li>
+                </ul>
+         </section>
+         <br>
+         <section>
+         <!-- st-segment -->
+         <h1 id= "stSeg">ST-Segment:</h1>
+         <img class= "techSm" src="resources/createdImgs/st-segment.jpg" alt= "St-Segment"> 
+                
+                <p> The ST segment represents the early part of ventricular repolarization & is
+                   measured at the baseline from the end of the QRS complex to the beginning of the T wave. 
+                 </p>
+               </section>
+            <br> 
+            <section>
+         <!-- QT-Interval -->
+         <h1 id= "qtI">QT-Interval:</h1>
+                 <img class= "techSm" src="resources/createdImgs/QT.jpg" alt= "QT-Interval"> 
+                 <p>
+                  The QT interval represents the time of ventricular activity including both depolarization and repolarization.</p>
+                 <p> It is measured from the beginning of the QRS complex to the end of the T wave.
+                  The normal QT interval is .36 to 0.44 seconds (9-11 boxes). It is important to note that the QT-interval will vary with patient gender, age & heart rate.</p>
+                  <p>Another guideline is that normal QT intervals are less than half of the R-R interval for heart rates below 100 bpm.
+                 </p> 
+               </section>
+              <br> 
+         <section>
+         <!-- QRS Interval -->
+         <h1 id= "qrsI">QRS-Interval</h1>
+                 <img class= "techSm" src="resources/createdImgs/qrs-interval.jpg" alt= "QRS-Measurement"> 
+              <p>The QRS interval measures the total time of ventricular depolarisation. It is measured from the beginning of the 
+                Q-wave until the end of the S-wave & the normal value ranges 0.06s & 0.10s.</p>
+               </section>
+            <br> 
+         <section>
+            <!-- R-R-interval -->
+            <h1 id= "rrI">R-R Interval</h1>
+             <img class= "techSm" src="resources/createdImgs/r-r.jpg" alt= "R-R interval"> 
+            <p>The R-R interval is the distance between two consecutive R waves & represents ventricular rate.</p>
+              <p>The duration of the R-R interval depends on heart rate. In sinus rhythm this interval 
+              should be constant.</p> 
+              <p>The R-R is measured from the beginning of an R-wave to the beginning of the next 
+              R-wave.</p>
+             </section>
+             <br>
+             <section>
+              <!-- P-P-interval -->
+              <h1 id= "ppI">P-P Interval</h1>
+               <img class= "techSm" src="resources/createdImgs/p-p.jpg" alt= "R-R interval"> 
+              <p>The P-P interval is the distance between two consecutive P waves & represents 
+                atrial rate. The duration of the P-P interval depends on heart rate.</p> 
+                <p>In sinus rhythm this interval should be constant. The P-P is measured from the beginning of an P-wave to the 
+                beginning of the next P-wave.
+              </p>     
+             </section>
+           
+             <br>
+          </section>
+</header> 
+</main>
+</div>
+<hr class="footerLine">
+<!-- Footer -->
+    <footer role="contentinfo">
+ 
+                    <span class="copyright">&copy;2020 CICU TELEMETRY GUIDE</span>
+                    <div class="disclaimer">This website is intended for use by medical professionals for educational
+                      purposes only. For medical care, please contact a healthcare provider.
+                    </div>
+    </footer> 
+    
+        <!-- JS (Hamburger Menu)-->
+        <script src= "JS/hamburger.js"></script>
+        <script src= "JS/sideBar.js"></script>
+        
+
+    </body>
+  </html>
