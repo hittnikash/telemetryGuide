@@ -15,6 +15,8 @@
 <body>
 <!-- Header -->
 <div class= "wrapper">
+ 
+
     <nav role="navigation"> 
         <div class="topnav" id="myTopnav">
           <div class= "logo">
@@ -50,6 +52,7 @@
               <a href="rhythm.html">Rhythm</a>
               <a href="heartRate.html">Heart Rate</a>
               <a href="refrence.html">EKG Reference</a>
+              <a href="refrence.html">EKG Calculators</a>
               <a href="artifact.html">Telemetry Artifact</a>
               <a href="pacing.html">Pacing</a>
               <a href="quiz.html">EKG Quiz</a>
@@ -59,75 +62,65 @@
            </div>
         
         </nav>
-      
         <main class="content" role= "main">
           <header class= "container" role="banner">
+      <!-- Heart Rate Calc -->
+                    <button class="accordion">EKG Calculators</button>
+                    <div class="panel">
+                        <h1>HEART-RATE</h1>
+                        <form>
+                            <fieldset id="HR">
+                                <input required type="text" class="HR-Input" id="heartRate" name="heart-rate"
+                                    placeholder="RR:"></input>
+                                <span class="toolTipabv">Can only contain numbers 0-9</span>
+                                <button type="button" id="HRbtn">=</button>
+                            </fieldset>
+                           
+                            <p id="HR-Result"></p>
+                            
+                        </form>
 
-     <section>
-      <h2 id= "productInfo">Phillips Product Information:</h2> 
-      <br>
-      <figure class= "figParameters">
-        <img class= "howToImg" src="editedTeleHowTos/productInfo.jpg" alt= "Product Info"> 
-        <figcaption class= "capParameters">Example: Product Info</figcaption> 
-    </figure>
-    <p>You can view Phillips product information, including the serial number, (which you will need should you ever
-        require contacting Phillips support) by selecting Phillips on the top right hand corner of any monitor.
-    </p>
-    <br>
-    </section>
+<!-- QT Calc -->
+                        <button class="accordion">QTC- Calculator</button>
+                        <div class="panel">
+                            <h1>QTC Calculator</h1>
+                            <form>
+                                <fieldset id="QTC">
 
-    <section>
-        <h2 id= "productSupport">Product Support:</h2> 
-        <br>
-        <figure class= "figParameters">
-          <img class= "howToImg" src="editedTeleHowTos/prductSupport.jpg" alt= "Product Support"> 
-          <figcaption class= "capParameters">Example: Product Support</figcaption> 
-      </figure>
-      <p>By selecting the search icon on the top, far right of the patient window you can find product support by searching alarm
-        messages, and event definitions, etc...
-      </p>
-      <br>
-      </section>
+                                    <input required type="text" class="QT-Input" id="QT" name="QT-Cal"
+                                    placeholder="QT:"></input>
+                                <span class="toolTipabv">Can only contain numbers 0-9</span>
 
-      <section>
-        <h2 id= "TopBar">TopBar Icons:</h2> 
-        <br>
-        <figure class= "figParameters">
-          <img class= "howToImg" src="editedTeleHowTos/topBar.jpg" alt= "TopBar Icons"> 
-          <figcaption class= "capParameters">Example: TopBarIcons</figcaption> 
-      </figure>
-      <p>ADD LATER>>>>>>>>>>>>
-      </p>
-      <br>
-      </section>
-
-      <!-- Bediside Monitor -->
-      <section>
-        <h1>Bedside Monitor</h1><br>
-        <figure class= "figParameters">
-          <img class= "howToImg" src="images/bluredBedMT.jpg" alt= "TopBar Icons"> 
-          <figcaption class= "capParameters">Example: Bedside Monitor</figcaption> 
-      </figure><br>
-<h2 id= "butterfly">Butterfly Mode</h2>
- <p>Some actions can only be prformed at the bediside monitor. These actions include filtering leads, printing trends &
-   placing a patient on butterfly mode.
- </p>
-
- <p>To place a patient on "Butterfly Mode", select profile in the top right corner of the screen, a list of options
-   will appear, including butterfly mode. Once this mode is selected all waveform colors will change to blue & the monitor 
-  will no longer alarm for events. </p>
-<br>
-  <h2 id= "filterLeads">Filter Leads</h2>
-<p>To filter leads, select a EKG waveform & a small grey box will appear, with the option to filter. Select filter. 
-  This is one way to clear up artifact at the baseline. 
-</p><br>
-<h2 id= "printTrends">Print Trends</h2>
-<p>ADD CONTENT YO!
-</p>
-      </section>
+                                    <input required type="text" class="rootRR-Input" id="rootRR" name="root-RR"
+                                        placeholder="RR:"></input>
+                                    <span class="toolTipabv">Can only contain numbers 0-9</span>
+                                    <button type="button" id="QTCbtn">=</button>
+                                </fieldset>
+                               
+                                <p id="QTC-Result"></p>
+                                
+                            </form>
+             
+                        
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+          </section>
 
         </header> 
         </main>
@@ -144,7 +137,9 @@
     
         <!-- JS (Hamburger Menu)-->
         <script src= "JS/hamburger.js"></script>
-
+        <script src= "JS/accordian.js"></script>
+        <script src= "JS/regex.js"></script>
+        <script src= "JS/QTCCalc.js"></script>
     
         
 
