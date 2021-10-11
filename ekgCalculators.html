@@ -64,10 +64,12 @@
         </nav>
         <main class="content" role= "main">
           <header class= "container" role="banner">
+<section>
       <!-- Heart Rate Calc -->
-                    <button class="accordion">EKG Calculators</button>
-                    <div class="panel">
+                    <button class="accordion">Heart-Rate Calculator</button>
+                    <div class="panel"><br>
                         <h1>HEART-RATE</h1>
+                        <h2 class= "h2Formula">(Formula: 60/RR = HR)</h2>
                         <form>
                             <fieldset id="HR">
                                 <input required type="text" class="HR-Input" id="heartRate" name="heart-rate"
@@ -75,18 +77,17 @@
                                 <span class="toolTipabv">Can only contain numbers 0-9</span>
                                 <button type="button" id="HRbtn">=</button>
                             </fieldset>
-                           
                             <p id="HR-Result"></p>
-                            
                         </form>
-
+</div>
 <!-- QT Calc -->
                         <button class="accordion">QTC- Calculator</button>
-                        <div class="panel">
+                        <div class="panel"><br>
                             <h1>QTC Calculator</h1>
+                            <h2 class= "h2Formula">(Bazett Formula:<br> QTc = QT/√RR)</h2>
                             <form>
+                              <div>
                                 <fieldset id="QTC">
-
                                     <input required type="text" class="QT-Input" id="QT" name="QT-Cal"
                                     placeholder="QT:"></input>
                                 <span class="toolTipabv">Can only contain numbers 0-9</span>
@@ -95,14 +96,22 @@
                                         placeholder="RR:"></input>
                                     <span class="toolTipabv">Can only contain numbers 0-9</span>
                                     <button type="button" id="QTCbtn">=</button>
-                                </fieldset>
-                               
+                                </fieldset>   
                                 <p id="QTC-Result"></p>
-                                
+                              </div>
                             </form>
-             
-                        
+                          </section>
+                       <section>
 
+      <p>The Heart rate calculator uses the simple 60/RR formula to calculate heart-rate.</p>
+      <p>The QT calculator utilizes Bazett's formula to calculate a corrrected QT. This formula results a
+        corrected QT by dividing the QT from the square root of the R-R.
+      </p>
+
+      <p>There are a few different QT calculators avaliable, Bazett's formula is often used due to it's simplicity. 
+        However it should be noted that Bazett's formula is most accurate with heartrates within the range of 60-100 bpm.</p>
+
+      <p></p>
 
 
 
@@ -120,8 +129,8 @@
 
     
     
-          </section>
-
+      
+    </section>
         </header> 
         </main>
       </div>

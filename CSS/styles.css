@@ -346,7 +346,7 @@ text-align: center;
 
 .sideNaveh2 {
   color: #fff;
-  margin-left: -22%;
+  margin-left: -20%; 
   margin-bottom: 10%;
 
 }
@@ -476,7 +476,7 @@ text-align: center;
   padding: 4px;
   position: absolute;
   width: 140px;
-  top: 280px;
+  top: 310px;
   left: 40px;
   text-transform: uppercase;
   }
@@ -504,13 +504,6 @@ text-align: center;
   justify-content: space-around;
   }
 
-.HR-Input, .QT-Input,
-.rootRR-Input  {
-  max-width: 35%;
-  max-height: 50px;
-  margin-top: 5%;
-  }
-
 #HRbtn, #QTCbtn  {
   display: inline-block;
   border-radius: 5px;
@@ -522,13 +515,17 @@ text-align: center;
   margin-top: 10%;
   }
 
+  #QTCbtn {
+    margin-left: 10%;
+  }
 
-
-.HR-Input, .QT-Input,
-.rootRR-Input {
+.HR-Input,  .QT-Input,
+.rootRR-Input  {
+  max-width: 30%;
+  max-height: 50px;
   margin-top: 10%;
   margin-bottom: 10%;
-  padding: 15px;
+  padding: 12px;
   width: 100%;
   height: auto;
   border-radius: 5px;
@@ -536,6 +533,10 @@ text-align: center;
   text-transform: uppercase;
   background-color: #08343c2e;
   }
+
+.QT-Input {
+  margin-left: 17px;
+}
 
 .HR-Input:focus,
 .QT-Input:focus
@@ -549,9 +550,10 @@ text-align: center;
   flex-direction: row;
   margin-left: 10%; 
  justify-content: center;
+}
 
-  
- 
+.h2Formula {
+  color: grey;
 }
 
 

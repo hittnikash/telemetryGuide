@@ -10,18 +10,24 @@ const rootInput = rrRoot.value;
     // get the square root of the inputed rr
   const root = Math.sqrt(rootInput);
 //   divide QTC inputed value by square root of rr 
-  const x = (QTC.value / root);
+  const x = (QTC.value/root);
 
   calculateResult.innerHTML = "<h1>QTC=   <h1>"  +  x.toFixed(2);
   console.log(x.toFixed(2));
 }
 
+
+
+
 // The RR may only be numbers 1-9 and may have a decimal point//
-// function isValidRR(rr) {
-//   return /^[1-9]\d*(\.\d+)?$/.test(rr);
-  
+// function isValidRR(RR) {
+//   return /^[1-9]\d*(\.\d+)?$/.test(RR);
 // }
-/* show element when show is true, hide when false */
+
+// function isValid(QT) {
+//   return /^[1-9]\d*(\.\d+)?$/.test(QT);
+// }
+// /* show element when show is true, hide when false */
 // function showOrHideTip(show, element) {
 //   if (show) {
 //     element.style.display = "inherit";
@@ -40,6 +46,5 @@ const rootInput = rrRoot.value;
    
 //   };
 // }
-/* Event Listeners */
-rrRoot.addEventListener("input", createListener(isValidRR))
-QTC.addEventListener("input", createListener(isValidRR))
+// /* Event Listeners */
+// rrRoot.addEventListener("input", createListener(isValidRR))

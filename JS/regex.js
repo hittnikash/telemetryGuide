@@ -3,6 +3,7 @@ const rr = document.getElementById("heartRate");
 const calcResult = document.getElementById("HR-Result");
 document.getElementById("HRbtn").onclick = calcHR;
 
+
 // ABV Calculator
 function calcHR() {
   const x = (60 / rr.value);
@@ -31,7 +32,6 @@ function createListener(validator) {
     const showTip = text !== "" && !valid;
     const tooltip = e.target.nextElementSibling;
     showOrHideTip(showTip, tooltip);
-   
   };
 }
 /* Event Listeners */
