@@ -93,9 +93,11 @@ main {
 /* Navigation */
 /* nav logo   */
 .nav-logo {
-  width: auto;
-  height: 70px;
-  margin-top: -5px;
+  /* width: auto;
+  height: 70px; */
+  height: 50px;
+  margin-top: 8px;
+  /* margin-top: -5px; */
   margin-left: -5px;
   Z-index: 4;
   }
