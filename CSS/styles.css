@@ -373,9 +373,6 @@ text-align: center;
 
 
 
-.controlNursingLink {
-  cursor: pointer;
-}
 
 /* PHILLIPS SYSTEM GUIDE */
 .howToImg {
@@ -592,21 +589,42 @@ color: #fff;
 margin-left: 5%;
 }  
 
-.list {
+/* links, clickable text */
+.list, .save-strip {
+  padding: 5%;
+  list-style-type: circle;
+  line-height: 145%;
+  width: 60%;
+  margin-left: 10%;
+  font-style: italic;
+  text-decoration: underline;
+  color:#09a6d1;
+}
+
+.save-strip {
+  padding: 0;
+  margin-left: 0;
+}
+/* review times list */
+.listrev {
   padding: 5%;
   list-style-type: circle;
   color: #000;
   line-height: 145%;
-  width: 60%;
+  width: 75%;
   margin-left: 10%;
-
+ 
+  
 }
+
 .systemList {
  margin-left: 10%;
   list-style-type: circle;
-  color: #000;
+  color: #09a6d1;
   width: 100%;
   font-style: italic;
+  text-decoration: underline;
+
 
 }
 /* .titleButton { 
@@ -767,7 +785,7 @@ li:hover + img {
 .Cmodal {
   cursor: pointer;
   width: 220px;
-  height: 420px;
+  height: 260px;
   display: flex;
   margin-top: -40%;
   margin-left: -5%;
@@ -784,11 +802,17 @@ li:hover + img {
   display: flex;
   flex-direction: column;
   margin-top: 2%;
-  margin-bottom: 80%;
   padding: 10px;
   border-radius: 5%;
-  
   } 
+
+
+  /* center heartrate param img */
+  .centerImg {
+    margin-left: 15%;
+  
+     
+  }
 
   #close {
     align-self: flex-end;
