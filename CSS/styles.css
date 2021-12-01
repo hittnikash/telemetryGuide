@@ -35,6 +35,12 @@ h3 {
   text-align: left;
   }
 
+/* calc h2 results */
+.h2Formula {
+  color: grey;
+}  
+
+/* device.html (Note that these devices are stored in the telemetry room.) */
 .note {
   font-size: .75rem;
   margin-top: -3%;
@@ -71,7 +77,13 @@ main {
   align-items: center;
 }
 
-/* images */
+.noma, .noma-Tabs, section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* IMAGES */
 .images {
   display: flex;
   flex-direction: column;  
@@ -84,30 +96,28 @@ main {
   margin-bottom: 2%;
 }
 
-.paper-img {
+.paper-img, .howToImg {
   width: 75%;
 }
 
-.wave-IMG {
+.wave-IMG, .NOMA-img {
   width: 95%;  
 }
 
-.NOMA-img {
-  width: 95%;
+#techSupport, .howToImg {
+  border-radius: 10px; 
 }
 
 /* Navigation */
-/* nav logo   */
+/* actual logo */
 .nav-logo {
-  /* width: auto;
-  height: 70px; */
   height: 50px;
   margin-top: 8px;
-  /* margin-top: -5px; */
   margin-left: -5px;
   Z-index: 4;
   }
 
+/* logo & hamburger menu grouped */
 .logo {
   display: flex;
   flex-direction: row;
@@ -132,7 +142,6 @@ main {
   overflow: hidden;
   position: relative;
   margin-top: 5%;
-
   }
 
 #navLinks, .hams, #navLinks a {
@@ -221,8 +230,6 @@ text-align: center;
   margin-top: -13px;
 }
 /* END NAVIGATION */
-
-
 
 /* LIGHTBOX */
 #lightbox {
@@ -353,7 +360,6 @@ text-align: center;
   color: #fff;
   margin-top: 7rem;
   margin-left: -1.9rem;
-  /* z-index: 1; */
   font-size: 1.5rem;
   padding-left: 8%;
 }
@@ -371,14 +377,8 @@ text-align: center;
 }
 /* END SIDEBAR NAV */
 
-
-
-
 /* PHILLIPS SYSTEM GUIDE */
-.howToImg {
-  width: 85%;
-}
-
+/* fig-captions */
 .figParameters {
   display: flex;
   flex-direction: column;
@@ -391,7 +391,7 @@ text-align: center;
   width: 80%;
   background-color: #000;
   color: #fff;
-  width: 85%;
+  width: 75%;
   margin-top: -10px;
   border-radius: 5px;
   text-align: center;
@@ -401,13 +401,13 @@ text-align: center;
 .teleIcons {
   width: 20%;
   height: 20%;
-  margin-top: -6%;
+  margin-top: -5%;
 }
 .teleIconLayout {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  width: 85%;
+   width: 85%;
 }
 
 /* CALCULATOR */
@@ -500,9 +500,7 @@ text-align: center;
  justify-content: center;
 }
 
-.h2Formula {
-  color: grey;
-}
+
 
 /* FOOTER */
 .footerLine {
@@ -542,11 +540,11 @@ footer {
 /* FOOTER END */
 
 /* INTRO & INTERP PAGE */
-.intro-flex {
+/* .intro-flex {
   display: flex;
   flex-direction: row;
   justify-content: center;
-}
+} */
 
 /* .sinus-section {
   display: flex;
@@ -555,42 +553,60 @@ footer {
   margin-top: 10%;
 } */
 
-.intro-ekg-img {
+/* .intro-ekg-img {
   width: 25px;
   margin-right: 3%;
-}
-
-.intro-list {
-align-content: center;
-width: 60%;
-margin-left: 10%;
-line-height: 150%;
-}
+} */
 
 /* tech page */
-.modalTitle {
+/* .modalTitle {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-}
+} */
 
 /* Tech Checlist page */
 /* Accordian Tools panels */
-.menu {
+/* .menu {
   display: flex;
   flex-direction: column;
   margin-top: 5%;
-  }
+  } */
 
 
-.acc-p {
+/* .acc-p {
 width:  260px;
 color: #fff;
 margin-left: 5%;
-}  
+}   */
 
-/* links, clickable text */
-.list, .save-strip {
+/* Lists, links, clickable text */
+/* regular list */
+.intro-list {
+  align-content: center;
+  width: 60%;
+  margin-left: 10%;
+  line-height: 150%;
+  }
+
+.basic-list {
+  list-style-type: circle;
+  color: #000;
+  line-height: 150%;
+}
+
+  /* review-times l regular ist */
+.listrev {
+  padding: 5%;
+  list-style-type: circle;
+  color: #000;
+  line-height: 145%;
+  width: 75%;
+  margin-left: 10%;
+}
+
+  /* CLICKABLE LIST & LINKS */
+.list, .save-strip, .systemList {
   padding: 5%;
   list-style-type: circle;
   line-height: 145%;
@@ -601,40 +617,18 @@ margin-left: 5%;
   color:#09a6d1;
 }
 
+/* LINKS */
 .save-strip {
   padding: 0;
   margin-left: 0;
 }
-/* review times list */
-.listrev {
-  padding: 5%;
-  list-style-type: circle;
-  color: #000;
-  line-height: 145%;
-  width: 75%;
-  margin-left: 10%;
- 
-  
-}
 
 .systemList {
- margin-left: 10%;
-  list-style-type: circle;
-  color: #09a6d1;
-  width: 100%;
-  font-style: italic;
-  text-decoration: underline;
+  line-height: initial; 
+   padding: initial;
+   width: 100%;
+ }
 
-
-}
-/* .titleButton { 
-  display: none;
-} */
-
-
-
-.accordionB,
-.accordionBLink,
 .accordion,
 .accordionLink {
   font-family: "Montserrat subheading", "Verdana", "sans-serif";
@@ -655,7 +649,6 @@ margin-left: 5%;
   margin-bottom: 3%;
   }
 
-.accordionB:after,
 .accordion:after {
   content: "\02795"; /* Unicode character for (+) */
   font-size: 15px;
@@ -663,14 +656,12 @@ margin-left: 5%;
   float: right;
   }
 
-.accordion.active:after,
-.accordionB.active:after {
+.accordion.active:after {
   content: "\2796"; /* Unicode character for (-) */
   }
 
 .active,
-.accordion:hover,
-.accordionB:hover {
+.accordion:hover {
   background-color: #f68923;
   transition: 0.9s;
   }
@@ -688,10 +679,6 @@ margin-left: 5%;
   border-radius: 5px;
   } 
 
-#techSupport {
-  border-radius: 10px; 
-}
-
 .techSm, .tech-imgB, 
 .tech-imgC,.tech-imgD,
 .tech-imgE,.tech-imgF, 
@@ -702,15 +689,13 @@ border-radius: 10px;
 margin-top: 2vh;
 }
 
-
-
-.figGrid {
+/* .figGrid {
   text-align: left;
   margin-left: 25%;
   margin-bottom: 5%;
-}
+} */
 
-.techModalA,
+/* .techModalA,
 .techModalB,
 .techModalC,
 .techModalD,
@@ -723,9 +708,9 @@ margin-top: 2vh;
   width: 400px;
   height: 400px;
   display: flex;
-  }
+  } */
 
-.techModalA--hidden,
+/* .techModalA--hidden,
 .techModalB--hidden,
 .techModalC--hidden,
 .techModalD--hidden,
@@ -733,18 +718,11 @@ margin-top: 2vh;
 .techModalF--hidden, 
 .techModalG--hidden {
   display: none;
-  }
+  } */
 
-.modalContents {
-  background-color: #fff;
-  border: 1px solid #000;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 5%;
-  }
+  /* control strip modal */
 
+/* 
 #closeA, #closeB,
 #closeC, #closeD,
 #closeE, #closeF,
@@ -753,7 +731,7 @@ margin-top: 2vh;
   cursor: pointer;
   margin-top: -8px;
  margin-left: 50px;
-}
+} */
 
 .deviceTrackImg {
   display: none;
@@ -767,14 +745,11 @@ li:hover + img {
   width: 100%;
 }
   /* basic-page */
-  .basic-list {
-      list-style-type: circle;
-      color: #000;
-      line-height: 150%;
-  }
+
 
 /*   
   Control Modal */
+  /* control strip image */
   .control {
     width: 200px;
     border-radius: 8px;
@@ -789,7 +764,6 @@ li:hover + img {
   display: flex;
   margin-top: -40%;
   margin-left: -5%;
-
   }
 
 .Cmodal--hidden {
@@ -801,23 +775,22 @@ li:hover + img {
   border: 1px solid #000;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   margin-top: 2%;
   padding: 10px;
   border-radius: 5%;
   } 
 
+#close {
+  align-self: flex-end;
+}
 
-  /* center heartrate param img */
+  /* center trend heartrate param img */
   .centerImg {
-    margin-left: 15%;
-  
-     
+    margin-left: 15%; 
   }
 
-  #close {
-    align-self: flex-end;
-    
-  }
 
   /* woi/ulp section */
   .noma, .noma-Tabs, section {
@@ -914,24 +887,55 @@ line-height: 15px;
   color: white;
   transform: rotateY(180deg);
   height: 240px;
-  
 }
 
 span {
   margin-bottom: 10%;
 }
 
-
+/* centers flash card */
 .center-img {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+
+
+/****** Small Screen Media Queries: Targets VP sizes 320px & narrow-er. *******/
+  @media (max-width: 320px) {
+      
+    /* Flash Card Shrink */
+    .strip {
+        width: 270px;
+      }
+    
+      .flip-card {
+        width: 300px;
+        height: 230px;
+      }
+    
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*-------------------------------------------------------------
       i-PAD
 -------------------------------------------------------------*/
 /****** Large-ish Screen Media Queries: Targets VP sizes 768px & wider. *******/
-@media (min-width: 768px) {
+ /* @media (min-width: 768px) {
   
 .hamburgerButton {
   display: none;
@@ -949,26 +953,26 @@ span {
   
   .dropbtn-a, .dropbtn, .hams {
     justify-content: center;
-  }
+  }  */
 
 /* .hams, #navLinks {
   margin-right: 0;
   } */
 
           
-.dropdown {
+/* .dropdown {
   flex-direction: column;
-  }
+  } */
 
 /* .dropbtn {
   margin-top: -12px;
   } */
 
- .intro-img, .NOMA-img {
+ /* .intro-img, .NOMA-img {
    width: 50vw;
    margin-left: 5%;
    margin-right: 3%;
- } 
+ }  */
 
 /* .showForDesktop {
   display: flex;
@@ -977,7 +981,7 @@ span {
   margin-top: 5%
 } */
 
-.intro-INT2 {
+/* .intro-INT2 {
   display: flex;
   flex-direction: row;
   align-self: flex-start;
@@ -988,32 +992,28 @@ span {
   width: 100%;
   margin-left: 10%;
   margin-right: 100px;
-}
-.basic-list {
+} */
+/* .basic-list {
   width: 100%;
   margin-top: 3%;
-}
-
-.intro-text {
-  margin-right: 2%;
-  margin-top: -4%;
-}
-
-/* .hideForDesktop {
-  display: none;
 } */
 
- .intro, .intro-INT {
-  flex-direction: row;
- }
+/* .intro-text {
+  margin-right: 2%;
+  margin-top: -4%;
+} */
 
- .INT-text {
+ /* .intro, .intro-INT {
+  flex-direction: row;
+ } */
+
+ /* .INT-text {
    width: 60%;
    margin-left: 5%;
- }
+ } */
 
 
- .intro-list {
+ /* .intro-list {
    width: 30%;
    margin-top: -20%;
    margin-right: 5%;
@@ -1023,39 +1023,34 @@ span {
    margin-left: 8%;
    justify-content: flex-start;
    
- }
+ } */
 
- .wave-IMG {
+ /* .wave-IMG {
    width: 90%;
    align-self: center;
- }
+ } */
 
  /* paper page */
- .paper-Img {
+ /* .paper-Img {
    width: 80%;
- }
+ } */
 
  /*Nomanclature*/
-.panel {
+/* .panel {
   width: 600px;
   border-radius: 10px;
-}
+} */
 
-.accordianB, 
+/* .accordianB, 
 .accordionBLink,
 .accordion,
 .accordionLink{
   width: 600px;
-}
+} */
 
- .NOMA-text {
+ /* .NOMA-text {
    padding-left: 0;
  }
-
- /* .acc-p{
- width: 50%;
- 
- } */
 
  .techSm, .tech-imgB, 
  .tech-imgC,.tech-imgD,
@@ -1078,9 +1073,10 @@ span {
   flex-direction: row;
   margin-left: 10%;
   
-  }
+  } */
 
-  .control {
+  /* control strips */
+  /* .control {
     width: 400px;
     margin-left: 0;
   }
@@ -1094,76 +1090,42 @@ span {
     margin-top: -30%;
     margin-left: 10%;
     
-  }
+  } */
 
 /* The sidebar menu */
 /* The sidebar links */
-.sidebar a, 
+/* .sidebar a, 
 .otherSidebar a {
   padding: 10px 10px 10px 35px;
   font-size: 1.2rem;
-}
+} */
 
 
 /* Position and style the close button (top right corner) */
-.sidebar .closebtn,
+/* .sidebar .closebtn,
 .otherSidebar .closebtn {
   font-size: 36px;
-}
+} */
 
 /* The button used to open the sidebar */
-.openbtn {
+/* .openbtn {
   font-size: 20px;
   height: 70px;
   padding: 10px 15px;
-}
+} */
 
-.openOTHERbtn {
+/* .openOTHERbtn {
   font-size: 20px;
   height: 70px;
   padding: 10px 8px;
 }
 
-
-
-
-  /* MT page */
-
-  /* Accordian Tools panels */
- 
-  /*hides main title and acoordian tabs*/
-/* .hideAcc, .hideTitle, .monitorAccordianSection { 
-  display: none;
-} */
-
-/* .hideTitle {
-  align-content: flex-start;
-  align-items: flex-start;
-  align-self: flex-start;
-} */
-/* displays titleButton for sidebar nav*/
-
-/* device img size*/
 li:hover + img {
   width: 40%;
-}
-
-
-
- /* main {
-    align-items: flex-start;
-}  */
-
-/* .monitorAccordianSection {
-  margin-left: 10%;
 } */
 
-/* REF GUIDE  */
-/* .intro-REF {
-  margin-left: 10%;
-} */
-
-.flip-card {
+/* flip cards */
+/* .flip-card {
   width: 440px;
   height: 260px;
 }
@@ -1179,16 +1141,16 @@ height: 260px;
 .strip {
   width: 420px;
 }
-}
+} */
 /*-------------------------------------------------------------
       i-PAD PRO
 -------------------------------------------------------------*/
 /****** Large-ish Screen Media Queries: Targets VP sizes 1024px & wider. *******/
-@media (min-width: 1024px) {
+/* @media (min-width: 1024px) { */
   /* .logo {
     justify-content: flex-start;
   } */
- .logo {
+ /* .logo {
    margin-bottom: 10%;
  } 
  
@@ -1197,7 +1159,7 @@ height: 260px;
 }  
 
 #navLinks, .dropdown, .hams {
-  /* justify-content: flex-end; */
+  
   margin-top: -40px;
     } 
 
@@ -1220,9 +1182,9 @@ height: 260px;
 .Cmodal {
   margin-bottom: 5%;
 }
-  }
+  } */
 /* SMALL DESKTOP SIZES */
-  @media (min-width: 1200px) {
+  /* @media (min-width: 1200px) {
 
 .logo {
   justify-content: flex-start;
@@ -1251,11 +1213,11 @@ height: 260px;
 }
 
 
-  }
+  } */
 
 
 
-  @media (min-width: 1400px) {
+  @media (min-width: 765px) {
     body {
       display: none;
     }
