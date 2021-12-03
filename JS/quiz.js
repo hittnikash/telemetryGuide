@@ -13,14 +13,14 @@
     {
         question: "What is the normal PRI?",
         optionA: "< .12 sec",
-        optionB: "> .20 sec",
+        optionB: ".12 - .20 sec",
         optionC: "> .12 sec",
-        optionD: "< .20 sec",
+        optionD: ".8 - .20 sec",
         correctOption: "optionB"
     },
 
     {
-        question: "Atrial pacing is when the spike is __________ ?",
+        question: "Atrial pacing is when the spike is - ?",
         optionA: "In front of the QRS complex",
         optionB: "After the P-wave",
         optionC: "On the QRS complex",
@@ -29,10 +29,10 @@
     },
 
     {
-        question: "Ventricular pacing is when the spike is __________?",
+        question: "Ventricular pacing is when the spike is -",
         optionA: "After the QRS complex",
         optionB: "In front of the P-wave",
-        optionC: "in front of the QRS complex",
+        optionC: "In front of the QRS complex",
         optionD: "On the T-wave",
         correctOption: "optionC"
     },
@@ -83,7 +83,7 @@
     },
 
     {
-        question: `"What is tachycardia?`,
+        question: "What is tachycardia?",
         optionA: "A heart rate < 60bpm",
         optionB: "A heart rate < 100bpm",
         optionC: "A hear rate > 60bpm",
@@ -101,135 +101,135 @@
     },
 
     {
-        question: " ?",
-        optionA: "",
-        optionB: "",
-        optionC: "",
-        optionD: "",
-        correctOption: ""
+        question: "On EKG grid paper -one 'big box' is equal to?",
+        optionA: ".20 seconds",
+        optionB: ".4 seconds",
+        optionC: ".12 seconds",
+        optionD: "1 millivolt (mv)",
+        correctOption: "optionA"
     },
 
 
     {
-        question: "?",
-        optionA: "",
-        optionB: "",
-        optionC: "",
-        optionD: "",
+        question: "What does the P-wave represent?",
+        optionA: "Ventricular Depolarization",
+        optionB: "Atrial Depoarization",
+        optionC: "Ventricular Polarization",
+        optionD: "Atrial Polarization",
         correctOption: "optionB"
     },
 
     {
-        question: "?",
-        optionA: "",
-        optionB: "",
-        optionC: "",
-        optionD: "",
+        question: "What does the PR-interval represent?",
+        optionA: "Both atrial depolarization & delay in SA node",
+        optionB: ".10 seconds",
+        optionC: ".12 seconds",
+        optionD: "Both atrial depolarization & delay in AV node",
         correctOption: "optionD"
     },
 
     {
-        question: "?",
-        optionA: "",
-        optionB: "",
-        optionC: "",
-        optionD: "",
+        question: "What does the R-R interval represent?",
+        optionA: "Ventricular Rate",
+        optionB: "Atrial Rate",
+        optionC: "Letters in the alphabet",
+        optionD: "Bundle Branch Block",
         correctOption: "optionA"
     },
 
     {
-        question: "?",
-        optionA: "",
-        optionB: "",
-        optionC: "",
-        optionD: "",
+        question: "What does the P-P interval represent?",
+        optionA: "Ventricular Rate ",
+        optionB: ".20 seconds",
+        optionC: "Atrial Rate",
+        optionD: ".20 millivolt (mv)",
         correctOption: "optionC"
     },
 
     {
-        question: "?",
-        optionA: "",
-        optionB: "",
-        optionC: "",
-        optionD: "",
+        question: "What does the QRS interval measure?",
+        optionA: "The total time of ventricular depolarization",
+        optionB: "Ventricular Rate",
+        optionC: "The total time of atrial depolarization",
+        optionD: "Atrial Rate",
         correctOption: "optionA"
     },
 
     {
-        question: "?",
-        optionA: "",
-        optionB: "",
-        optionC: "",
-        optionD: "",
+        question: "ST-Elevation indicates _?",
+        optionA: "Cell death",
+        optionB: "mitosis",
+        optionC: "Cell injury",
+        optionD: "The J-point",
         correctOption: "optionC"
     },
 
     {
-        question: "?",
-        optionA: "",
-        optionB: "",
-        optionC: "",
-        optionD: "",
+        question: "An electrocardiogram is a recording of the_?",
+        optionA: "Opening & closing of the valves of the heart.",
+        optionB: "Force of the blood against the walls of the blood vessels.",
+        optionC: "Contraction & relaxation of the ventricles.",
+        optionD: "Electrical activity of the heart.",
         correctOption: "optionD"
     },
 
     {
-        question: "?",
-        optionA: "",
-        optionB: "",
-        optionC: "",
-        optionD: "",
+        question: "What does 'Amplitude' refer to",
+        optionA: "Height (voltage) of a waveform on the EKG.",
+        optionB: "The sound of the monitor when it alarms.",
+        optionC: "A piece of equipment that an instrument can be plugged into.",
+        optionD: "Central monitor equipment",
         correctOption: "optionA"
     },
 
     {
-        question: "?",
-        optionA: "",
-        optionB: "",
-        optionC: "",
-        optionD: "",
+        question: "What is artifact?",
+        optionA: "Priceless items displayed in a museum",
+        optionB: "An object made by a human being, typically an item of culural or historical interest",
+        optionC: "Something that is not naturally occuring",
+        optionD: "Distortion of EKG tracing by electrical activity that is non-cardiac in origin.",
         correctOption: "optionD"
     },
 
     {
-        question: "?",
-        optionA: "",
-        optionB: "",
-        optionC: "",
-        optionD: "",
+        question: "If the electrical conduction initiates in the SA Node the rhythm is said to be-?",
+        optionA: "Ventricular",
+        optionB: "Sinus",
+        optionC: "Junctional",
+        optionD: "Dysrhythmia",
         correctOption: "optionB"
     },
 
     {
-        question: "?",
-        optionA: "",
-        optionB: "",
-        optionC: "",
-        optionD: "",
+        question: "The horizontal axis on EKG grid paper represents-?",
+        optionA: "Amplitude",
+        optionB: "Time",
+        optionC: "Volume",
+        optionD: "David Gilmour",
         correctOption: "optionB"
     },
 
     {
-        question: "?",
-        optionA: "",
-        optionB: "",
-        optionC: "",
-        optionD: "",
+        question: "Which of the following electrical events will result in contraction?",
+        optionA: "Polarization",
+        optionB: "Repolarization",
+        optionC: "Depolarization",
+        optionD: "Relaxation",
         correctOption: "optionC"
     },
 
     {
-        question: "?",
-        optionA: "",
-        optionB: "",
-        optionC: "",
-        optionD: "",
+        question: "Voltage on the EKG monitor strip is measured-?",
+        optionA: "Diagon Alley",
+        optionB: "Diagonally",
+        optionC: "Vertically",
+        optionD: "Horizontally",
         correctOption: "optionC"
     }
 
 ]
 
-
+// Shuffle questions
 let shuffledQuestions = [] //empty array to hold shuffled selected questions out of all available questions
 
 function handleQuestions() { 
@@ -242,6 +242,9 @@ function handleQuestions() {
         }
     }
 }
+
+
+
 
 
 let questionNumber = 1 //holds the current question number
@@ -261,8 +264,14 @@ function NextQuestion(index) {
     document.getElementById("option-two-label").innerHTML = currentQuestion.optionB;
     document.getElementById("option-three-label").innerHTML = currentQuestion.optionC;
     document.getElementById("option-four-label").innerHTML = currentQuestion.optionD;
+    // display image instead of question
 
+
+    
+    
 }
+
+
 
 
 function checkForAnswer() {
@@ -278,12 +287,12 @@ function checkForAnswer() {
         }
     })
 
-    //checking to make sure a radio input has been checked or an option being chosen
+    //checking to make sure a input has been checked or an option being chosen
     if (options[0].checked === false && options[1].checked === false && options[2].checked === false && options[3].checked == false) {
         document.getElementById('option-modal').style.display = "flex"
     }
 
-    //checking if checked radio button is same as answer
+    //checking if checked button is same as answer
     options.forEach((option) => {
         if (option.checked === true && option.value === currentQuestionAnswer) {
             document.getElementById(correctOption).style.backgroundColor = "green"
@@ -336,7 +345,7 @@ function resetOptionBackground() {
     })
 }
 
-// unchecking all radio buttons for next question(can be done with map or foreach loop also)
+// unchecking all buttons for next question(can be done with map or foreach loop also)
 function unCheckRadioButtons() {
     const options = document.getElementsByName("option");
     for (let i = 0; i < options.length; i++) {
@@ -351,15 +360,15 @@ function handleEndGame() {
 
     // condition check for player remark and remark color
     if (playerScore <= 3) {
-        remark = "Bad Grades, Keep Practicing."
+        remark = "Not Great, Keep Practicing."
         remarkColor = "red"
     }
     else if (playerScore >= 4 && playerScore < 7) {
-        remark = "Average Grades, You can do better."
+        remark = "Eh, You can do better."
         remarkColor = "orange"
     }
     else if (playerScore >= 7) {
-        remark = "Excellent, Keep the good work going."
+        remark = "Excellent, Great Job!"
         remarkColor = "green"
     }
     const playerGrade = (playerScore / 10) * 100
