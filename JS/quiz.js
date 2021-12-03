@@ -86,13 +86,13 @@
         question: "What is tachycardia?",
         optionA: "A heart rate < 60bpm",
         optionB: "A heart rate < 100bpm",
-        optionC: "A hear rate > 60bpm",
+        optionC: "A heart rate > 60bpm",
         optionD: "A heart rate > 100bpm",
         correctOption: "optionD"
     },
 
     {
-        question: "What are the characteristics of Atrial Arrythmias?",
+        question: "What are the characteristics of Atrial Arrhythmias?",
         optionA: "Absent or short PR interval",
         optionB: "Wide QRS complexes, P-wave present with possible morphology change",
         optionC: "Narrow QRS complexes, P-wave present with possible morphology change",
@@ -113,7 +113,7 @@
     {
         question: "What does the P-wave represent?",
         optionA: "Ventricular Depolarization",
-        optionB: "Atrial Depoarization",
+        optionB: "Atrial Depolarization",
         optionC: "Ventricular Polarization",
         optionD: "Atrial Polarization",
         correctOption: "optionB"
@@ -174,7 +174,7 @@
     },
 
     {
-        question: "What does 'Amplitude' refer to",
+        question: "What does 'Amplitude' refer to?",
         optionA: "Height (voltage) of a waveform on the EKG.",
         optionB: "The sound of the monitor when it alarms.",
         optionC: "A piece of equipment that an instrument can be plugged into.",
@@ -185,7 +185,7 @@
     {
         question: "What is artifact?",
         optionA: "Priceless items displayed in a museum",
-        optionB: "An object made by a human being, typically an item of culural or historical interest",
+        optionB: "An object made by a human being, typically an item of cultural or historical interest",
         optionC: "Something that is not naturally occuring",
         optionD: "Distortion of EKG tracing by electrical activity that is non-cardiac in origin.",
         correctOption: "optionD"

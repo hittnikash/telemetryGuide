@@ -817,7 +817,7 @@ span {
   align-items: center;
 }
 
-/* QUIZ */
+/* knowledge QUIZ */
 .game-quiz-container{
   width: 90%;
   height: 100%;
@@ -827,7 +827,8 @@ span {
   align-items: center;
   justify-content: space-around;
   border-radius: 30px;
-  margin: 5rem;
+  margin: 2rem;
+ 
 }
 
 .game-details-container{
@@ -842,6 +843,7 @@ span {
 
 .game-details-container h1{
   font-size: .75rem;
+  letter-spacing: -.05px;
 }
 
 .game-question-container{
@@ -850,7 +852,6 @@ span {
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 2px solid lightgrey;
   border-radius: 25px;
   margin-bottom: 10%;
   margin-top: 5%;
@@ -863,6 +864,7 @@ span {
   padding: 3px;
   color: #09a6d1;
   font-weight: 550;
+  letter-spacing: 2px;
 }
 
 .game-options-container{
@@ -882,15 +884,16 @@ span {
   border: 2px solid #fff;
   border-radius: 20px;
   overflow: hidden;
+  font-size: .90rem;;
 }
 
 span label{
-  width: 95%;
+  width: 100%;
   height: 100%;
   display: flex;
-  margin-left: 5%;
   align-items: center;
   justify-content: center;
+  text-align: center;
   cursor: pointer;
   transition: transform 0.3s;
   font-weight: 400;
@@ -925,10 +928,10 @@ input[type=radio]:checked ~ .option {
   height: 2rem;
   border-radius: 10px;
   background: none;
-  color: #fff;
+  color: #09a6d1;
   font-weight: 600;
-  background-color: #f68923;
-  border: 2px solid lightgray;
+  background-color: #fff;
+  /* border: 2px solid lightgray; */
   cursor: pointer;
   outline: none;
 }
