@@ -111,8 +111,8 @@ main {
 /* Navigation */
 /* actual logo */
 .nav-logo {
-  height: 50px;
-  margin-top: 8px;
+  height: 80px;
+  margin-top: -10px;
   margin-left: -5px;
   Z-index: 4;
   }
