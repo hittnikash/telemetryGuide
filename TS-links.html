@@ -83,14 +83,18 @@
   <h2 class= "sideNaveh2">Tech-Support</h2>
   <a href="javascript:void(0)" class="closebtn" onclick="closeOtherNav()">&times;</a>
   <a href="TS-links.html#vitalsNotDisplaying">Bedside Monitor Not Displaying</a>
-  <a href="#">Central Monitor Not Diplaying</a>
+  <a href="TS-links.html#centralMonitorNotDisplaying"">Central Monitor Not Diplaying</a>
+  <a href="TS-links.html#5Lead">5-lead only displaying as a 3-lead</a>
+  <a href="TS-links.html#3Lead">3-lead only displaying as a 5-lead</a>
+  <a href="TS-links.html#vitalsNotTransferring">Vitals Not Transferring to Epic</a>
+  <a href="#">Monitor alarm Check Patient ID</a>
   <a href="#">Patient on Tele-pack- o2 Waveform Not Displaying</a>
   <a href="#"></a>
   <a href="#"></a>
   <a href="#"></a>
-  <a href="#"></a>
-  <a href="#"></a>
-  <a href="#"></a>
+  <br>
+  <a href="TS-links.html#vitalsNotDisplaying">BACK TO THE TOP</a>
+   
   <br>
   <a>(If you run into a technical issue not listed above please communicate 
     it so we can find solutions and document them above.)</a>
@@ -128,6 +132,60 @@
                    has gone bad. If that is the case contact biomed.
                </p>   
           </section>
+<br>
+
+<section id= "centralMonitorNotDisplaying">
+  <h1>Central Monitor<br> Not Displaying</h1><br>
+  <img id= "techSupport" src="images/TS-images/ether.png" alt= "ethernet cable" width="70%">
+          <p>So the patient vitals are displayed on the bedside monitor but not the central monitor. 
+            Check to ensure that the ethernet cable (orange cable) is plugged into the back of the monitor but also into the outlet on 
+            the wall behind the monitor. If everything is plugged in properly the cable may be faulty. Contact biomed.</p>
+            </section>
+            <br>
+
+          <section id= "5Lead">
+            <h1>5-Lead displaying<br> as 3-lead</h1><br>
+            <img id= "techSupport" src="" alt= "" width="70%">
+                    <p>The patient is on a 5-lead, but the monitor is only displaying as a 3-lead. 
+                      There are a few different things you can do to troubleshoot.
+                      First ensure the patient is using the correct lead setup with the correct electrodes. 
+                      If the issue persists the next steps involve replacing equipment until the faulty piece is found. 
+                      Replace each piece in this order:
+                      </p>
+                      <ol class= "listrev">
+                        <li>EKG Cable</li>
+                        <li>Piink adaptor (if applicable)</li>
+                        <li>X2/X3</li>
+                        <li>Lead setup <br>(if it was not replaced in the initial troubleshooting, sometimes a wire breaks in the setup.)</li>
+                      </ol>
+                      <p>If you are unable to solve the issue contact biomed.</p>
+                      </section>
+                     
+                      <br>
+
+                      <section id= "3Lead">
+                        <h1>3-Lead displaying<br> as 5-lead</h1>
+                        <img id= "techSupport" src="" alt= "" width="70%">
+                        <p>The patient is on a 3-lead, but the monitor is displaying as a 5-lead. 
+                          First ensure the patient is using the correct lead setup with the correct electrodes. 
+                          If the patient was previously on a 5-lead the electrodes have to be changed out when switched to a 3-lead. </p>
+                          <p>If the issue persists the next step is to try and reset the patient profile- which must be done at bedside.</p>
+                                  </section>
+
+                                  <br>
+                                  <section id= "vitalsNotTransferring">
+                                    <h1>Vitals Not <br>Transferring to Epic</h1><br>
+                                    <img id= "techSupport" src="" alt= "" width="70%">
+                                            <p>Vitals are not crossing over into Epic. First ask the RN to make sure the box labeled “hide vitals” is not 
+                                              checked at the top of the patient’s chart in Epic. If that does not solve the issue follow the next steps. 
+                                              Ask the R.N if she is the only one experiencing this issue. Sometimes there are technical issues with Epic and 
+                                              our network that prevent data transferring- so this may be an IT issue (helpdesk).</p> 
+                                              <p>If no one else is experiencing
+                                               this issue, have the R.N get the X2 or X3 number and ensure the equipment is “paired” correctly.</p> 
+                                               <p>Lastly if the patient came in as a trauma through the E.D that could impact how data is transferred. 
+                                              The R.N would need to contact the E.D to get the problem solved. </p>
+                                              </section>
+                                              <br>
 </header> 
         </main>
 
@@ -146,6 +204,7 @@
         <script src= "JS/hamburger.js"></script>
         <script src= "JS/tech.js"></script>
         <script src= "JS/sideBar.js"></script>
+        <script src= "JS/lightBox.js"></script>
        
 
     </body>

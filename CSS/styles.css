@@ -90,6 +90,10 @@ main {
   align-items: center;
 }
 
+.hiddenImg {
+  display: none;
+}
+
 .intro-img {
   border-radius: 8px;
   width: 75vw;
@@ -1038,7 +1042,27 @@ input[type=radio]:checked ~ .option {
 
 /****** Large Screen Media Queries: Targets VP sizes 765px & wider. *******/
   @media (min-width: 765px) {
-    body {
+    .wrapper {
       display: none;
+    }
+
+    .hiddenImg {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 15rem;
+    }
+
+    .images {
+      width: 40rem;
+    }
+
+    .hiddenh1 {
+      margin-left: 12rem;
+      margin-top: -2rem;
+    }
+
+    .disclaimer {
+      width: 50%;
     }
   }
