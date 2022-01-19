@@ -87,8 +87,10 @@
   <a href="TS-links.html#5Lead">5-lead only displaying as a 3-lead</a>
   <a href="TS-links.html#3Lead">3-lead only displaying as a 5-lead</a>
   <a href="TS-links.html#vitalsNotTransferring">Vitals Not Transferring to Epic</a>
-  <a href="#">Monitor alarm Check Patient ID</a>
-  <a href="#">Patient on Tele-pack- o2 Waveform Not Displaying</a>
+  <a href="TS-links.html#check-ID">Monitor alarm Check Patient ID</a>
+  <a href="TS-links.html#mode">Patient on Tele-pack- o2 Waveform Not Displaying</a>
+  <a href="TS-links.html#noData">Monitor Alarm No Data Tele</a>
+  <a href="TS-links.html#syncOut">Monitor Alarm Check SyncOut Cable</a>
   <a href="#"></a>
   <a href="#"></a>
   <a href="#"></a>
@@ -145,7 +147,7 @@
 
           <section id= "5Lead">
             <h1>5-Lead displaying<br> as 3-lead</h1><br>
-            <img id= "techSupport" src="" alt= "" width="70%">
+            <img id= "techSupport" src="editedTeleHowTos/3Lead.jpg" alt= "3-lead display" width="70%">
                     <p>The patient is on a 5-lead, but the monitor is only displaying as a 3-lead. 
                       There are a few different things you can do to troubleshoot.
                       First ensure the patient is using the correct lead setup with the correct electrodes. 
@@ -172,22 +174,80 @@
                           <p>If the issue persists the next step is to try and reset the patient profile- which must be done at bedside.</p>
                                   </section>
 
-                                  <br>
-                                  <section id= "vitalsNotTransferring">
-                                    <h1>Vitals Not <br>Transferring to Epic</h1><br>
-                                    <img id= "techSupport" src="" alt= "" width="70%">
-                                            <p>Vitals are not crossing over into Epic. First ask the RN to make sure the box labeled “hide vitals” is not 
-                                              checked at the top of the patient’s chart in Epic. If that does not solve the issue follow the next steps. 
-                                              Ask the R.N if she is the only one experiencing this issue. Sometimes there are technical issues with Epic and 
-                                              our network that prevent data transferring- so this may be an IT issue (helpdesk).</p> 
-                                              <p>If no one else is experiencing
-                                               this issue, have the R.N get the X2 or X3 number and ensure the equipment is “paired” correctly.</p> 
-                                               <p>Lastly if the patient came in as a trauma through the E.D that could impact how data is transferred. 
-                                              The R.N would need to contact the E.D to get the problem solved. </p>
-                                              </section>
-                                              <br>
+            <br>
+            <section id= "vitalsNotTransferring">
+              <h1>Vitals Not <br>Transferring to Epic</h1><br>
+              <img id= "techSupport" src="" alt= "" width="70%">
+                      <p>Vitals are not crossing over into Epic. First ask the RN to make sure the box labeled “hide vitals” is not 
+                        checked at the top of the patient’s chart in Epic. If that does not solve the issue follow the next steps. 
+                        Ask the R.N if she is the only one experiencing this issue. Sometimes there are technical issues with Epic and 
+                        our network that prevent data transferring- so this may be an IT issue (helpdesk).</p> 
+                        <p>If no one else is experiencing
+                          this issue, have the R.N get the X2 or X3 number and ensure the equipment is “paired” correctly.</p> 
+                          <p>If the patient had OR in their room or went to OR and then returned to their room, make sure the patient has been "pulled" back to 
+                            their room in Epic. </p>
+                          <p>Lastly if the patient came in as a trauma through the E.D that could impact how data is transferred. 
+                        The R.N would need to contact the E.D to get the problem solved. </p>
+                        </section>
+                        <br>
+
+                <section id= "check-ID">
+                  <h1>Monitor Alarming <br>Check Patient I.D</h1><br>
+                  <p>The monitor may alarm when there are conflicts with patient I.D.</p>
+                     <p>To clear this alarm select "Manage Patient". Next look at the equipment paired to the bedside 
+                       monitor. Confirm the X2 or X3 number with the nurse at bedside.
+                       If the number does not match, remove the device that is paired using the arrows and add the 
+                       correct x2 or x3- again using the arrows. Once this is done ask the nurse to unplug the X2 or X3 from the bedside
+                       monitor and plug back in. This will clear the alarm. 
+                     </p>
+                     <p>If the X2 or X3 is intially paired correctly then just have the nurse unplug the X2 or X3 from the bedside
+                       monitor and plug back in to clear the alarm.
+                     </p>
+                  <img id= "techSupport" src="" alt= "" width="70%">
+                   
+                          
+                            </section>
+                            <br>
+
+            <section id= "mode">
+              <h1>Patient on Tele-pack <br>O2 Waveform not Displaying</h1><br>
+              <p>Sometimes when you put a patient on a Tele-Pack the o2 waveform stops displaying. </p>
+                <p>When this happens select "Measurements", next select "SpO2" in the far left column. 
+                  Then you should see two options on the far right under SpO2, this should be the tele-pack number and the bedside number. 
+                  Select the tele-pack number. Next select "Mode" and choose the option "continous". </p>    
+              <img id= "techSupport" src="editedTeleHowTos/sp02Mode.png" alt= "change mode" width="70%">
+              <p>Now the pleth will display on the central monitor for the patient hooked up to the tele-pack. 
+                 In this example the patients sat probe was off.</p>       
+                        </section>
+                        <br>
+
+                
+            <section id= "noData">
+              <h1>Monitor Alarm <br>No Data Tele</h1><br>
+              <p>You may see this alarm becuase there are multiple devices paired to the bedside monitor. </p>
+              <p>To clear this alarm select "Manage Patient" Next look at the devices paired and remove the the 
+                unnecessary devices using the arrows. The ICU's use X2s & X3s so you may need to contact the nurse to find out which 
+                one is in the room.</p>
+                  
+              <img id= "techSupport" src="editedTeleHowTos/noDataTeleError.png" alt= "no data tele error" width="70%">    
+                        </section>  
+                        <br>    
+                 
+                <section id= "syncOut">
+                  <h1>Monitor Alarm <br>Check Sync-Out Cable</h1><br>
+                  <p>First check the cable connections in the back of the monitor to ensure each are plugged in correctly.</p>
+                  <img id= "techSupport" src="editedTeleHowTos/syncOutCable.jpg" alt= "no data tele error" width="70%">
+                  <p>With this particular alarm I have found that it is usually the cable in the image below.
+                    What I ended up doing that cleared the alarm was taking this cable from another monitor
+                     not in use and using it as a replacement. Then I put in a biomed request for the monitor with the faulty cable.</p> 
+                  <img id= "techSupport" src="editedTeleHowTos/plug1.jpg" alt= "faulty cable" width="70%">  
+                  <p>However this should not be practiced routinely. If you get this error just double check your cable connections
+                    and contact biomed.
+                  </p>
+                            </section>
+                            <br>           
 </header> 
-        </main>
+</main>
 
 </div>
 <hr class="footerLine">
