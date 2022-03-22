@@ -14,5 +14,5 @@ function cookieVal(cookieName) {
 	}
 	return 0;
 }
- 
+
 document.getElementById('result').innerHTML ="<h3>Visitor Analytics, Total: </h3><label style='font-size:15px;' class='text-info'>"+counter+"</label>";
