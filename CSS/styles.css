@@ -7,6 +7,18 @@ BASE STYLES (MOBILE-FIRST)
   box-sizing: border-box;
   }
 
+/* visitor analytics */
+#result {
+  display: flex;
+  flex-direction: row;
+  font-family: "Montserrat-subheading", "Verdana", "sans-serif";
+  align-self: center;
+  margin-bottom: -10%;
+  margin-top: 10%;
+}
+
+
+
 /***** BASIC TEXT STYLES ******/
 p {
   font-family: "Montserrat-subheading", "Verdana", "sans-serif";
