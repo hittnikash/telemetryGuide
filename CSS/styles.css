@@ -47,6 +47,25 @@ h3 {
   text-align: left;
   }
 
+  /* Array of object styles */
+/* Equipment page */
+.imageGen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
+  justify-self: center;
+  }
+
+.gen-p {
+    /* max-width: 100%; */
+    width: 75vw;
+    cursor: pointer;
+    border-radius: 10px;
+    margin-top: 2vh;
+}
+
 /* calc h2 results */
 .h2Formula {
   color: grey;
