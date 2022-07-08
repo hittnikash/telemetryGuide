@@ -9,7 +9,7 @@ const images = [
     },
 
     {
-        name: "X2's & X3s",
+        name: "X2's & X3's",
         about: "These small devices pair to the bedside monitor. The X3 is the newer version of the X2. There is an attachment device that provides for extra ports if needed. The X2 or X3 simply slides into the attachment device.<br><br>",
         photo: 'images/equipmentImages/x2x3.png',
     },
