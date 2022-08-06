@@ -6,14 +6,20 @@
         <title>CICU Telemetry Guide</title>
 
         <meta name="viewport" content="width=device-width, initial-scale=1"/>
-        <meta name="description" content= "Telemetry Reference Guide"/>
+        <meta name="description" content= "CICU Telemetry Guide"/>
         <meta name="author" content="Ashley Needy"/>
     <!--Link to CSS -->  
     <link rel="stylesheet" href="CSS/normalize.css"/>
     <link rel="stylesheet" href="CSS/styles.css"/>
+   
 </head>
 <body>
 <!-- Header -->
+
+<div class= "hiddenImg">
+  <img class= "images" src="icons/teleto.png" alt= "CICU Telemetry Reference Guide." > 
+  <h1 class= "hiddenh1">Please Vew on Mobile Device Only</h1>
+</div>
 <div class= "wrapper">
  
 
@@ -54,7 +60,7 @@
               <a href="heartRate.html">Heart Rate</a>
               <a href="refrence.html">EKG Reference</a>
               <a href="pacemaker.html">External Pacemakers</a>
-              <a href="refrence.html">EKG Calculators</a>
+              <a href="ekgCalculators.html">EKG Calculators</a>
               <a href="artifact.html">Telemetry Artifact</a>
               <a href="quiz.html">EKG Quiz</a>
             </div>
@@ -65,80 +71,64 @@
         </nav>
         <main class="content" role= "main">
           <header class= "container" role="banner">
-<section>
-      <!-- Heart Rate Calc -->
-                    <button class="accordion">Heart-Rate Calculator</button>
-                    <div class="panel"><br>
-                        <h1>HEART-RATE</h1>
-                        <h2 class= "h2Formula">(Formula: 60/RR = HR)</h2>
-                        <form>
-                            <fieldset id="HR">
-                                <input required type="text" class="HR-Input" id="heartRate" name="heart-rate"
-                                    placeholder="RR:"></input>
-                                <span class="toolTipabv">Can only contain numbers 0-9</span>
-                                <button type="button" id="HRbtn">=</button>
-                            </fieldset>
-                            <p id="HR-Result"></p>
-                        </form>
-</div>
-<!-- QT Calc -->
-                        <button class="accordion">QTC- Calculator</button>
-                        <div class="panel"><br>
-                            <h1>QTC Calculator</h1>
-                            <h2 class= "h2Formula">(Bazett Formula:<br> QTc = QT/√RR)</h2>
-                            <form>
-                              <div>
-                                <fieldset id="QTC">
-                                    <input required type="text" class="QT-Input" id="QT" name="QT-Cal"
-                                    placeholder="QT:"></input>
-                                <span class="toolTipabv">Can only contain numbers 0-9</span>
+           
 
-                                    <input required type="text" class="rootRR-Input" id="rootRR" name="root-RR"
-                                        placeholder="RR:"></input>
-                                    <span class="toolTipabv">Can only contain numbers 0-9</span>
-                                    <button type="button" id="QTCbtn">=</button>
-                                </fieldset>   
-                                <p id="QTC-Result"></p>
-                              </div>
-                            </form>
-                          </section>
-                       <section>
+        <h1>External Pacemakers</h1><br>
+        <div class= "flex-row">
+                <img class= "paceIMG" src="resources/pacers/externalPacemaker.jpg"  alt= "external pacemaker">
+            <p>An external pacemaker is used to support patients with certain arrhy-thmias such as heartblock or severe brady-cardia which can result in low cardiac output.</p>
+             </div>
+            
+         <section class= "intro">
+            <p><b>Mode</b> controls which leads are paced & how, the pacer responds to native cardiac activity.</p>
+            <p><b>Rate</b> controls how often the pacer will send an impulse. In the image to the left the rate is set at 80 bpm.</p>
+            <p><b>Output</b> controls how much energy is delivered to each pacing lead. While <b>threshold</b> refers to how much energy is required to trigger depolarization, (QRS complex).</p>
+            <p><b>Sensitivity</b> controls how much current has to be detected to identify depolarization.</p>
+            <br>
+            <img class= "" src="resources/pacers/vvi.jpg"  alt= "VVI mode"><br>
+           
+            <table>
+                <tr>
+                    <th><b>MODE</b></th>
+                    <th><b>DESCRIPTION</b></th>
+                    <th><b>PROs</b></th>
+                    <th><b>CONs</b></th>
+                </tr>
+                <tr>
+                    <th>VVI</th>
+                    <th>Common mode used via transvenous pacer wire.</th>
+                    <th>On demand V pacing; good for backup.</th>
+                    <th>Loss of atrial kick. Difficult to assess ST segments with V pacing.</th>
+                </tr>
+                <tr>
+                    <th>VOO</th>
+                    <th>Can be used when sensing is unreliable.</th>
+                    <th>Resistant to interference.</th>
+                    <th>Loss of atrial kick & Rsk of R on T phenomenon.</th>
+                </tr>
+                <tr>
+                    <th>DDD</th>
+                    <th>Common mode for pacing via epicardial pacing wires.</th>
+                    <th>Maintains atrial kick.</th>
+                    <th>Risk of endless-loop tachycardia.</th>     
+                </tr>
+                <tr>
+                    <th>DOO</th>
+                    <th>Can be used when sensing is unreliable.</th>
+                    <th>Maintains atrial kick & resistant to interference.</th>
+                    <th>Risk of R on T phenomenon.</th>
+                </tr>
+            </table>
+            <br>
 
-      <p>The Heart rate calculator uses the simple 60/RR formula to calculate heart-rate.</p>
-      <p>The QT calculator utilizes Bazett's formula to calculate a corrected QT. 
-        This formula results in a corrected QT by dividing the QT from the square root of the R-R.
-
-      </p>
-
-      <p>There are a few different QT calculators available, Bazett's formula is often used due to its simplicity. 
-        However it should be noted that Bazett's formula is most accurate with heart rates within the range of 60-100 bpm.
-  
-</p>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
-    
-      
-    </section>
+        </section>
         </header> 
         </main>
       </div>
+      <!-- <div id="result"></div>  -->
 <hr class="footerLine">
 <!-- Footer -->
     <footer role="contentinfo">
-    
                     <span class="copyright">&copy;2020 CICU TELEMETRY GUIDE</span>
                     <div class="disclaimer">This website is intended for use by medical professionals for educational
                       purposes only. For medical care, please contact a healthcare provider.
@@ -146,10 +136,9 @@
     </footer> 
     
         <!-- JS (Hamburger Menu)-->
+        
         <script src= "JS/hamburger.js"></script>
-        <script src= "JS/accordian.js"></script>
-        <script src= "JS/regex.js"></script>
-        <script src= "JS/QTCCalc.js"></script>
+       
     
         
 

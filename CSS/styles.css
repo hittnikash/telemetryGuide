@@ -1049,7 +1049,44 @@ input[type=radio]:checked ~ .option {
 .modal-button-container button:hover{
   background-color: rgb(83, 82, 82);
 }
+/* 
+external Pacemaker */
+.flex-row {
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+padding: 5px;
+}
+.paceIMG {
+  margin-left: 10%;
+  margin-right: 5%;
+  padding: 5px;
+  max-height: 265px;
+  width: auto;
+  margin-top: 10px;
+}
 
+/* table */
+table {
+  font-family: "monsterrat-subheading", "verdana", "sans-serif";
+  border-collapse: collapse;
+  width: 70%;
+  font-size: .75rem;
+ 
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 5px;
+}
+th {
+  font-weight: lighter;
+}
+
+tr:nth-child(even) {
+  background-color: #e8ebec;
+  
 
 
 
