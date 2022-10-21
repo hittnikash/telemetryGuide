@@ -1,4 +1,4 @@
-// Bottle brew flavor notes- toggles from hidden to visable
+
 function modalToggleA() {
     const modalToggleA = () => {
       document.querySelector(".techModalA").classList.toggle('techModalA--hidden');
