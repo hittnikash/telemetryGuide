@@ -48,20 +48,21 @@ h3 {
   }
 /* slider */
 /* carousel */
-.ec-text {
+.ec-text, .ec-p {
   color: #fff;
   margin-bottom: -5%;
   margin-top: 5%;
 }
+
 .carousel-container {
-  width: 100%;
-  height: 70vh;
+  width: 100vw;
+  height: 100vh;
   /* border-radius: 10px; */
   position: relative;
   margin: 0 auto;
   background-color: #09a6d1;
 }
-.Ec-caption, .ec-list {
+.Ec-caption, .ec-list, .ec-p {
   margin-left: 5%;
   color:#fff;
   list-style-type: circle;
