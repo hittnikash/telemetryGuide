@@ -49,10 +49,20 @@ h3 {
 
 /* slider */
 /* carousel */
-.ec-text, .ec-p {
+.ec-text, .ec-p, .ec-h1 {
   color: #fff;
   margin-bottom: -5%;
   margin-top: 5%;
+}
+
+.ec-h1 {
+  margin-top: -10px;
+}
+.iNeedtoFix p {
+  color: #ea1d48;
+}
+.downTimeP {
+  margin-left: 15%;
 }
 
 .carousel-container {
@@ -67,7 +77,11 @@ h3 {
   margin-left: 5%;
   color:#fff;
   list-style-type: circle;
-  
+}
+
+.ec-p {
+  margin-left: 15%;
+  margin-top: 10%;
   
 }
 .navigation .next {
@@ -374,6 +388,7 @@ text-align: center;
 
 
 /* SIDEBAR MENU */
+
 .sidebar {
   height: 100%; /* 100% Full-height */
   width: 0; /* 0 width - change this with JavaScript */
@@ -387,8 +402,8 @@ text-align: center;
   background-color: #ea1d48;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   overflow-x: scroll; /*Disable horizontal scroll */
+  overflow-y: scroll;
   transition: 0.5s; /* 0.5 second transition effect to slide in the sidebar */
-
 }
 
 .otherSidebar {
@@ -401,7 +416,8 @@ text-align: center;
   border-radius: 5px;
   background-color: #09a6d1;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  overflow-x: hidden;
+  overflow-x: scroll;
+  overflow-y: scroll;
   padding-top: 15%;
   transition: 0.5s;
 }
@@ -431,6 +447,7 @@ text-align: center;
   right: 0;
   font-size: 36px;
   color: #fff;
+
 }
 
 /*sidenav h2s */
@@ -438,6 +455,7 @@ text-align: center;
   color: #fff;
   margin-left: -20%; 
   margin-bottom: 10%;
+ 
 }
 
 /* The buttons used to open the sidebar */
@@ -468,6 +486,7 @@ text-align: center;
   margin-left: -1.9rem;
   z-index: 3;
   font-size: 1.5rem;
+  
 }
 
 .otherOtherBtn, .otherOtherBtnEC{
