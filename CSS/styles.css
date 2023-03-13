@@ -46,6 +46,7 @@ h2, h3 {
 h3 {
   text-align: left;
   }
+
 /* slider */
 /* carousel */
 .ec-text, .ec-p {
@@ -60,7 +61,7 @@ h3 {
   /* border-radius: 10px; */
   position: relative;
   margin: 0 auto;
-  background-color: #09a6d1;
+  /* background-color: #09a6d1; */
 }
 .Ec-caption, .ec-list, .ec-p {
   margin-left: 5%;
@@ -73,17 +74,17 @@ h3 {
   position: absolute;
   z-index: 10;
   font-size: 25px;
-  top: 50%;
-  left: 4px;
+  top: 12%;
+  left: 45px;
   font-weight: 500;
   color: #fff;
 }
 .navigation .prev {
-  right: 4px;
+  right: 45px;
   position: absolute;
   font-size: 25px;
   z-index: 10;
-  top: 50%;
+  top: 12%;
   font-weight: 500;
   color: #fff;
 }
@@ -385,8 +386,9 @@ text-align: center;
   padding-top: -15%;
   background-color: #ea1d48;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  overflow-x: hidden; /*Disable horizontal scroll */
+  overflow-x: scroll; /*Disable horizontal scroll */
   transition: 0.5s; /* 0.5 second transition effect to slide in the sidebar */
+
 }
 
 .otherSidebar {
@@ -439,7 +441,7 @@ text-align: center;
 }
 
 /* The buttons used to open the sidebar */
-.openbtn {
+.openbtn, .openbtnEC {
   position: fixed;
   height: 40px;
   width: 65px; 
@@ -454,7 +456,7 @@ text-align: center;
   
 }
 
-.openOTHERbtn {
+.openOTHERbtn, .openOTHERbtnEC {
   position: fixed;
   height: 40px;
   width: 65px; 
@@ -466,10 +468,9 @@ text-align: center;
   margin-left: -1.9rem;
   z-index: 3;
   font-size: 1.5rem;
-
 }
 
-.otherOtherBtn {
+.otherOtherBtn, .otherOtherBtnEC{
   position: fixed;
   height: 40px;
   width: 65px; 
@@ -481,12 +482,30 @@ text-align: center;
   font-size: 1.5rem;
   padding-left: 8%;
 }
+.otherOtherBtnEC, .openOTHERbtnEC,
+.openbtnEC {
+  width:90px;
+ 
+}
 
 /* button divs for sidebar navs */
 .titleButton {
   display: flex;
   align-self: flex-start;
 }
+
+.ec-tabs {
+  margin-left: -2px;
+  letter-spacing: 3px;
+  font-size: 12px;
+  font-weight: 500;
+}
+.ec-tab {
+  margin-left: -2px;
+  letter-spacing: 2px;
+  font-size: 12px;
+}
+
 
 /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
 #main, #main2 {
@@ -675,13 +694,16 @@ footer {
 }
 
   /* review-times l regular ist */
-.listrev {
+.listrev, .EClist{
   padding: 5%;
   list-style-type: circle;
   color: #000;
   line-height: 145%;
   width: 75%;
   margin-left: 10%;
+}
+.EClist {
+margin-left: 25%;
 }
 
   /* CLICKABLE LIST & LINKS */
